@@ -14,7 +14,8 @@
  * Implementation of hook_theme_suggestions_form_element_alter().
  */
 function rosewood_theme_suggestions_form_element_alter(array &$suggestions, array $variables) {
-    if (!empty($variables['element']['#array_parents'][1]) && ($variables['element']['#array_parents'][1] == 'product_options')) {
+    $form_element_type = $variables['element']['#type'];
+    if (!empty($variables['element']['#array_parents'][1]) && ($variables['element']['#array_parents'][1] === 'product_options') && ($form_element_type === 'checkbox')) {
       $suggestions[] = $variables['theme_hook_original'] . '--type-webform-checkbox';
     }
 }
@@ -23,7 +24,9 @@ function rosewood_theme_suggestions_form_element_alter(array &$suggestions, arra
  * Implementation of hook_preprocess_form_element().
  */
 function rosewood_preprocess_form_element(&$variables, $hook, &$info) {
-  if (!empty($variables['element']['#array_parents'][1]) && ($variables['element']['#array_parents'][1] == 'product_options')) {
+  $form_element_type = $variables['element']['#type'];
+  if (!empty($variables['element']['#array_parents'][1]) && ($variables['element']['#array_parents'][1] === 'product_options') && ($form_element_type === 'checkbox')) {
     $info['template'] = 'form-element--type-webform-checkbox';
   }
 }
+

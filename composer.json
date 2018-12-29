@@ -24,11 +24,11 @@
         "drupal/colorbox": "^1.4",
         "drupal/conditional_fields": "^1.0@alpha",
         "drupal/console": "^1.0.2",
-        "drupal/contentimport": "^4.1",
         "drupal/copyright_block": "^1.0@RC",
         "drupal/core": "^8.6.0",
         "drupal/cshs": "^1.0@beta",
         "drupal/devel": "^1.2",
+        "drupal/draggableviews": "^1.2",
         "drupal/easy_breadcrumb": "^1.8",
         "drupal/eck": "^1.0@alpha",
         "drupal/entity_browser": "^2.0",
@@ -97,9 +97,7 @@
             }
         },
         "patches": {
-          "drupal/core": {
-            "Drupal Core entity references not showing views fields: www.drupal.org/project/drupal/issues/2174633": "https://www.drupal.org/files/issues/2018-12-12/2174633-227.patch"     
-          }
+  
         }
     }
 }
