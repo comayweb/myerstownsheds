@@ -68,6 +68,10 @@ AddEncoding gzip svgz
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
+  
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
@@ -114,9 +118,9 @@ AddEncoding gzip svgz
   
   # Custom rewrite rules for the myerstown website to ensure that the original
   # site url's have a destination. - applied by SLE @ Rosewood
-  RewriteRule ^/sheds/sheds-painted$ /sheds/wood$1 [L,R=301]
-  RewriteRule ^/sheds/sheds-painted/(.+?)(-[0-9]+)?$ /sheds/wood/$1 [L,R=301]
-
+  RewriteBase /
+  RewriteRule ^sheds/sheds-painted$ "INVALID LINE HERE" [R=302]
+  RewriteRule ^sheds/sheds-painted/(.+?)(-[0-9]+)?$ /sheds/wood/$1 [R=302]
 
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
