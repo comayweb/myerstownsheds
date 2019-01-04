@@ -68,10 +68,6 @@ AddEncoding gzip svgz
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  
-  RewriteCond %{HTTPS} off
-  RewriteCond %{HTTP:X-Forwarded-Proto} !https
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
@@ -113,14 +109,8 @@ AddEncoding gzip svgz
   # To redirect all users to access the site WITHOUT the 'www.' prefix,
   # (http://www.example.com/foo will be redirected to http://example.com/foo)
   # uncomment the following:
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
-  
-  # Custom rewrite rules for the myerstown website to ensure that the original
-  # site url's have a destination. - applied by SLE @ Rosewood
-  RewriteBase /
-  RewriteRule ^sheds/sheds-painted$ "INVALID LINE HERE" [R=302]
-  RewriteRule ^sheds/sheds-painted/(.+?)(-[0-9]+)?$ /sheds/wood/$1 [R=302]
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
@@ -163,7 +153,7 @@ AddEncoding gzip svgz
   # Deny access to any other PHP files that do not match the rules above.
   # Specifically, disallow autoload.php from being served directly.
   RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
-  
+
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
   <IfModule mod_headers.c>
