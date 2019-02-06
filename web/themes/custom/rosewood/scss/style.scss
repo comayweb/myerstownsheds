@@ -7,6 +7,9 @@
 // Base-theme overrides.
 @import 'overrides';
 
+//fonts
+@import url("https://use.typekit.net/zxp5wax.css");
+
 //bootstrap menu issue
 .dropdown-submenu {
     position: relative;
@@ -60,4 +63,40 @@
 }
 .navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > .dropdown-menu {
   left: -100%;
+}
+
+//Begin custom theming
+$primary-text-color: #5F9357;
+$secondary-text-color: #EA984D;
+$white: #FFFFFF;
+$black: #000000;
+$grey: rgba($black, .5);
+$warning-color: #E2574C;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: $black;
+  font-family: work-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+
+  a {
+    color: $primary-text-color;
+    font-family: oswald, sans-serif;
+
+    &:visited,
+    &:hover {
+      color: rgba($primary-text-color, .8);
+      text-decoration: none;
+    }
+
+    &:hover img {
+      opacity: .9;
+      box-shadow: 0 0 2px $grey;
+    }
+  }
 }

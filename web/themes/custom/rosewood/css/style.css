@@ -16,6 +16,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://use.typekit.net/zxp5wax.css");
 /* line 9, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/bootstrap/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -10093,24 +10094,24 @@ p:last-child,
   margin-top: 0;
 }
 
-/* line 11, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 14, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 15, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 18, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
   padding: 0px;
 }
 
-/* line 21, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 24, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 25, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 28, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu > a:after {
   content: "\e080";
   display: inline-block;
@@ -10121,17 +10122,17 @@ p:last-child,
   margin-top: 5px;
 }
 
-/* line 35, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 38, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: #fff;
 }
 
-/* line 39, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 42, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu.pull-left {
   float: none;
 }
 
-/* line 43, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 46, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -10140,26 +10141,58 @@ p:last-child,
   border-radius: 6px 0 6px 6px;
 }
 
-/* line 50, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 53, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .navbar-nav li:last-child > .dropdown-menu {
   left: auto;
   right: 0px;
 }
 
-/* line 54, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 57, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .navbar-nav li:last-child > .dropdown-menu a {
   text-align: right !important;
 }
 
-/* line 57, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 60, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > a:after {
   float: left;
   content: "\e079";
 }
 
-/* line 61, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 64, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > .dropdown-menu {
   left: -100%;
+}
+
+/* line 76, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 80, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body {
+  color: #000000;
+  font-family: work-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* line 87, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body a {
+  color: #5F9357;
+  font-family: oswald, sans-serif;
+}
+
+/* line 91, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body a:visited, body a:hover {
+  color: rgba(95, 147, 87, 0.8);
+  text-decoration: none;
+}
+
+/* line 97, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body a:hover img {
+  opacity: .9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=../css/style.map */
