@@ -73,20 +73,24 @@ $black: #000000;
 $grey: rgba($black, .5);
 $warning-color: #E2574C;
 
+$primaryFont: work-sans, sans-serif;
+$linkFont: oswald, sans-serif;
+$accentFont: raleway, sans-serif;
+
 html {
   font-size: 100%;
 }
 
 body {
   color: $black;
-  font-family: work-sans, sans-serif;
+  font-family: $primaryFont;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
 
   a {
     color: $primary-text-color;
-    font-family: oswald, sans-serif;
+    font-family: $linkFont;
 
     &:visited,
     &:hover {
@@ -98,5 +102,23 @@ body {
       opacity: .9;
       box-shadow: 0 0 2px $grey;
     }
+  }
+
+  .field--name-field-headline {
+    color: $secondary-text-color;
+    text-align: center;
+
+    a {
+      @extend .field--name-field-headline;
+      font-family: $primaryFont;
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-default,
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none;
+    background-color: transparent;
   }
 }

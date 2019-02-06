@@ -10163,12 +10163,12 @@ p:last-child,
   left: -100%;
 }
 
-/* line 76, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 80, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 html {
   font-size: 100%;
 }
 
-/* line 80, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 84, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 body {
   color: #000000;
   font-family: work-sans, sans-serif;
@@ -10177,22 +10177,42 @@ body {
   font-size: 1em;
 }
 
-/* line 87, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 91, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 body a {
   color: #5F9357;
   font-family: oswald, sans-serif;
 }
 
-/* line 91, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 95, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 body a:visited, body a:hover {
   color: rgba(95, 147, 87, 0.8);
   text-decoration: none;
 }
 
-/* line 97, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 101, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 body a:hover img {
   opacity: .9;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* line 107, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body .field--name-field-headline, body .field--name-field-headline a {
+  color: #EA984D;
+  text-align: center;
+}
+
+/* line 111, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body .field--name-field-headline a {
+  font-family: work-sans, sans-serif;
+  text-decoration: underline;
+}
+
+/* line 118, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+body .navbar-default,
+body .navbar-default .navbar-collapse,
+body .navbar-default .navbar-form {
+  border: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=../css/style.map */

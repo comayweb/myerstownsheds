@@ -23,3 +23,6 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - rosewood/framework
+
+libraries:
+  - rosewood/typer
