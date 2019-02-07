@@ -23,3 +23,10 @@ typer:
     js/typer.js: {}
   dependencies:
     - core/jquery
+
+compactforms:
+  js:
+    js/compact_labels.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

@@ -26,3 +26,4 @@ libraries-extend:
 
 libraries:
   - rosewood/typer
+  - rosewood/compactforms

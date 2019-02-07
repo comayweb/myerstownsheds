@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/myerstown
+    - /bin/cp -R config $DEPLOYPATH/config
+    - /bin/cp -R drush $DEPLOYPATH/drush
+    - /bin/cp -R vendor $DEPLOYPATH/vendor
+    - /bin/cp -R scripts $DEPLOYPATH/scripts
+    - /bin/cp -R web $DEPLOYPATH/web

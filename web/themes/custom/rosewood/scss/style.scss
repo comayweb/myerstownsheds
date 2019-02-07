@@ -64,52 +64,41 @@
 .navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > .dropdown-menu {
   left: -100%;
 }
-
-//Begin custom theming
-$primary-text-color: #5F9357;
-$secondary-text-color: #EA984D;
-$white: #FFFFFF;
-$black: #000000;
-$grey: rgba($black, .5);
-$warning-color: #E2574C;
-
-$primaryFont: work-sans, sans-serif;
-$linkFont: oswald, sans-serif;
-$accentFont: raleway, sans-serif;
-
+//Begin Custom Styles
 html {
-  font-size: 100%;
+  font-size: calc(10px + .62vw);
 }
 
 body {
-  color: $black;
+  color: $gray-base;
   font-family: $primaryFont;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
+  letter-spacing: .125em;
 
   a {
-    color: $primary-text-color;
+    color: $brand-primary;
     font-family: $linkFont;
 
     &:visited,
     &:hover {
-      color: rgba($primary-text-color, .8);
+      color: rgba($brand-primary, .8);
       text-decoration: none;
     }
 
     &:hover img {
       opacity: .9;
-      box-shadow: 0 0 2px $grey;
+      box-shadow: 0 0 2px $gray;
     }
   }
 
-  .field--name-field-headline {
-    color: $secondary-text-color;
+  .field--name-field-headline-text {
+    color: $brand-warning;
     text-align: center;
 
     a {
-      @extend .field--name-field-headline;
+      @extend .field--name-field-headline-text;
       font-family: $primaryFont;
       text-decoration: underline;
     }
@@ -120,5 +109,19 @@ body {
   .navbar-default .navbar-form {
     border: none;
     background-color: transparent;
+  }
+//forms styles 
+
+  input, select, textarea,
+  .form-control {
+    background-color: rgba($gray-base, .25);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: $gray-base;
+
+    &:focus {
+      border: 1px solid rgba($brand-primary, .8);
+    }
   }
 }
