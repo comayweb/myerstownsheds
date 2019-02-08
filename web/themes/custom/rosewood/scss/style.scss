@@ -64,10 +64,21 @@
 .navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > .dropdown-menu {
   left: -100%;
 }
+
+
 //Begin Custom Styles
+
+  //Layout
 html {
-  font-size: calc(10px + .62vw);
+  font-size: calc(10px + .56vw);
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+  //Styling
 
 body {
   color: $gray-base;
@@ -75,7 +86,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  letter-spacing: .125em;
+  letter-spacing: .05em;
 
   a {
     color: $brand-primary;
