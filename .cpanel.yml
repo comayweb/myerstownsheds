@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/myerstown
-    - composer install
-    - rsync -r ./ $DEPLOYPATH
+    - /usr/local/bin/composer install
+    - /usr/bin/rsync -a --delete * $DEPLOYPATH
