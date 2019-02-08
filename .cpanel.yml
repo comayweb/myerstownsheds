@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/myerstown/public_html/myerstown
     - /usr/local/bin/composer install
-    - - /usr/bin/rsync -a --delete --exclude=".git" --exclude=".cpanel.yml" /home/myerstown/repositories/myerstownsheds/ $DEPLOYPATH
+    - /usr/bin/rsync -a --delete --exclude=".git" --exclude=".cpanel.yml" /home/myerstown/repositories/myerstownsheds/ $DEPLOYPATH
