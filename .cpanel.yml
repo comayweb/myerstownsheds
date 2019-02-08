@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/myerstown
-    - cp -r ./ $DEPLOYPATH
+    - composer install
+    - rsync -r ./ $DEPLOYPATH
