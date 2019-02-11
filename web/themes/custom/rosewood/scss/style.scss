@@ -76,6 +76,58 @@ html {
 body {
   margin: 0;
   padding: 0;
+  letter-spacing: .05em;
+
+  .field--name-field-headline-text {
+    padding: .5em 0;
+  }
+
+  header.navbar {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .navbar-header {
+    height: 5em;
+
+    .logo {
+      padding: 0;
+      margin: 0;
+      img {
+        height: auto;
+        max-width: 12.5em;
+        padding: 1.2em 15%;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    float: left;
+  }
+
+  .menu--product-navigation.menu {
+    
+    padding: 1.2em 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .user-login-form {
+    max-width: 20em;
+    margin: 0 auto;
+  }
+
+  footer.footer {
+    background-color: $brand-primary;
+    color: $white;
+    text-align: center;
+
+    a {
+      color: $white;
+    }
+  }
 }
 
   //Styling
@@ -86,7 +138,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  letter-spacing: .05em;
 
   a {
     color: $brand-primary;
@@ -106,6 +157,8 @@ body {
 
   .field--name-field-headline-text {
     text-align: center;
+    color: $brand-primary;
+    text-transform: uppercase;
 
     a {
       @extend .field--name-field-headline-text;
@@ -114,8 +167,37 @@ body {
     }
   }
 
+  header.navbar {
+    padding: 0;
+    background-color: $gray;
+    height: 5em;
+  }
+
+  .region-navigation .logo {
+    background-color: $brand-primary;
+    height: 5em;
+  }
+
+  .menu--product-navigation {
+
+    background-color: $gray;
+
+    li a {
+      color: $white;
+    }
+
+    li a:hover, 
+    li a:focus {
+      background-color: transparent;
+      color: rgba($white, .7);
+    }
+
+    .dropdown-menu {
+      background-color: $gray;
+    }
+  }
+
   .navbar-default,
-  .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border: none;
     background-color: transparent;
