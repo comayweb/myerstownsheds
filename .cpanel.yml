@@ -3,6 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/myerstown/public_html/myerstown
     - /usr/local/bin/composer install
-    - /usr/bin/rsync -a --delete --exclude=".git" --exclude=".cpanel.yml" --exclude="web/sites/default/*" /home/myerstown/repositories/myerstownsheds/ $DEPLOYPATH
+    - /usr/bin/rsync -a --delete --exclude=".git" --exclude=".cpanel.yml" --exclude="web/sites/default/*.php" --exclude="web/sites/default/files" /home/myerstown/repositories/myerstownsheds/ $DEPLOYPATH
     - find /home/myerstown/public_html/myerstown -type d -exec chmod 755 '{}' ';'
     - $DEPLOYPATH/vendor/bin/drush --root=$DEPLOYPATH/web --uri=myerstown.rosewoodhosting.us.com cr
