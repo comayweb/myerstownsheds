@@ -38,6 +38,7 @@ $white:                  #FFF;
 
 $brand-primary:         #5F9357 !default;
 $brand-success:         #5cb85c !default;
+$brand-accent:          #F7F4CE !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #EA984D !default;
 $brand-danger:          #E2574C !default;
@@ -356,9 +357,9 @@ $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default;
+//$grid-float-breakpoint:     $screen-sm-min !default;
 //** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+//$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
 
 //== Container sizes
@@ -893,6 +894,6 @@ $page-header-border-color:    $gray-lighter !default;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Point at which .dl-horizontal becomes horizontal
-$dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
+//$dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;

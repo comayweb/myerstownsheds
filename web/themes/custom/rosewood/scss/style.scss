@@ -1,3 +1,20 @@
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 // Default variables.
 @import "default-variables";
 
@@ -66,154 +83,399 @@
 }
 
 
-//Begin Custom Styles
+/*
+============================================
 
-  //Layout
+                   Styles for Myerstown Site
+============================================
+                                   -- layout
+============================================
+*/
+
+@include for-phone-only {
+  #block-searchbutton {
+    position: absolute;
+    top: -3em;
+    right: 3em;
+    span.icon {
+      color: $gray-base;
+    }
+  }
+  #block-responsivemenumobileicon {
+    position: absolute;
+    top: -4.25em;
+    right: 0;
+    .responsive-menu-toggle-icon:before, 
+    .responsive-menu-toggle-icon:after, 
+    .responsive-menu-toggle-icon span.icon {
+      background-color: $gray-base;
+    }
+  }
+}
+
 html {
-  font-size: calc(10px + .56vw);
+  font-size: 62.5%;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   letter-spacing: .05em;
+  font-size: 1.6em;
+  height: 100%;
+}
 
-  .field--name-field-headline-text {
-    padding: .5em 0;
+.main-container {
+  margin: 0;
+  padding: 0;
+
+  .col-sm-12 {
+    float: none;
   }
 
-  header.navbar {
+  section {
+    padding: .5em 2em;
+    margin: 1em auto;
+    max-width: 800px;
+  }
+}
+
+p {
+  margin: 2em 0;
+}
+
+#block-siteheadline {
+  text-align: center;
+}
+
+.field--name-field-headline-text,
+.field--name-field-link {
+  display: inline-block;
+  padding: 1.4em 0;
+  font-size: 1.5rem;
+
+  a {
     padding: 0;
-    border-radius: 0;
   }
+}
 
-  .navbar-header {
-    height: 5em;
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin: 0;
+  padding: 0;
+}
 
-    .logo {
+header.navbar {
+  padding: 0;
+  border-radius: 0;
+}
+
+.navbar-header {
+
+  .logo {
+    padding: 0;
+    margin: 0;
+    img {
+      width: 100%;
+      max-width: 165px;
       padding: 0;
-      margin: 0;
-      img {
-        height: auto;
-        max-width: 12.5em;
-        padding: 1.2em 15%;
-      }
-    }
-  }
-
-  .navbar-collapse {
-    float: left;
-  }
-
-  .menu--product-navigation.menu {
-    
-    padding: 1.2em 0;
-
-    li {
-      display: inline-block;
-    }
-  }
-
-  .user-login-form {
-    max-width: 20em;
-    margin: 0 auto;
-  }
-
-  footer.footer {
-    background-color: $brand-primary;
-    color: $white;
-    text-align: center;
-
-    a {
-      color: $white;
+      margin: 0 auto;
     }
   }
 }
 
-  //Styling
+.region-navigation #block-productnavigation {
+  display: none;
+  padding: 0;
+  float: right;
+  width: 54vw;
+  margin: 0 auto;
+  li,
+  .open {
+    padding-top: 2.12em;
+    display: inline-block;
+
+    a,
+    a:hover,
+    a:active {
+      font-size: 1.2vw;
+      padding: 0 .25vw;
+      background-color: transparent;
+    }
+  }
+  li .caret {
+    display: none;
+  }
+}
+
+.mm-menu_offcanvas.mm-menu_opened + div {
+  width: 80vw;
+}
+
+.mm-menu .menu--product-navigation,
+.mm-menu .dropdown-menu {
+  display: block;
+}
+
+.mm-menu .dropdown-menu {
+  display: block;
+  position: relative;
+  background: transparent;
+  top: auto;
+  float: none;
+  left: auto;
+  padding: 0;
+  font-size: 1em;
+
+  li a {
+    padding: 1em .25em;
+    display: inline-block;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  li a.mm-btn {
+    float: right;
+    padding: .5em 0;
+  }
+}
+
+.responsive-menu-toggle {
+  /* display: inline-block; */
+  float: right;
+}
+
+.responsive-menu-toggle-icon {
+  width: 3.75em;
+  margin-top: 2em;
+
+  span.label {
+    display: none;
+  }
+
+  &::before,
+  &::after,
+  span.icon {
+    width: 1.6em;
+    border-radius: 0;
+  }
+  &::before {
+    top: .3em;
+  }
+  &::after {
+    top: 1.45em;
+  }
+}
+
+.toggle .label {
+  display: none;
+}
+
+.user-login-form {
+  max-width: 20em;
+  margin: 0 auto;
+}
+
+.paragraph--type--text-area-brand-color p {
+  font-size: 2rem;
+}
+
+footer.footer {
+  background-color: $brand-primary;
+  color: $white;
+  text-align: center;
+  height: 22.47em;
+
+  a {
+    color: $white;
+  }
+}
+
+
+/*
+============================================
+
+                   Styles for Myerstown Site
+============================================
+                                   -- styles
+============================================
+*/
 
 body {
   color: $gray-base;
   font-family: $primaryFont;
   font-style: normal;
   font-weight: 400;
-  font-size: 1em;
+}
+
+a {
+  color: $brand-primary;
+  font-family: $linkFont;
+
+  &:visited,
+  &:hover {
+    color: rgba($brand-primary, .8);
+    text-decoration: none;
+  }
+
+  &:hover img {
+    opacity: .9;
+    //box-shadow: 0 0 2px $gray;
+  }
+}
+
+.page-header {
+  width: 50vw;
+  background-color: $brand-accent;
+  margin: 0;
+  padding: 1.2em .5em;
+}
+
+.field--name-field-headline-text,
+.field--name-field-link {
+  text-align: center;
+  color: $brand-primary;
+  text-transform: uppercase;
+  font-weight: bold;
 
   a {
-    color: $brand-primary;
-    font-family: $linkFont;
+    @extend .field--name-field-headline-text;
+    font-family: $primaryFont;
+    text-decoration: underline;
+  }
+}
 
-    &:visited,
-    &:hover {
-      color: rgba($brand-primary, .8);
-      text-decoration: none;
-    }
+header.navbar {
+  padding: 0;
+  background-color: $gray;
+}
 
-    &:hover img {
-      opacity: .9;
-      box-shadow: 0 0 2px $gray;
-    }
+.region-navigation .logo {
+  width: 50vw;
+  max-width: 250px;
+  background-color: $brand-primary;
+  text-align: center;
+  padding: 1.45em .2em;
+}
+
+#block-searchbutton {
+  float: right;
+  margin: 1.5em .5em 0;
+  color: $white;
+  font-size: 1.4em;
+  cursor: pointer;
+
+  .contextual {
+    margin-top: -1em;
+  }
+}
+
+#block-telephone {
+  float: right;
+  margin: 1.4em .5em 0;
+  color: $white;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.outline-button {
+  border: 3px solid $brand-warning;
+  padding: .3em .75em;
+
+  a {
+    color: $brand-warning;
+    font-size: .75em;
+    font-weight: bold;
+  }
+}
+
+.menu--product-navigation {
+
+  li a {
+    color: $white;
   }
 
-  .field--name-field-headline-text {
-    text-align: center;
-    color: $brand-primary;
-    text-transform: uppercase;
-
-    a {
-      @extend .field--name-field-headline-text;
-      font-family: $primaryFont;
-      text-decoration: underline;
-    }
-  }
-
-  header.navbar {
-    padding: 0;
-    background-color: $gray;
-    height: 5em;
-  }
-
-  .region-navigation .logo {
-    background-color: $brand-primary;
-    height: 5em;
-  }
-
-  .menu--product-navigation {
-
-    background-color: $gray;
-
-    li a {
-      color: $white;
-    }
-
-    li a:hover, 
-    li a:focus {
-      background-color: transparent;
-      color: rgba($white, .7);
-    }
-
-    .dropdown-menu {
-      background-color: $gray;
-    }
-  }
-
-  .navbar-default,
-  .navbar-default .navbar-form {
-    border: none;
+  li a:hover, 
+  li a:focus {
     background-color: transparent;
+    color: rgba($white, .7);
   }
+
+  .dropdown-menu {
+    background-color: $gray;
+  }
+}
+
+.navbar-default,
+.navbar-default .navbar-form {
+  border: none;
+  background-color: transparent;
+}
 //forms styles 
 
-  input, select, textarea,
-  .form-control {
-    background-color: rgba($gray-base, .25);
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    color: $gray-base;
+input, select, textarea,
+.form-control {
+  background-color: rgba($gray-base, .25);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: $gray-base;
 
-    &:focus {
-      border: 1px solid rgba($brand-primary, .8);
+  &:focus {
+    border: 1px solid rgba($brand-primary, .8);
+  }
+}
+
+.paragraph--type--text-area-brand-color p {
+  color: $brand-primary;
+}
+.messages__wrapper {
+  max-width: 50vw;
+}
+.search-block-form {
+  float: right;
+  width: 50vw;
+  max-width: 17em;
+  margin-right: 1em;
+  //display: none;
+
+  input,
+  .btn {
+    height: 3em;
+
+  }
+}
+
+@include for-tablet-portrait-up {
+  .navbar-header {
+    float: unset;
+  }
+  .responsive-menu-toggle-wrapper.responsive-menu-toggle {
+    display: inline-block;
+  }
+}
+
+@include for-desktop-up {
+  .region-navigation #block-productnavigation {
+    display: inline-block;
+  }
+  .mm-menu .menu--product-navigation,
+  .mm-menu .dropdown-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1475px) {
+  .region-navigation #block-productnavigation {
+    li a,
+    li a:hover,
+    li a:active {
+      font-size: 1.2em;
     }
   }
 }

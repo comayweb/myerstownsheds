@@ -3,7 +3,7 @@
     attach: function (context, settings) {
       $('label.control-label', context).once('control-label').each(function () {
         // Apply the myCustomBehaviour effect to the elements only once.
-        console.log('custom behavior');
+        //console.log('custom behavior');
       });
     }
   };

@@ -30,3 +30,10 @@ compactforms:
   dependencies:
     - core/jquery
     - core/jquery.once
+
+searchtrigger:
+  js:
+    js/search_trigger.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

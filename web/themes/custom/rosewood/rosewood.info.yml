@@ -9,7 +9,6 @@ package: 'Bootstrap'
 regions:
   headline: 'Headline'
   navigation: 'Navigation'
-  navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'
@@ -27,3 +26,4 @@ libraries-extend:
 libraries:
   - rosewood/typer
   - rosewood/compactforms
+  - rosewood/searchtrigger

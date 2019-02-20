@@ -57,7 +57,7 @@
   {{ page.headline }}
 {% endif %}
 {# Navbar #}
-{% if page.navigation or page.navigation_collapsible %}
+{% if page.navigation %}
   {% block navbar %}
     {%
       set navbar_classes = [
@@ -82,13 +82,7 @@
           </button>
         {% endif %}
       </div>
-
-      {# Navigation (collapsible) #}
-      {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse">
-          {{ page.navigation_collapsible }}
-        </div>
-      {% endif %}
+      
       {% if not navbar_attributes.hasClass(container) %}
         </div>
       {% endif %}
