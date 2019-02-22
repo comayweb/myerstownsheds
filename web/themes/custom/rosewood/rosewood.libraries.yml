@@ -18,6 +18,7 @@ framework:
   dependencies:
       - core/jquery
       - core/drupal
+      - core/drupal.dialog.ajax
 
 typer:
   js:
