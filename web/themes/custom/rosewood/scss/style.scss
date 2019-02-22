@@ -121,7 +121,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  letter-spacing: .05em;
   font-size: 1.6em;
   height: 100%;
 }
@@ -290,6 +289,7 @@ footer.footer {
   color: $white;
   text-align: center;
   height: 22.47em;
+  font-weight: 100;
 
   a {
     color: $white;
@@ -330,10 +330,31 @@ a {
 }
 
 .page-header {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-content: center;
   width: 50vw;
   background-color: $brand-accent;
-  margin: 0;
-  padding: 1.2em .5em;
+  padding: 1em 0;
+
+  span {
+    width: 12em;
+    color: $brand-primary;
+    font-size: 2rem;
+
+    &:before {
+      content: ' ';
+      font-size: .65em;
+      text-align: left;
+      display: block;
+      padding-top: .8em;
+       
+    }
+  }
+}
+
+.path-frontpage .page-header span:before {
+  content: 'Make Space. Claim Space.';
 }
 
 .field--name-field-headline-text,
@@ -353,6 +374,7 @@ a {
 header.navbar {
   padding: 0;
   background-color: $gray;
+  margin-bottom: 0;
 }
 
 .region-navigation .logo {
@@ -389,7 +411,7 @@ header.navbar {
 
   a {
     color: $brand-warning;
-    font-size: .75em;
+    font-size: .85em;
     font-weight: bold;
   }
 }
@@ -416,7 +438,6 @@ header.navbar {
   border: none;
   background-color: transparent;
 }
-//forms styles 
 
 input, select, textarea,
 .form-control {
@@ -434,20 +455,64 @@ input, select, textarea,
 .paragraph--type--text-area-brand-color p {
   color: $brand-primary;
 }
+
 .messages__wrapper {
   max-width: 50vw;
 }
+
 .search-block-form {
   float: right;
   width: 50vw;
   max-width: 17em;
-  margin-right: 1em;
-  //display: none;
+
 
   input,
   .btn {
     height: 3em;
 
+  }
+}
+
+#block-footerlogo {
+  padding: 2em 0;
+}
+
+#block-copyrightblock {
+  font-size: .85em;
+  
+  a {
+    text-decoration: underline;
+  }
+}
+
+.view-content {
+  display: block;
+
+  .views-row {
+    padding: 1em 1.2em;
+    margin: 1em;
+    font-weight: 400;
+    text-align: center;
+    border: $gray-lighter 1px solid;
+
+    .views-field a {
+      color: $gray-base;
+      font-family: $primaryFont;
+    }
+
+    .views-field,
+    .outline-button {
+      display: block;
+      margin: 0 auto 1.75em auto;
+    }
+
+    .outline-button {
+      max-width: 8em;
+      
+      a {
+        font-weight: 100;
+      }
+    }
   }
 }
 
@@ -458,6 +523,16 @@ input, select, textarea,
   .responsive-menu-toggle-wrapper.responsive-menu-toggle {
     display: inline-block;
   }
+
+  .view-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .views-row {
+    width: calc(100% / 2 - 2em);
+    
+  }
 }
 
 @include for-desktop-up {
@@ -467,6 +542,10 @@ input, select, textarea,
   .mm-menu .menu--product-navigation,
   .mm-menu .dropdown-menu {
     display: none;
+  }
+
+  .view-content .views-row {
+    width: calc(100% / 3 - 2em);
   }
 }
 
