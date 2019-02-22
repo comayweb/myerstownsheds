@@ -17,6 +17,7 @@ framework:
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
   dependencies:
       - core/jquery
+      - core/drupal
 
 typer:
   js:
