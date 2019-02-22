@@ -27,6 +27,7 @@
     required ? 'form-required',
   ]
 -%}
+{{ attach_library('rosewood/framework') }}
 {% if title is not empty and title_display == 'invisible' and (is_checkbox or is_radio) -%}
   {#
   Clear but preserve label text as attribute (e.g. for screen readers) for
