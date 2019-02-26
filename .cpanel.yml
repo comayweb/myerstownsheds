@@ -8,4 +8,4 @@ deployment:
     - find $DEVPATH -type d -exec chmod 755 '{}' ';'
     - $DEVPATH/vendor/bin/drush --root=$DEVPATH/web --uri=dev.myerstown.rosewoodhosting.us.com cr && $PRODPATH/vendor/bin/drush --root=$PRODPATH/web --uri=myerstown.rosewoodhosting.us.com cr
     - $PRODPATH/vendor/bin/drush --root=$PRODPATH/web --uri=myerstown.rosewoodhosting.us.com sql-dump --result-file=$DEVPATH/DB.sql
-    - $DEVPATH/vendor/bin/drush --root=$DEVPATH/web --uri=dev.myerstown.rosewoodhosting.us.com drush sql-cli < $DEVPATH/DB.sql
+    - $DEVPATH/vendor/bin/drush --root=$DEVPATH/web --uri=dev.myerstown.rosewoodhosting.us.com sql-cli < $DEVPATH/DB.sql
