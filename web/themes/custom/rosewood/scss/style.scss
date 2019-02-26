@@ -126,17 +126,13 @@ body {
 }
 
 .main-container {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 85vw;
+  max-width: 800px;
 
   .col-sm-12 {
     float: none;
-  }
-
-  section {
-    padding: .5em 2em;
-    margin: 1em auto;
-    max-width: 800px;
   }
 }
 
@@ -310,7 +306,13 @@ body {
   color: $gray-base;
   font-family: $primaryFont;
   font-style: normal;
-  font-weight: 400;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 a {
@@ -330,26 +332,34 @@ a {
 }
 
 .page-header {
-  display: inline-flex;
-  justify-content: flex-end;
-  align-content: center;
-  width: 50vw;
+  display: block;
+  width: 12em;
+  color: $brand-primary;
+  font-size: 3.8rem;
   background-color: $brand-accent;
+  position: relative;
+  border: none;
   padding: 1em 0;
+  font-weight: lighter;
 
-  span {
-    width: 12em;
-    color: $brand-primary;
-    font-size: 2rem;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    background-color: inherit;
+  }
 
-    &:before {
-      content: ' ';
-      font-size: .65em;
-      text-align: left;
-      display: block;
-      padding-top: .8em;
-       
-    }
+  span:before {
+    content: ' ';
+    font-size: .6em;
+    text-align: left;
+    display: block;
+    padding-top: .8em;
+    font-weight: bold;
+
   }
 }
 
