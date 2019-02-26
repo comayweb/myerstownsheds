@@ -125,6 +125,10 @@ body {
   height: 100%;
 }
 
+.mm-menu_offcanvas {
+  z-index: 999;
+}
+
 .main-container {
   margin: 0 auto;
   padding: 0;
@@ -246,7 +250,7 @@ header.navbar {
 }
 
 .responsive-menu-toggle-icon {
-  width: 3.75em;
+  width: 3.5em;
   margin-top: 2em;
 
   span.label {
@@ -397,9 +401,9 @@ header.navbar {
 
 #block-searchbutton {
   float: right;
-  margin: 1.5em .5em 0;
+  margin: 1.4em .5em 0;
   color: $white;
-  font-size: 1.4em;
+  font-size: 1.5em;
   cursor: pointer;
 
   .contextual {
@@ -409,20 +413,28 @@ header.navbar {
 
 #block-telephone {
   float: right;
-  margin: 1.4em .5em 0;
+  margin: 1.1em .5em 0;
   color: $white;
   font-size: 1.4em;
   cursor: pointer;
+
+  a {
+    font-weight: 400;
+  }
 }
 
 .outline-button {
-  border: 3px solid $brand-warning;
-  padding: .3em .75em;
+  border: 4px solid $brand-warning;
+  padding: .18em 1.2em;
+  display: block;
+  margin: 0 auto;
+  max-width: 8em;
 
   a {
     color: $brand-warning;
-    font-size: .85em;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: $primaryFont;
+    font-weight: 100;
   }
 }
 
@@ -495,33 +507,45 @@ input, select, textarea,
   }
 }
 
-.view-content {
+.view-content,
+.field--name-field-product {
   display: block;
 
-  .views-row {
-    padding: 1em 1.2em;
-    margin: 1em;
-    font-weight: 400;
+  .views-row,
+  > .field--item {
+    padding: 1em;
+    margin: .5em;
+    font-size: 1.8rem;
+    font-weight: 100;
     text-align: center;
     border: $gray-lighter 1px solid;
 
-    .views-field a {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+    
+    .name {
+      display: block;
+      margin: 1em 0;
+    }
+
+    .outline-button {
+      margin: 1.5em auto 1.75em auto;
+    }
+
+    .views-field-field-product-thumbnail,
+    .field--name-field-product-image {
+      min-height: 150px;
+    }
+
+    .views-field a,
+    .name a {
       color: $gray-base;
       font-family: $primaryFont;
-    }
-
-    .views-field,
-    .outline-button {
-      display: block;
-      margin: 0 auto 1.75em auto;
-    }
-
-    .outline-button {
-      max-width: 8em;
-      
-      a {
-        font-weight: 100;
-      }
     }
   }
 }
@@ -534,13 +558,14 @@ input, select, textarea,
     display: inline-block;
   }
 
-  .view-content {
+  .view-content,
+  .field--name-field-product {
     display: flex;
     flex-wrap: wrap;
   }
 
   .views-row {
-    width: calc(100% / 2 - 2em);
+    width: calc(100% / 2 - 1em);
     
   }
 }
@@ -554,8 +579,9 @@ input, select, textarea,
     display: none;
   }
 
-  .view-content .views-row {
-    width: calc(100% / 3 - 2em);
+  .view-content .views-row,
+  .field--name-field-product > .field--item {
+    width: calc(100% / 3 - .67em);
   }
 }
 
@@ -564,7 +590,7 @@ input, select, textarea,
     li a,
     li a:hover,
     li a:active {
-      font-size: 1.2em;
+      font-size: 2.2rem;
     }
   }
 }

@@ -77,26 +77,22 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h5{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h5>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
   <div{{ content_attributes.addClass('content') }}>
     {{ content }}
   </div>
+  
+  {{ title_prefix }}
+  {% if not page %}
+    <span class='name'>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </span>
+  {% endif %}
+  {{ title_suffix }}
+  
+  <span class="outline-button">
+    <span>
+      <a href="{{ url }}" hreflang="en" >More info</a>
+    </span>
+  </span>
 
 </article>
