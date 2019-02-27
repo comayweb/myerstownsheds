@@ -25,3 +25,6 @@
 
 # Ignore .env files as they are personal
 /.DS_Store
+
+# Ignore deploy script
+/bin/
