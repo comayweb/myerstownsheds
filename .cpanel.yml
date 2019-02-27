@@ -5,4 +5,6 @@ deployment:
     - export PRODPATH=/home/myerstown/public_html/myerstown
     - /usr/local/bin/composer install
     - /usr/bin/rsync -a --delete --exclude=".git" --exclude=".cpanel.yml" --exclude="web/sites/default/*.php" --exclude="web/sites/default/files" /home/myerstown/repositories/myerstownsheds/ $DEVPATH
-    - find $DEVPATH -type d -exec chmod 755 '{}' ';'
+    - $DEVPATH/vendor/bin/drush --root=$DEVPATH/web --uri=dev.myerstown.rosewoodhosting.us.com cr && $PRODPATH/vendor/bin/drush --root=$PRODPATH/web --uri=myerstown.rosewoodhosting.us.com cr
+    - $PRODPATH/vendor/bin/drush --root=$PRODPATH/web --uri=myerstown.rosewoodhosting.us.com sql-dump --result-file=$DEVPATH/DB.sql
+    - $DEVPATH/vendor/bin/drush --root=$DEVPATH/web --uri=dev.myerstown.rosewoodhosting.us.com sql-cli < $DEVPATH/DB.sql
