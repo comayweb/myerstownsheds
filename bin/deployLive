@@ -1,3 +1,6 @@
 #!/bin/bash
+export REPOPATH=/home/myerstown/repositories/myerstownsheds/
+export PRODPATH=/home/myerstown/public_html/myerstown
 
-echo Hello, World!
+/usr/bin/rsync -a --delete --exclude=".git" --exclude=".cpanel.yml" --exclude="web/sites/default/*.php" --exclude="web/sites/default/files" $REPOPATH $PRODPATH
+$PRODPATH/vendor/bin/drush --root=$PRODPATH/web --uri=myerstown.rosewoodhosting.us.com cr
