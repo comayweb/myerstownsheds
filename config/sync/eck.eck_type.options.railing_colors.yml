@@ -1,0 +1,9 @@
+uuid: 0a3fbb0b-ec0f-43a2-bad9-8ff1adfb3005
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.options
+name: 'Railings - Colors'
+type: railing_colors
+description: ''

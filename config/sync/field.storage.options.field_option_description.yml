@@ -1,0 +1,19 @@
+uuid: c63b4ced-41fa-493e-a850-95d4904d86e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: options.field_option_description
+field_name: field_option_description
+entity_type: options
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

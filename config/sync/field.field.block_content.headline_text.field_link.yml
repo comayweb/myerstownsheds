@@ -1,0 +1,23 @@
+uuid: 5ba6bf90-4e6d-4a21-ae8d-612a45ee58c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.headline_text
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.headline_text.field_link
+field_name: field_link
+entity_type: block_content
+bundle: headline_text
+label: link
+description: 'Add a link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

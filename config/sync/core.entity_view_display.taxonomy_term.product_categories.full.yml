@@ -1,0 +1,35 @@
+uuid: c338e4ee-1d44-4a56-8336-1a2cfe01f3de
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.product_categories.field_disable
+    - field.field.taxonomy_term.product_categories.field_link_products
+    - taxonomy.vocabulary.product_categories
+  module:
+    - entity_reference_revisions
+    - text
+id: taxonomy_term.product_categories.full
+targetEntityType: taxonomy_term
+bundle: product_categories
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link_products:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: product_thumbnail_display
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_disable: true

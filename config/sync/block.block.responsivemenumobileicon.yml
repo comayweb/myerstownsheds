@@ -1,0 +1,20 @@
+uuid: 455bb4d8-03bd-4bb0-ad33-fea6a021acf7
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - rosewood
+id: responsivemenumobileicon
+theme: rosewood
+region: navigation
+weight: -6
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: 521d6746-bac0-4310-ac40-7777bddc0f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.product_image.field_media_image
+    - media.type.product_image
+  module:
+    - image
+id: media.product_image.default
+targetEntityType: media
+bundle: product_image
+mode: default
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

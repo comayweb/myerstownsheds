@@ -1,0 +1,28 @@
+uuid: 9d8ecb83-47b3-429c-bfe0-6d04e7cbafc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.upgrades
+    - field.storage.options.field_image
+    - media.type.product_image
+id: options.upgrades.field_image
+field_name: field_image
+entity_type: options
+bundle: upgrades
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      product_image: product_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: c6d8bf86-c785-4177-97cd-c75f70328a5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - rosewood
+id: searchform
+theme: rosewood
+region: header
+weight: -9
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

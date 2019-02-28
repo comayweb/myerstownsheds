@@ -1,0 +1,124 @@
+uuid: 81d41629-6c93-4cef-a0a0-e8afef1c8b1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.product_image_browser
+    - field.field.node.product_item.feeds_item
+    - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_choose_options_form
+    - field.field.node.product_item.field_options
+    - field.field.node.product_item.field_product_category
+    - field.field.node.product_item.field_product_image
+    - node.type.product_item
+  module:
+    - cshs
+    - entity_browser
+    - entity_browser_entity_form
+    - inline_entity_form
+    - paragraphs
+    - path
+    - webform
+id: node.product_item.default
+targetEntityType: node
+bundle: product_item
+mode: default
+content:
+  field_add_element:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: text_area
+    third_party_settings: {  }
+    region: content
+  field_choose_options_form:
+    weight: 5
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_options:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Option
+      label_plural: ''
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsed: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: browse_options
+  field_product_category:
+    weight: 4
+    settings:
+      force_deepest: '1'
+      parent: '0'
+      level_labels: ''
+    third_party_settings: {  }
+    type: cshs
+    region: content
+  field_product_image:
+    type: entity_browser_entity_reference
+    weight: 1
+    region: content
+    settings:
+      entity_browser: product_image_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: media_browser
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: options_buttons
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  promote: true
+  sticky: true

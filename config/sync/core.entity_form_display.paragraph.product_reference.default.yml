@@ -1,0 +1,47 @@
+uuid: 16a28da6-d074-4a79-8450-3ec640591a35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_reference.field_optional_group_hea
+    - field.field.paragraph.product_reference.field_product
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - text
+id: paragraph.product_reference.default
+targetEntityType: paragraph
+bundle: product_reference
+mode: default
+content:
+  field_optional_group_hea:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_product:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Product
+      label_plural: Products
+      collapsible: true
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: product_browser
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

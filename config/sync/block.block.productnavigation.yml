@@ -1,0 +1,27 @@
+uuid: 115a574f-67a6-4afc-9d31-6e3e8f56098c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.product-navigation
+  module:
+    - menu_block
+  theme:
+    - rosewood
+id: productnavigation
+theme: rosewood
+region: navigation
+weight: -4
+provider: null
+plugin: 'menu_block:product-navigation'
+settings:
+  id: 'menu_block:product-navigation'
+  label: 'Product Navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'product-navigation:'
+  suggestion: product_navigation
+visibility: {  }

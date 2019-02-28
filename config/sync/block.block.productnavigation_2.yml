@@ -1,0 +1,27 @@
+uuid: 4e7a9d2a-d12f-4ee3-80a5-2afce317b38c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.product-navigation
+  module:
+    - menu_block
+  theme:
+    - bootstrap
+id: productnavigation_2
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:product-navigation'
+settings:
+  id: 'menu_block:product-navigation'
+  label: 'Product Navigation'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'product-navigation:'
+  suggestion: product_navigation
+visibility: {  }

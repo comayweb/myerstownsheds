@@ -1,0 +1,9 @@
+uuid: 2ae6b7ae-225b-4ef7-935f-47c9b1f412ea
+langcode: en
+status: true
+dependencies: {  }
+name: 'Building Sizes'
+vid: building_sizes
+description: ''
+hierarchy: 0
+weight: -9

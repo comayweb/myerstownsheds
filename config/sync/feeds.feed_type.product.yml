@@ -1,0 +1,118 @@
+uuid: 490a53e4-5557-4e63-b163-64ee95c2e44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.product_item.title
+    - field.field.node.product_item.feeds_item
+    - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_product_category
+    - field.field.node.product_item.field_product_image
+    - node.type.product_item
+  module:
+    - node
+    - paragraphs
+label: Product
+id: product
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: product_item
+custom_sources:
+  '':
+    label: ''
+    value: ''
+    machine_name: ''
+  id:
+    label: ID
+    value: ID
+    machine_name: id
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  description:
+    label: Description
+    value: Description
+    machine_name: description
+  categories:
+    label: Categories
+    value: Categories
+    machine_name: categories
+  categories_2:
+    label: Categories_2
+    value: Categories_2
+    machine_name: categories_2
+  categories_3:
+    label: Categories_3
+    value: Categories_3
+    machine_name: categories_3
+  categories_03:
+    label: Categories_3
+    value: Categories_3
+    machine_name: categories_03
+  options_1:
+    label: Options_1
+    value: Options_1
+    machine_name: options_1
+  options_2:
+    label: Options_2
+    value: Options_2
+    machine_name: options_2
+  product_image_reference:
+    label: Product_Image_Reference
+    value: Product_Image_Reference
+    machine_name: product_image_reference
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+  -
+    target: field_add_element
+    map:
+      value: description
+    settings:
+      paragraphs_type: text_area
+      paragraph_field: field_text_area
+      format: basic_html
+  -
+    target: field_product_category
+    map:
+      target_id: categories
+    settings:
+      reference_by: tid
+      autocreate: 0
+  -
+    target: feeds_item
+    map:
+      url: ''
+      guid: id
+    unique:
+      guid: '1'
+  -
+    target: field_product_image
+    map:
+      target_id: product_image_reference
+    settings:
+      reference_by: mid
+      autocreate: 0

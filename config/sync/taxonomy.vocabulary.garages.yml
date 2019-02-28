@@ -1,0 +1,9 @@
+uuid: 1ea7bf85-9ac8-4693-95d1-cc264037aab9
+langcode: en
+status: true
+dependencies: {  }
+name: Garages
+vid: garages
+description: null
+hierarchy: 0
+weight: -8

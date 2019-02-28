@@ -1,0 +1,20 @@
+uuid: 5c89a77f-fdd0-477f-a248-9f2e838ff0f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_product_thumbnail
+field_name: field_product_thumbnail
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 9d86b938-7321-4b15-9841-85d136e599e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_product_thumbnail
+    - media.type.product_image
+    - taxonomy.vocabulary.product_categories
+id: taxonomy_term.product_categories.field_product_thumbnail
+field_name: field_product_thumbnail
+entity_type: taxonomy_term
+bundle: product_categories
+label: 'Category Photo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      product_image: product_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

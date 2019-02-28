@@ -1,0 +1,21 @@
+uuid: 8724f3d6-799b-410e-8f9c-f1dd23eee98d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.doors
+    - field.storage.options.field_option_description
+  module:
+    - text
+id: options.doors.field_option_description
+field_name: field_option_description
+entity_type: options
+bundle: doors
+label: 'Door Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

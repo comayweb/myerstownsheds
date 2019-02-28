@@ -1,0 +1,61 @@
+uuid: af205728-d605-4755-ad96-d6323b08a061
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.product_categories.field_disable
+    - field.field.taxonomy_term.product_categories.field_link_products
+    - field.field.taxonomy_term.product_categories.field_product_thumbnail
+    - taxonomy.vocabulary.product_categories
+  module:
+    - media_library
+    - paragraphs
+    - text
+id: taxonomy_term.product_categories.default
+targetEntityType: taxonomy_term
+bundle: product_categories
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_disable:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_link_products:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: 'Product Group'
+      title_plural: 'Product Groups'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: product_reference
+    third_party_settings: {  }
+    region: content
+  field_product_thumbnail:
+    type: media_library_widget
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  path: true

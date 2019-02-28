@@ -1,0 +1,25 @@
+uuid: 1fed31d0-3af7-41fb-8153-5e2d5ead32d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_block:ecb97fc8-2bd0-4223-8d43-f56779b50eb3'
+  module:
+    - block_content
+  theme:
+    - rosewood
+id: telephone
+theme: rosewood
+region: navigation
+weight: -7
+provider: null
+plugin: 'block_content:ecb97fc8-2bd0-4223-8d43-f56779b50eb3'
+settings:
+  id: 'block_content:ecb97fc8-2bd0-4223-8d43-f56779b50eb3'
+  label: Telephone
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

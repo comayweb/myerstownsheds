@@ -1,0 +1,10 @@
+uuid: 9eae8afb-3a6d-47ee-bd0c-9477d3daa23c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.product_thumbnail_display
+label: 'Product Thumbnail Display'
+targetEntityType: paragraph
+cache: true

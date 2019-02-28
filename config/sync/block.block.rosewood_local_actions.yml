@@ -1,0 +1,20 @@
+uuid: da34de8b-c6bd-45e1-889b-8d8b507e655c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - rosewood
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: rosewood_local_actions
+theme: rosewood
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

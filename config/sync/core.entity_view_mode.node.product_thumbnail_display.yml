@@ -1,0 +1,10 @@
+uuid: e6ac7817-0c4b-47c6-a9bc-73840ba91f83
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.product_thumbnail_display
+label: 'Product Thumbnail Display'
+targetEntityType: node
+cache: true

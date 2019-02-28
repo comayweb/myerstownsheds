@@ -1,0 +1,21 @@
+uuid: 9eaa8dda-3da3-46a7-a867-4a031f69ae23
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.windows
+    - field.storage.options.field_option_description
+  module:
+    - text
+id: options.windows.field_option_description
+field_name: field_option_description
+entity_type: options
+bundle: windows
+label: 'Window Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

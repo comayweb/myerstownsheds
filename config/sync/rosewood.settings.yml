@@ -1,0 +1,38 @@
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'https://myerstown.rosewoodhosting.us.com/themes/custom/rosewood/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  rosewood: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+  node_user_picture: false
+logo:
+  path: ./sites/default/files/logo_reverse.png
+  url: ''
+  use_default: 0
+region_wells:
+  headline: ''
+  navigation: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+fluid_container: 0
+cdn_custom_css: null
+cdn_custom_css_min: null
+cdn_custom_js: null
+cdn_custom_js_min: null
+cdn_jsdelivr_version: null
+cdn_jsdelivr_theme: null
+reset_http_request_cache: ''
+table: ''

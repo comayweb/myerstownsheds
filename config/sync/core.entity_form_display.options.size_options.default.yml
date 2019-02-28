@@ -1,0 +1,19 @@
+uuid: bafaa000-5d08-4288-99c5-8d0851b45a16
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.size_options
+    - field.field.options.size_options.field_size_list
+id: options.size_options.default
+targetEntityType: options
+bundle: size_options
+mode: default
+content:
+  field_size_list:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden: {  }

@@ -1,0 +1,41 @@
+uuid: 10a0d33d-5d59-4977-97be-1fe7c85d6a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.windows
+    - field.field.options.windows.field_image
+    - field.field.options.windows.field_option_description
+  module:
+    - media
+    - text
+id: options.windows.default
+targetEntityType: options
+bundle: windows
+mode: default
+content:
+  field_image:
+    weight: -4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_option_description:
+    weight: -3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

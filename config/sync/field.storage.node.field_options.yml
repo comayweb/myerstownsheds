@@ -1,0 +1,20 @@
+uuid: 771f6bff-56c9-4b1d-b7bd-514b494c4785
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - node
+id: node.field_options
+field_name: field_options
+entity_type: node
+type: entity_reference
+settings:
+  target_type: options
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

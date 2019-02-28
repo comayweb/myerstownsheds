@@ -1,0 +1,36 @@
+uuid: dd69908e-9955-422f-91e9-882a653ce875
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.manage_products
+  module:
+    - views
+name: product_browser
+label: 'Product Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'add products'
+  auto_open: true
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: node
+  display: label
+  display_settings: {  }
+  select_text: add
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  8733874d-09e0-4351-b95a-ad10a19bf87b:
+    settings:
+      view: manage_products
+      view_display: entity_browser_1
+      submit_text: 'Select products'
+      auto_select: false
+    uuid: 8733874d-09e0-4351-b95a-ad10a19bf87b
+    weight: 1
+    label: 'Add existing'
+    id: view

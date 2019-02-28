@@ -1,0 +1,129 @@
+definitions:
+  admin_toolbar_tools__add_media:
+    weight: 2
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  system__admin_content:
+    weight: -99
+    menu_name: admin
+    parent: system.admin
+    enabled: true
+    expanded: false
+  system__admin_structure:
+    weight: -97
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__themes_page:
+    weight: -96
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__modules_list:
+    weight: -95
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_config:
+    weight: -94
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    weight: -93
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_reports:
+    weight: -92
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__38':
+    parent: ''
+    weight: 1
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__39':
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.38'
+    weight: 0
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__40':
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.38'
+    weight: 1
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__41':
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.38'
+    weight: 2
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__43':
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.42'
+    weight: 0
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__44':
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.42'
+    weight: 1
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__45':
+    parent: ''
+    weight: 2
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__46':
+    parent: ''
+    weight: 3
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__47':
+    parent: ''
+    weight: 4
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__48':
+    parent: ''
+    weight: 5
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__49':
+    parent: ''
+    weight: 6
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__50':
+    parent: ''
+    weight: 7
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__42':
+    parent: ''
+    weight: 2
+    expanded: false
+    enabled: true
+    menu_name: product-navigation
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

@@ -1,0 +1,27 @@
+uuid: 6ae3c98c-fc05-4a35-9dd8-b582cad0634c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - menu_block
+  theme:
+    - rosewood
+id: tools
+theme: rosewood
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'menu_block:tools'
+settings:
+  id: 'menu_block:tools'
+  label: Tools
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'tools:'
+  suggestion: tools
+visibility: {  }

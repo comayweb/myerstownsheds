@@ -1,0 +1,42 @@
+uuid: 1ad0a767-ec5c-4c19-b47b-76872b299497
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_image_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: product_image_browser
+label: 'Product Image Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Add Image'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6df25c5e-2b25-44a0-be10-594258cfd5d0:
+    settings:
+      entity_type: media
+      bundle: product_image
+      form_mode: media_library
+      submit_text: Save
+    uuid: 6df25c5e-2b25-44a0-be10-594258cfd5d0
+    weight: -9
+    label: 'add new'
+    id: entity_form
+  4a89b8d2-5a03-4394-b57f-bbb864eaab6f:
+    settings:
+      view: product_image_browser
+      view_display: entity_browser_1
+      submit_text: Select
+      auto_select: false
+    uuid: 4a89b8d2-5a03-4394-b57f-bbb864eaab6f
+    weight: -10
+    label: 'find existing'
+    id: view

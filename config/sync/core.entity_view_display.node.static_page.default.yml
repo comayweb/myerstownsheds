@@ -1,0 +1,30 @@
+uuid: 47896a16-c633-4bfb-ba12-448cfcf57f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.static_page.field_text_area
+    - node.type.static_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.static_page.default
+targetEntityType: node
+bundle: static_page
+mode: default
+content:
+  field_text_area:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

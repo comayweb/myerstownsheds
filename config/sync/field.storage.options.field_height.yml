@@ -1,0 +1,20 @@
+uuid: 1cc4fdde-8f3b-4c2f-8059-f9190ac96eb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+id: options.field_height
+field_name: field_height
+entity_type: options
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

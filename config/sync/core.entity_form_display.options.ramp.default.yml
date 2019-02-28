@@ -1,0 +1,41 @@
+uuid: 19c107a3-1f58-4e8f-bb6c-e80a155f5258
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.ramp
+    - field.field.options.ramp.field_image
+    - field.field.options.ramp.field_option_description
+  module:
+    - text
+id: options.ramp.default
+targetEntityType: options
+bundle: ramp
+mode: default
+content:
+  field_image:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_option_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

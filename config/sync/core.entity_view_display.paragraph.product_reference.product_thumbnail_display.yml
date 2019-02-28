@@ -1,0 +1,33 @@
+uuid: fd9daec0-4278-4522-a170-e9d710b11443
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.product_thumbnail_display
+    - field.field.paragraph.product_reference.field_optional_group_hea
+    - field.field.paragraph.product_reference.field_product
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - text
+id: paragraph.product_reference.product_thumbnail_display
+targetEntityType: paragraph
+bundle: product_reference
+mode: product_thumbnail_display
+content:
+  field_optional_group_hea:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_product:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: product_thumbnail_display
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

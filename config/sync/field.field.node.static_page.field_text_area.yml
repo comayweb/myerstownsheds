@@ -1,0 +1,39 @@
+uuid: 675b4b08-9384-4ace-8306-7a94c1a47f23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_area
+    - node.type.static_page
+    - paragraphs.paragraphs_type.text_area
+    - paragraphs.paragraphs_type.text_area_brand_color
+  module:
+    - entity_reference_revisions
+id: node.static_page.field_text_area
+field_name: field_text_area
+entity_type: node
+bundle: static_page
+label: 'Text Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_area: text_area
+      text_area_brand_color: text_area_brand_color
+    target_bundles_drag_drop:
+      product_reference:
+        weight: 3
+        enabled: false
+      text_area:
+        enabled: true
+        weight: 4
+      text_area_brand_color:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

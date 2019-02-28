@@ -1,0 +1,29 @@
+uuid: 2c361817-5a5f-4adf-8f44-7f65e4730680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_choose_options_form
+    - node.type.product_item
+  module:
+    - webform
+id: node.product_item.field_choose_options_form
+field_name: field_choose_options_form
+entity_type: node
+bundle: product_item
+label: 'Choose Options Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

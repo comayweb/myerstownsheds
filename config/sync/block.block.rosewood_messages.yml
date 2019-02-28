@@ -1,0 +1,22 @@
+uuid: df3464a2-37e0-4cf4-8489-14fe88dbc788
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rosewood
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: rosewood_messages
+theme: rosewood
+region: header
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

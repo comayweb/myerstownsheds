@@ -1,0 +1,52 @@
+uuid: 40951a04-3faa-4e6e-8378-0b9c3044af22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_item.feeds_item
+    - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_choose_options_form
+    - field.field.node.product_item.field_options
+    - field.field.node.product_item.field_product_category
+    - field.field.node.product_item.field_product_image
+    - node.type.product_item
+  module:
+    - entity_reference_revisions
+    - user
+    - webform
+id: node.product_item.default
+targetEntityType: node
+bundle: product_item
+mode: default
+content:
+  field_add_element:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_choose_options_form:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_product_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  field_options: true
+  field_product_category: true
+  links: true

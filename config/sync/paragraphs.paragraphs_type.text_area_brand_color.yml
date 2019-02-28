@@ -1,0 +1,9 @@
+uuid: 48bf541b-fcbe-4421-ad8c-2ec204183bd4
+langcode: en
+status: true
+dependencies: {  }
+id: text_area_brand_color
+label: 'Text Area (green)'
+icon_uuid: null
+description: 'Add green text.'
+behavior_plugins: {  }

@@ -1,0 +1,29 @@
+uuid: 9fb745bf-d8ca-4801-aa23-3e9b706b87d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.height
+    - field.storage.options.field_height
+    - taxonomy.vocabulary.height
+id: options.height.field_height
+field_name: field_height
+entity_type: options
+bundle: height
+label: Height
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      height: height
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 2d3ea2f1-eafd-4e37-b34f-a8139bd4ad4a
+name: 'Myerstown Sheds'
+mail: stephen@rosewood.us.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/399
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

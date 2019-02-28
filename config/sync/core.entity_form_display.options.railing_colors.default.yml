@@ -1,0 +1,46 @@
+uuid: 213cf0d8-b5e3-4ef0-9a81-3e99433be793
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.railing_colors
+    - field.field.options.railing_colors.field_image
+    - field.field.options.railing_colors.field_materai
+    - field.field.options.railing_colors.field_option_description
+  module:
+    - media_library
+    - text
+id: options.railing_colors.default
+targetEntityType: options
+bundle: railing_colors
+mode: default
+content:
+  field_image:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_materai:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_option_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

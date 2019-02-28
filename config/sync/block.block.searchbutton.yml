@@ -1,0 +1,25 @@
+uuid: a1dcb35d-3109-4736-add6-fec01b04b612
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_block:30ceb321-d963-4f68-a983-2584b4ea773d'
+  module:
+    - block_content
+  theme:
+    - rosewood
+id: searchbutton
+theme: rosewood
+region: navigation
+weight: -5
+provider: null
+plugin: 'block_content:30ceb321-d963-4f68-a983-2584b4ea773d'
+settings:
+  id: 'block_content:30ceb321-d963-4f68-a983-2584b4ea773d'
+  label: 'Search button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

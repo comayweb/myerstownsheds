@@ -1,0 +1,9 @@
+uuid: 07c8a6f8-46cf-4ea1-bf18-0b0e81136141
+langcode: en
+status: true
+dependencies: {  }
+id: text_area
+label: 'Text Area'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

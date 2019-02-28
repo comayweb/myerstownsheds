@@ -1,0 +1,18 @@
+uuid: 8d3d7ffe-8d7f-4bb4-86fb-f06b3c9d53fa
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: development
+description: ''
+folder: ../config/dev
+module:
+  devel: 0
+  kint: 0
+  webform_devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

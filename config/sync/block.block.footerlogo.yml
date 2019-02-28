@@ -1,0 +1,25 @@
+uuid: 574ab20f-f91f-4753-9648-0b0789e759f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_block:6a7fded5-b344-459f-9cc4-62bcd50587df'
+  module:
+    - block_content
+  theme:
+    - rosewood
+id: footerlogo
+theme: rosewood
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:6a7fded5-b344-459f-9cc4-62bcd50587df'
+settings:
+  id: 'block_content:6a7fded5-b344-459f-9cc4-62bcd50587df'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

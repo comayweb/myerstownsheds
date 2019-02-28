@@ -1,0 +1,25 @@
+uuid: 0f082b21-5d44-4163-bc8e-3972c05871b1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_block:cd0f4dbd-c4fc-4f17-b62c-d477baae98c1'
+  module:
+    - block_content
+  theme:
+    - rosewood
+id: address
+theme: rosewood
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:cd0f4dbd-c4fc-4f17-b62c-d477baae98c1'
+settings:
+  id: 'block_content:cd0f4dbd-c4fc-4f17-b62c-d477baae98c1'
+  label: Address
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

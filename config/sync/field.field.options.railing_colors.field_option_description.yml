@@ -1,0 +1,21 @@
+uuid: 68691975-b78b-4b5f-b713-6aa6c1cc730c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.railing_colors
+    - field.storage.options.field_option_description
+  module:
+    - text
+id: options.railing_colors.field_option_description
+field_name: field_option_description
+entity_type: options
+bundle: railing_colors
+label: 'Color Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

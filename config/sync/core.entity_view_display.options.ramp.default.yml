@@ -1,0 +1,41 @@
+uuid: 87f0b134-ab88-4e40-9f61-c6376aaaf3c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.ramp
+    - field.field.options.ramp.field_image
+    - field.field.options.ramp.field_option_description
+  module:
+    - media
+    - text
+id: options.ramp.default
+targetEntityType: options
+bundle: ramp
+mode: default
+content:
+  field_image:
+    weight: -4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_option_description:
+    weight: -3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

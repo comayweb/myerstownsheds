@@ -1,0 +1,29 @@
+uuid: fa6653e8-a4ae-4c79-af67-d9edfda363f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.height
+    - field.field.options.height.field_height
+id: options.height.default
+targetEntityType: options
+bundle: height
+mode: default
+content:
+  field_height:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

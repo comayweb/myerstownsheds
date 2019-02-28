@@ -1,0 +1,34 @@
+uuid: 0816b5fe-ee4a-41f5-af9c-edc507694929
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link_products
+    - paragraphs.paragraphs_type.product_reference
+    - taxonomy.vocabulary.product_categories
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.product_categories.field_link_products
+field_name: field_link_products
+entity_type: taxonomy_term
+bundle: product_categories
+label: Products
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      product_reference: product_reference
+    target_bundles_drag_drop:
+      product_reference:
+        enabled: true
+        weight: 3
+      text_area:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

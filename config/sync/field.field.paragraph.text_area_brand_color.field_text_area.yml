@@ -1,0 +1,21 @@
+uuid: d0947d6c-83de-4ec5-af15-d081c6278aeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_area
+    - paragraphs.paragraphs_type.text_area_brand_color
+  module:
+    - text
+id: paragraph.text_area_brand_color.field_text_area
+field_name: field_text_area
+entity_type: paragraph
+bundle: text_area_brand_color
+label: 'Text Area'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

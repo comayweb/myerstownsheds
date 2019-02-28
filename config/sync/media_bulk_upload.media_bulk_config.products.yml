@@ -1,0 +1,9 @@
+uuid: aebde711-9999-41f7-bf69-e4d67034fcaa
+langcode: en
+status: true
+dependencies: {  }
+id: products
+label: Products
+media_types:
+  product_image: product_image
+form_mode: media_library

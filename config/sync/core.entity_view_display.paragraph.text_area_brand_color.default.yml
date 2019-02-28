@@ -1,0 +1,22 @@
+uuid: dde77379-66c4-428b-a5f2-ecaedf5220dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_area_brand_color.field_text_area
+    - paragraphs.paragraphs_type.text_area_brand_color
+  module:
+    - text
+id: paragraph.text_area_brand_color.default
+targetEntityType: paragraph
+bundle: text_area_brand_color
+mode: default
+content:
+  field_text_area:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 10d36063-83d5-4129-bf7b-f212e847adc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.options
+name: 'Sheds - Upgrades'
+type: upgrades
+description: ''

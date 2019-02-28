@@ -1,0 +1,19 @@
+uuid: da48d961-7731-44b6-8b95-1c73a7d3deb1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'Administer Quick Node Clone Settings'
+  - 'access content'
+  - 'search content'
+  - 'use text format basic_html'
+  - 'view any options entities'
+  - 'view media'
+  - 'view own webform submission'
+  - 'view unpublished paragraphs'

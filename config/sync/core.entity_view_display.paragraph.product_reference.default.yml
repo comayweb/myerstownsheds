@@ -1,0 +1,31 @@
+uuid: ecf2d5db-1bf0-45a9-92d2-7d9fc14bd11b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_reference.field_optional_group_hea
+    - field.field.paragraph.product_reference.field_product
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - text
+id: paragraph.product_reference.default
+targetEntityType: paragraph
+bundle: product_reference
+mode: default
+content:
+  field_optional_group_hea:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_product:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

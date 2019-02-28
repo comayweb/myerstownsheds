@@ -1,0 +1,23 @@
+uuid: acb4455b-2528-49a7-9a7e-090b0e512aea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_disable
+    - taxonomy.vocabulary.product_categories
+id: taxonomy_term.product_categories.field_disable
+field_name: field_disable
+entity_type: taxonomy_term
+bundle: product_categories
+label: Disable
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

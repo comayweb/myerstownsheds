@@ -1,0 +1,16 @@
+uuid: 5db562d6-bcb1-4286-995d-c032da574aad
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.product-navigation
+    - taxonomy.vocabulary.product_categories
+id: product_navigation
+label: 'Product Navigation'
+vocabulary: product_categories
+menu: product-navigation
+expanded: false
+depth: 1
+menu_parent: 'admin:'
+description_field_name: name
+use_term_weight_order: true

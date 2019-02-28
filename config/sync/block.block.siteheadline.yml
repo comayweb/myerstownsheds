@@ -1,0 +1,25 @@
+uuid: 21ca6456-ef07-4d1a-b656-9e335dad99dd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:headline_text:a20686b3-d93d-4fc1-a870-5168b8fdf16a'
+  module:
+    - block_content
+  theme:
+    - rosewood
+id: siteheadline
+theme: rosewood
+region: headline
+weight: 0
+provider: null
+plugin: 'block_content:a20686b3-d93d-4fc1-a870-5168b8fdf16a'
+settings:
+  id: 'block_content:a20686b3-d93d-4fc1-a870-5168b8fdf16a'
+  label: 'Site Headline'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

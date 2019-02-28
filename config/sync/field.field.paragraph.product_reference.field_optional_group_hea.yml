@@ -1,0 +1,21 @@
+uuid: 02f12688-0615-4c3c-b7d7-295c433ed38f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_optional_group_hea
+    - paragraphs.paragraphs_type.product_reference
+  module:
+    - text
+id: paragraph.product_reference.field_optional_group_hea
+field_name: field_optional_group_hea
+entity_type: paragraph
+bundle: product_reference
+label: 'Optional Product Group Header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

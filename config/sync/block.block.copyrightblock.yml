@@ -1,0 +1,25 @@
+uuid: 289e93ff-9721-4972-aac1-e04c50cc5df8
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_block
+  theme:
+    - rosewood
+id: copyrightblock
+theme: rosewood
+region: footer
+weight: -7
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  provider: copyright_block
+  label_display: '0'
+  start_year: '2019'
+  seperator: '-'
+  text:
+    value: "<p>©&nbsp;[copyright_statement:dates] Myerstown Sheds &amp; Fencing | Design By: Rosewood Marketing | Privacy Policy</p>\r\n"
+    format: basic_html
+visibility: {  }

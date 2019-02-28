@@ -1,0 +1,39 @@
+uuid: 4b3c59ce-2b51-475a-87e3-e7b30028bbd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.options.upgrades
+    - field.field.options.upgrades.field_image
+    - field.field.options.upgrades.field_option_description
+  module:
+    - media_library
+    - text
+id: options.upgrades.default
+targetEntityType: options
+bundle: upgrades
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_option_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

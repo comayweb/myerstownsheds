@@ -1,0 +1,9 @@
+uuid: 5b192dba-49cd-436a-b2e0-21cb5b8f4511
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.options
+name: 'Sheds - Size Options'
+type: size_options
+description: ''

@@ -1,0 +1,17 @@
+uuid: 3648187e-69ac-4251-a269-39c001e8eaca
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Static Page'
+type: static_page
+description: 'Form for adding a page that is static in nature.'
+help: 'Form for adding a page that is static in nature.'
+new_revision: true
+preview_mode: 1
+display_submitted: false

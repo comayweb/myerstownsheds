@@ -1,0 +1,9 @@
+uuid: 07256567-7e19-4ff0-bb08-dcac8a485127
+langcode: en
+status: true
+dependencies: {  }
+id: product_reference
+label: 'Product Group'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

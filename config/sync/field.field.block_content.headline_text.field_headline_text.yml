@@ -1,0 +1,21 @@
+uuid: cf869042-e72b-49d7-8693-2917d4ed51b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.headline_text
+    - field.storage.block_content.field_headline_text
+  module:
+    - text
+id: block_content.headline_text.field_headline_text
+field_name: field_headline_text
+entity_type: block_content
+bundle: headline_text
+label: 'Headline Text'
+description: 'Add a short headline using this form. The headline must be 255 characters or less.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
