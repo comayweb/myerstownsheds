@@ -10564,45 +10564,46 @@ header.navbar {
 /* line 426, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .outline-button {
   border: 4px solid #EA984D;
-  padding: .18em 1.2em;
   display: block;
   margin: 0 auto;
   max-width: 8em;
 }
 
-/* line 433, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 432, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .outline-button a {
   color: #EA984D;
   font-size: 1.8rem;
   font-family: work-sans, sans-serif;
   font-weight: 100;
+  padding: .25em 1.2em;
+  display: block;
 }
 
-/* line 443, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 444, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .menu--product-navigation li a {
   color: #FFF;
 }
 
-/* line 447, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 448, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .menu--product-navigation li a:hover,
 .menu--product-navigation li a:focus {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 453, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 454, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .menu--product-navigation .dropdown-menu {
   background-color: #555555;
 }
 
-/* line 458, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 459, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .navbar-default,
 .navbar-default .navbar-form {
   border: none;
   background-color: transparent;
 }
 
-/* line 464, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 465, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 input, select, textarea,
 .form-control {
   background-color: rgba(0, 0, 0, 0.25);
@@ -10612,57 +10613,58 @@ input, select, textarea,
   color: #000;
 }
 
-/* line 472, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 473, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 input:focus, select:focus, textarea:focus,
 .form-control:focus {
   border: 1px solid rgba(95, 147, 87, 0.8);
 }
 
-/* line 477, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 478, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .paragraph--type--text-area-brand-color p {
   color: #5F9357;
 }
 
-/* line 481, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 482, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .messages__wrapper {
   max-width: 50vw;
 }
 
-/* line 485, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 486, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .search-block-form {
   float: right;
   width: 50vw;
   max-width: 17em;
+  display: none;
 }
 
-/* line 491, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 493, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .search-block-form input,
 .search-block-form .btn {
   height: 3em;
 }
 
-/* line 498, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 500, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 #block-footerlogo {
   padding: 2em 0;
 }
 
-/* line 502, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 504, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 #block-copyrightblock {
   font-size: .85em;
 }
 
-/* line 505, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 507, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 #block-copyrightblock a {
   text-decoration: underline;
 }
 
-/* line 510, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 512, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .view-content,
 .field--name-field-product {
   display: block;
 }
 
-/* line 514, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 516, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .view-content .views-row,
 .view-content > .field--item,
 .field--name-field-product .views-row,
@@ -10675,23 +10677,7 @@ input:focus, select:focus, textarea:focus,
   border: #eeeeee 1px solid;
 }
 
-/* line 523, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
-.view-content .views-row:nth-child(3n),
-.view-content > .field--item:nth-child(3n),
-.field--name-field-product .views-row:nth-child(3n),
-.field--name-field-product > .field--item:nth-child(3n) {
-  margin-right: 0;
-}
-
-/* line 527, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
-.view-content .views-row:nth-child(3n + 1),
-.view-content > .field--item:nth-child(3n + 1),
-.field--name-field-product .views-row:nth-child(3n + 1),
-.field--name-field-product > .field--item:nth-child(3n + 1) {
-  margin-left: 0;
-}
-
-/* line 531, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 525, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .view-content .views-row .name,
 .view-content > .field--item .name,
 .field--name-field-product .views-row .name,
@@ -10700,15 +10686,16 @@ input:focus, select:focus, textarea:focus,
   margin: 1em 0;
 }
 
-/* line 536, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 530, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .view-content .views-row .outline-button,
 .view-content > .field--item .outline-button,
 .field--name-field-product .views-row .outline-button,
 .field--name-field-product > .field--item .outline-button {
   margin: 1.5em auto 1.75em auto;
+  border: 2px solid #EA984D;
 }
 
-/* line 540, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 535, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .view-content .views-row .views-field-field-product-thumbnail,
 .view-content .views-row .field--name-field-product-image,
 .view-content > .field--item .views-field-field-product-thumbnail,
@@ -10720,7 +10707,19 @@ input:focus, select:focus, textarea:focus,
   min-height: 150px;
 }
 
-/* line 545, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+/* line 539, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+.view-content .views-row .views-field-field-product-thumbnail .img-responsive,
+.view-content .views-row .field--name-field-product-image .img-responsive,
+.view-content > .field--item .views-field-field-product-thumbnail .img-responsive,
+.view-content > .field--item .field--name-field-product-image .img-responsive,
+.field--name-field-product .views-row .views-field-field-product-thumbnail .img-responsive,
+.field--name-field-product .views-row .field--name-field-product-image .img-responsive,
+.field--name-field-product > .field--item .views-field-field-product-thumbnail .img-responsive,
+.field--name-field-product > .field--item .field--name-field-product-image .img-responsive {
+  margin: 0 auto;
+}
+
+/* line 544, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 .view-content .views-row .views-field a,
 .view-content .views-row .name a,
 .view-content > .field--item .views-field a,
@@ -10734,50 +10733,102 @@ input:focus, select:focus, textarea:focus,
 }
 
 @media (min-width: 600px) {
-  /* line 554, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 553, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .navbar-header {
     float: unset;
   }
-  /* line 557, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 556, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .responsive-menu-toggle-wrapper.responsive-menu-toggle {
     display: inline-block;
   }
-  /* line 561, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 560, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .view-content,
   .field--name-field-product {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 567, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
-  .views-row {
-    width: calc(100% / 2 - 1em);
+  /* line 565, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row,
+  .view-content > .field--item,
+  .field--name-field-product .views-row,
+  .field--name-field-product > .field--item {
+    width: calc(100% / 2 - .5em);
+  }
+  /* line 569, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row:nth-child(2n),
+  .view-content > .field--item:nth-child(2n),
+  .field--name-field-product .views-row:nth-child(2n),
+  .field--name-field-product > .field--item:nth-child(2n) {
+    margin-right: 0;
+  }
+  /* line 573, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row:nth-child(2n + 1),
+  .view-content > .field--item:nth-child(2n + 1),
+  .field--name-field-product .views-row:nth-child(2n + 1),
+  .field--name-field-product > .field--item:nth-child(2n + 1) {
+    margin-left: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 574, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 581, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .region-navigation #block-productnavigation {
     display: inline-block;
   }
-  /* line 577, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 584, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .mm-menu .menu--product-navigation,
   .mm-menu .dropdown-menu {
     display: none;
   }
-  /* line 582, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 589, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content,
+  .field--name-field-product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 594, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .view-content .views-row,
+  .view-content > .field--item,
+  .field--name-field-product .views-row,
   .field--name-field-product > .field--item {
     width: calc(100% / 3 - .67em);
+  }
+  /* line 598, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row:nth-child(2n),
+  .view-content > .field--item:nth-child(2n),
+  .field--name-field-product .views-row:nth-child(2n),
+  .field--name-field-product > .field--item:nth-child(2n) {
+    margin-right: .5em;
+  }
+  /* line 602, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row:nth-child(2n + 1),
+  .view-content > .field--item:nth-child(2n + 1),
+  .field--name-field-product .views-row:nth-child(2n + 1),
+  .field--name-field-product > .field--item:nth-child(2n + 1) {
+    margin-left: .5em;
+  }
+  /* line 607, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row:nth-child(3n),
+  .view-content > .field--item:nth-child(3n),
+  .field--name-field-product .views-row:nth-child(3n),
+  .field--name-field-product > .field--item:nth-child(3n) {
+    margin-right: 0;
+  }
+  /* line 611, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  .view-content .views-row:nth-child(3n + 1),
+  .view-content > .field--item:nth-child(3n + 1),
+  .field--name-field-product .views-row:nth-child(3n + 1),
+  .field--name-field-product > .field--item:nth-child(3n + 1) {
+    margin-left: 0;
   }
 }
 
 @media (min-width: 1475px) {
-  /* line 590, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
+  /* line 620, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
   .region-navigation #block-productnavigation li a,
   .region-navigation #block-productnavigation li a:hover,
   .region-navigation #block-productnavigation li a:active {
     font-size: 2.2rem;
-    font-weight: 100;
   }
 }
 

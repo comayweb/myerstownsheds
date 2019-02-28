@@ -425,7 +425,6 @@ header.navbar {
 
 .outline-button {
   border: 4px solid $brand-warning;
-  padding: .18em 1.2em;
   display: block;
   margin: 0 auto;
   max-width: 8em;
@@ -435,6 +434,8 @@ header.navbar {
     font-size: 1.8rem;
     font-family: $primaryFont;
     font-weight: 100;
+    padding: .25em 1.2em;
+    display: block;
   }
 }
 
@@ -486,6 +487,7 @@ input, select, textarea,
   float: right;
   width: 50vw;
   max-width: 17em;
+  display: none;
 
 
   input,
@@ -519,14 +521,6 @@ input, select, textarea,
     font-weight: 100;
     text-align: center;
     border: $gray-lighter 1px solid;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    &:nth-child(3n + 1) {
-      margin-left: 0;
-    }
     
     .name {
       display: block;
@@ -535,11 +529,16 @@ input, select, textarea,
 
     .outline-button {
       margin: 1.5em auto 1.75em auto;
+      border: 2px solid $brand-warning;
     }
 
     .views-field-field-product-thumbnail,
     .field--name-field-product-image {
       min-height: 150px;
+
+      .img-responsive {
+        margin: 0 auto;
+      }
     }
 
     .views-field a,
@@ -562,11 +561,19 @@ input, select, textarea,
   .field--name-field-product {
     display: flex;
     flex-wrap: wrap;
-  }
 
-  .views-row {
-    width: calc(100% / 2 - 1em);
-    
+    .views-row,
+    > .field--item {
+      width: calc(100% / 2 - .5em);
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n + 1) {
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -579,9 +586,32 @@ input, select, textarea,
     display: none;
   }
 
-  .view-content .views-row,
-  .field--name-field-product > .field--item {
-    width: calc(100% / 3 - .67em);
+  .view-content,
+  .field--name-field-product {
+  display: flex;
+  flex-wrap: wrap;
+
+    .views-row,
+    > .field--item {
+      width: calc(100% / 3 - .67em);
+
+      &:nth-child(2n) {
+        margin-right: .5em;
+      }
+
+      &:nth-child(2n + 1) {
+        margin-left: .5em;
+      }
+
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n + 1) {
+        margin-left: 0;
+      }
+    }
   }
 }
 
