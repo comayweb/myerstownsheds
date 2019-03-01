@@ -42,6 +42,7 @@
         "drupal/google_analytics": "^2.3",
         "drupal/honeypot": "^1.29",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/manage_display": "^1.0",
         "drupal/media_bulk_upload": "^1.0@alpha",
         "drupal/menu_block": "^1.5",
         "drupal/metatag": "^1.7",

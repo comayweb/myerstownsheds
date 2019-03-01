@@ -1,4 +1,18 @@
 <?php
+  
+/**
+ * Implements theme_preprocess_block().
+ */
+function rosewood_preprocess_block(&$variables) {
+  // Remove page title block on 'product_item' content type.
+  $block_id = $variables['elements']['#id'];
+  if ($block_id == 'rosewood_page_title') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node && $node->getType() == 'product_item') {
+      $variables['content'] = [];
+    }
+  }
+}
 
 /**
  * @file

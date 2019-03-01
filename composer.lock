@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f784f3a9488d4d6453210ff8e17d14a8",
+    "content-hash": "149468ebb6141a409096383609c05913",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2715,6 +2715,9 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
+                },
+                "patches_applied": {
+                    "Patch for manage display to fix title issue": "https://www.drupal.org/files/issues/2019-02-28/title.display-D8.6-2923701-305_0.patch"
                 }
             },
             "autoload": {
@@ -3946,6 +3949,53 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/manage_display",
+            "version": "1.0.0-alpha7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/manage_display",
+                "reference": "8.x-1.0-alpha7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/manage_display-8.x-1.0-alpha7.zip",
+                "reference": "8.x-1.0-alpha7",
+                "shasum": "78552abbca9729d78c33bf30a0e7bf3ba66e6a9d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha7",
+                    "datestamp": "1551385086",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "AdamPS",
+                    "homepage": "https://www.drupal.org/user/2650563"
+                }
+            ],
+            "description": "Make base fields such as 'title' available in \"Manage Display\"",
+            "homepage": "https://www.drupal.org/project/manage_display",
+            "support": {
+                "source": "http://cgit.drupalcode.org/manage_display"
             }
         },
         {
