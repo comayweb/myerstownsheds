@@ -12,6 +12,7 @@ permissions:
   - 'Administer Quick Node Clone Settings'
   - 'access content'
   - 'search content'
+  - 'use exclude node title'
   - 'use text format basic_html'
   - 'view any options entities'
   - 'view media'

@@ -1,46 +1,53 @@
-uuid: 71b22de9-aea1-4bfd-a4d0-e6e6cadcbdb9
+uuid: c9dd7f11-c858-41e7-a143-40888e00926a
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.product_thumbnail_display
+    - core.entity_view_mode.node.full
     - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
     - field.field.node.product_item.field_choose_options_form
     - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
-    - image.style.medium
     - node.type.product_item
   module:
-    - media
-id: node.product_item.product_thumbnail_display
+    - entity_reference_revisions
+    - user
+    - webform
+id: node.product_item.full
 targetEntityType: node
 bundle: product_item
-mode: product_thumbnail_display
+mode: full
 content:
+  field_add_element:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_choose_options_form:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
   field_product_image:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
-      image_style: medium
-      image_link: content
+      view_mode: default
+      link: false
     third_party_settings: {  }
     region: content
-  title:
-    label: hidden
-    type: string
-    weight: 1
-    region: content
-    settings:
-      link_to_entity: true
-    third_party_settings: {  }
 hidden:
   feeds_item: true
-  field_add_element: true
-  field_choose_options_form: true
   field_options: true
   field_product_category: true
   links: true
-  uid: true

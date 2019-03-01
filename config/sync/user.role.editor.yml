@@ -70,6 +70,7 @@ permissions:
   - 'revert product_item revisions'
   - 'update any media'
   - 'update media'
+  - 'use exclude node title'
   - 'use products bulk upload form'
   - 'use text format full_html'
   - 'view all media revisions'

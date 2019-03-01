@@ -180,6 +180,8 @@ contribute:
   account_type: user
   account_id: null
 langcode: en
-third_party_settings: {  }
+third_party_settings:
+  captcha:
+    replace_administration_mode: true
 _core:
   default_config_hash: LfS9F5pMOujrNNKzmWTQNsr6msfNn99m26vszAjDUOo

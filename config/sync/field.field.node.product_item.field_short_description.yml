@@ -1,0 +1,21 @@
+uuid: 308ebfb9-69d4-402f-90e8-540550838db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.product_item
+  module:
+    - text
+id: node.product_item.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: product_item
+label: 'Short Description'
+description: 'Enter a short description. Additional Info can be added below.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

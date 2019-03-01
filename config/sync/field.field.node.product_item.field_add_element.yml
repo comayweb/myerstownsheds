@@ -12,7 +12,7 @@ id: node.product_item.field_add_element
 field_name: field_add_element
 entity_type: node
 bundle: product_item
-label: 'Add Element'
+label: 'Additional Info'
 description: ''
 required: false
 translatable: false
@@ -28,4 +28,10 @@ settings:
       text_area:
         enabled: true
         weight: 2
+      product_reference:
+        weight: 4
+        enabled: false
+      text_area_brand_color:
+        weight: 6
+        enabled: false
 field_type: entity_reference_revisions
