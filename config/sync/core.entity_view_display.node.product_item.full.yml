@@ -10,9 +10,11 @@ dependencies:
     - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
+    - field.field.node.product_item.field_short_description
     - node.type.product_item
   module:
     - entity_reference_revisions
+    - text
     - user
     - webform
 id: node.product_item.full
@@ -22,7 +24,7 @@ mode: full
 content:
   field_add_element:
     type: entity_reference_revisions_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -30,7 +32,7 @@ content:
     third_party_settings: {  }
     region: content
   field_choose_options_form:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       source_entity: true
@@ -39,13 +41,20 @@ content:
     region: content
   field_product_image:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
+  field_short_description:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   feeds_item: true
   field_options: true

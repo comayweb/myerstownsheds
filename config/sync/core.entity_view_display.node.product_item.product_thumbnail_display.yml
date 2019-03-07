@@ -28,19 +28,11 @@ content:
       image_link: content
     third_party_settings: {  }
     region: content
-  title:
-    label: hidden
-    type: string
-    weight: 1
-    region: content
-    settings:
-      link_to_entity: true
-    third_party_settings: {  }
 hidden:
   feeds_item: true
   field_add_element: true
   field_choose_options_form: true
   field_options: true
   field_product_category: true
+  field_short_description: true
   links: true
-  uid: true
