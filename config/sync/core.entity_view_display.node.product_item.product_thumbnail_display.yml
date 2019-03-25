@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
+    - field.field.node.product_item.field_short_description
     - image.style.medium
     - node.type.product_item
   module:
     - media
+    - user
 id: node.product_item.product_thumbnail_display
 targetEntityType: node
 bundle: product_item

@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.product_item.title
     - field.field.node.product_item.feeds_item
-    - field.field.node.product_item.field_short_description
+    - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_product_category
+    - field.field.node.product_item.field_product_image
     - node.type.product_item
   module:
     - node
+    - paragraphs
 label: Product
 id: product
 description: ''
@@ -79,6 +83,26 @@ custom_sources:
     machine_name: product_image_reference
 mappings:
   -
+    target: title
+    map:
+      value: title
+    unique: {  }
+  -
+    target: field_add_element
+    map:
+      value: description
+    settings:
+      paragraphs_type: text_area
+      paragraph_field: field_text_area
+      format: basic_html
+  -
+    target: field_product_category
+    map:
+      target_id: categories
+    settings:
+      reference_by: tid
+      autocreate: 0
+  -
     target: feeds_item
     map:
       url: ''
@@ -86,8 +110,9 @@ mappings:
     unique:
       guid: '1'
   -
-    target: field_short_description
+    target: field_product_image
     map:
-      value: description
+      target_id: product_image_reference
     settings:
-      format: basic_html
+      reference_by: mid
+      autocreate: 0

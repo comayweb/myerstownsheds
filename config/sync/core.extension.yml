@@ -15,7 +15,6 @@ module:
   contextual: 0
   copyright_block: 0
   cshs: 0
-  csv_serialization: 0
   ctools: 0
   dblog: 0
   dropzonejs: 0
@@ -32,9 +31,12 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  flexslider: 0
+  flexslider_views: 0
   honeypot: 0
   image: 0
   inline_entity_form: 0
+  libraries: 0
   link: 0
   media: 0
   media_bulk_upload: 0
@@ -56,9 +58,7 @@ module:
   redirect_404: 0
   responsive_image: 0
   responsive_menu: 0
-  rest: 0
   search: 0
-  serialization: 0
   syslog: 0
   system: 0
   taxonomy: 0
@@ -69,8 +69,8 @@ module:
   update: 0
   user: 0
   views_bulk_operations: 0
-  views_data_export: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   webform_image_select: 0
   webform_ui: 0
