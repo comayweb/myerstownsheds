@@ -439,6 +439,14 @@ header.navbar {
   }
 }
 
+.cta-button {
+  background-color: $brand-warning;
+  a {
+    color: $white;
+  }
+  
+}
+
 .menu--product-navigation {
 
   li a {
