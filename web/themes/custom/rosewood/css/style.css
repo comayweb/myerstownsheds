@@ -10444,7 +10444,7 @@ input:focus, select:focus, textarea:focus,
 ============================================
 */
 /* line 10, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
-* {
+.responsive-menu-page-wrapper * {
   position: relative;
   z-index: 1;
 }
