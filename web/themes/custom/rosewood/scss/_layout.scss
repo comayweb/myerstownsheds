@@ -7,11 +7,12 @@
 ============================================
 */
 
-.contextual {
+.responsive-menu-page-wrapper .contextual {
   position: absolute;
+  z-index: 100;
 }
 
-.responsive-menu-page-wrapper * {
+.region-content * {
   position: relative;
   z-index: 1;
 }
@@ -116,6 +117,13 @@ body {
 
   }
 }
+@include for-tablet-landscape-up {
+  .path-frontpage .page-header {
+    z-index: 30;
+    margin-top: -5.25em;
+  }
+}
+
 
 header.navbar {
   padding: 0;
@@ -157,8 +165,6 @@ header.navbar {
 
 .main-container {
   padding: 0;
-  width: 90vw;
-  max-width: 800px;
   margin: 0 auto;
 
   .col-sm-12 {
@@ -170,6 +176,12 @@ header.navbar {
     background-color: $brand-accent;
     @include background-to-edge;   
   }
+}
+
+.region-content, .contain {
+  width: 90vw;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .page-node-type-product-item .row {
@@ -221,6 +233,7 @@ p {
 header.navbar {
   padding: 0;
   border-radius: 0;
+  z-index: 0;
 }
 
 .navbar-header {

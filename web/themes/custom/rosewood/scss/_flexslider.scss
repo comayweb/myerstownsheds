@@ -1,0 +1,87 @@
+$arrow-back: $white;
+$flex-background: $brand-warning;
+$pager-back: $gray-light;
+
+
+.flex-prev {
+    background: transparent;
+    font-weight: 100;
+}
+@media (min-width: 960px) {
+    .flex-prev {
+    background: $arrow-back;
+}
+}.flex-next {
+    background: transparent;
+    font-weight: 100;
+}
+@media (min-width: 960px) {
+    .flex-next {
+    background: $arrow-back;
+}
+
+}.flex-caption {
+    color: $text-color;
+    font-size: 0.9rem;
+    overflow: auto;
+    height: 8em;
+    margin: 0;
+    padding: 1em 0 0;
+    text-align: left;
+    line-height: 1.5em;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  left: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  right: 0;
+}
+.flex-direction-nav {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.flex-direction-nav a {
+    color: $arrow-back;
+    text-shadow: none;
+    padding: .5em .5em 3.55em;
+    top: calc(50% - 3.25em);
+}
+.flex-direction-nav a::before {
+    visibility: visible;
+    color: $flex-background;
+}
+.flex-direction-nav .flex-nav-prev a {
+    color: transparent;
+}
+.flexslider {
+    margin: 0;
+    position: relative;
+    z-index: 20;
+    border: none;
+}
+.flex-control-nav {
+    z-index: 30;
+    bottom: 2em;
+    right: 2em;
+    height: 1em;
+    position: absolute;
+    text-align: right;
+}
+.flex-control-paging li a {
+    border-radius: 0;
+    color: transparent;
+    background: $pager-back;
+}
+.flex-control-paging li a.flex-active {
+    background: $flex-background;
+}
+.flex-control-paging li a:hover {
+    background: $flex-background;
+}
+.flex-control-paging li a {
+    width: 1.25rem;
+    height: 1.25rem;
+}
