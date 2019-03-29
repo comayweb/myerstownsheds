@@ -1,0 +1,23 @@
+uuid: 2bcf6d61-d6c9-4c16-b2e2-783c292a71c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_images.field_images
+    - paragraphs.paragraphs_type.two_column_images
+  module:
+    - media_library
+id: paragraph.two_column_images.default
+targetEntityType: paragraph
+bundle: two_column_images
+mode: default
+content:
+  field_images:
+    type: media_library_widget
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

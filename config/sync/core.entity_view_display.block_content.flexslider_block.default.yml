@@ -1,0 +1,27 @@
+uuid: fba6d796-b525-4a4f-ba13-13673322494e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.flexslider_block
+    - field.field.block_content.flexslider_block.field_flex_slide_image
+    - responsive_image.styles.flex_slide_image
+  module:
+    - flexslider_fields
+id: block_content.flexslider_block.default
+targetEntityType: block_content
+bundle: flexslider_block
+mode: default
+content:
+  field_flex_slide_image:
+    weight: 1
+    label: hidden
+    settings:
+      optionset: default
+      responsive_image_style: flex_slide_image
+      caption: '1'
+      image_link: ''
+    third_party_settings: {  }
+    type: flexslider_responsive
+    region: content
+hidden: {  }

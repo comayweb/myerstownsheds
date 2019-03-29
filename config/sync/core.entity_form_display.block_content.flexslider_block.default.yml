@@ -1,0 +1,32 @@
+uuid: 0359551f-058c-47a8-a509-f93817b4f20e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.flexslider_block
+    - field.field.block_content.flexslider_block.field_flex_slide_image
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.flexslider_block.default
+targetEntityType: block_content
+bundle: flexslider_block
+mode: default
+content:
+  field_flex_slide_image:
+    weight: 27
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

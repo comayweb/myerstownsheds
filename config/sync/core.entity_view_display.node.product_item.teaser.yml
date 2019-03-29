@@ -4,13 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.product_item.feeds_item
-    - field.field.node.product_item.field_add_element
-    - field.field.node.product_item.field_choose_options_form
-    - field.field.node.product_item.field_options
-    - field.field.node.product_item.field_product_category
-    - field.field.node.product_item.field_product_image
-    - field.field.node.product_item.field_short_description
     - node.type.product_item
   module:
     - user
@@ -24,11 +17,4 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  feeds_item: true
-  field_add_element: true
-  field_choose_options_form: true
-  field_options: true
-  field_product_category: true
-  field_product_image: true
-  field_short_description: true
+hidden: {  }

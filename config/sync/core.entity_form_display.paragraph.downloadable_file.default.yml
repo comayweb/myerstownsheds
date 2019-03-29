@@ -1,0 +1,24 @@
+uuid: 5a99b848-92c7-400d-80ad-84bf87ff61e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.downloadable_file.field_file
+    - paragraphs.paragraphs_type.downloadable_file
+  module:
+    - file
+id: paragraph.downloadable_file.default
+targetEntityType: paragraph
+bundle: downloadable_file
+mode: default
+content:
+  field_file:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+hidden:
+  created: true
+  status: true

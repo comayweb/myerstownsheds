@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
     - field.field.node.product_item.field_choose_options_form
+    - field.field.node.product_item.field_flexslider_view_reference
     - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
@@ -16,6 +17,7 @@ dependencies:
     - entity_reference_revisions
     - text
     - user
+    - viewsreference
     - webform
 id: node.product_item.full
 targetEntityType: node
@@ -25,7 +27,7 @@ content:
   field_add_element:
     type: entity_reference_revisions_entity_view
     weight: 2
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: ''
@@ -39,15 +41,15 @@ content:
     third_party_settings: {  }
     type: webform_entity_reference_entity_view
     region: content
-  field_product_image:
-    type: entity_reference_entity_view
+  field_flexslider_view_reference:
+    type: viewsreference_formatter
     weight: 1
+    region: content
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      plugin_types:
+        - block
     third_party_settings: {  }
-    region: content
   field_short_description:
     type: text_default
     weight: 0
@@ -59,4 +61,5 @@ hidden:
   feeds_item: true
   field_options: true
   field_product_category: true
+  field_product_image: true
   links: true

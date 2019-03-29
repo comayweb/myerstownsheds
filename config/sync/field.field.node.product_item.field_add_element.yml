@@ -5,7 +5,11 @@ dependencies:
   config:
     - field.storage.node.field_add_element
     - node.type.product_item
+    - paragraphs.paragraphs_type.downloadable_file
+    - paragraphs.paragraphs_type.embed
+    - paragraphs.paragraphs_type.single_image
     - paragraphs.paragraphs_type.text_area
+    - paragraphs.paragraphs_type.two_column_images
   module:
     - entity_reference_revisions
 id: node.product_item.field_add_element
@@ -24,14 +28,30 @@ settings:
     negate: 0
     target_bundles:
       text_area: text_area
+      single_image: single_image
+      two_column_images: two_column_images
+      downloadable_file: downloadable_file
+      embed: embed
     target_bundles_drag_drop:
       text_area:
         enabled: true
-        weight: 2
+        weight: -15
       product_reference:
-        weight: 4
+        weight: -14
         enabled: false
       text_area_brand_color:
-        weight: 6
+        weight: -13
         enabled: false
+      single_image:
+        enabled: true
+        weight: -12
+      two_column_images:
+        enabled: true
+        weight: -11
+      downloadable_file:
+        enabled: true
+        weight: -10
+      embed:
+        enabled: true
+        weight: -9
 field_type: entity_reference_revisions

@@ -1,0 +1,31 @@
+uuid: 68eea7bc-aaa8-404d-8970-505461768135
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:flexslider_block:180927ad-4623-4963-83c3-96b52bdfab29'
+  module:
+    - block_content
+    - system
+  theme:
+    - rosewood
+id: flexslideshowforhomepage
+theme: rosewood
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:180927ad-4623-4963-83c3-96b52bdfab29'
+settings:
+  id: 'block_content:180927ad-4623-4963-83c3-96b52bdfab29'
+  label: 'Flex Slideshow for Home Page'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 275daab2-de63-47a2-9d7a-5ec3572a0a5a
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_images
+label: 'Two Column Images'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

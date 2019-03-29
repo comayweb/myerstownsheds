@@ -1,0 +1,21 @@
+uuid: ab1638ec-2932-4f04-a492-9884d01d9c5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_flexslider_view_reference
+field_name: field_flexslider_view_reference
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

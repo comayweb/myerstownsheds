@@ -1,0 +1,8 @@
+uuid: 75f5a078-ecbd-4e99-bc41-5ac81f56ba77
+langcode: en
+status: true
+dependencies: {  }
+id: flexslider_block
+label: 'Flexslider Block'
+revision: 0
+description: ''

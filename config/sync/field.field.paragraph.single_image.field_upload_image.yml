@@ -1,0 +1,28 @@
+uuid: 8ec5083e-699b-4dcd-8d56-3aa4c1161af3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_upload_image
+    - media.type.additional_info_image
+    - paragraphs.paragraphs_type.single_image
+id: paragraph.single_image.field_upload_image
+field_name: field_upload_image
+entity_type: paragraph
+bundle: single_image
+label: 'Upload Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      additional_info_image: additional_info_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: additional_info_image
+field_type: entity_reference

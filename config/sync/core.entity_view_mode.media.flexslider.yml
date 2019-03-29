@@ -1,0 +1,10 @@
+uuid: c2903343-17a5-4183-bb32-76ce8a7a5208
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.flexslider
+label: Flexslider
+targetEntityType: media
+cache: true

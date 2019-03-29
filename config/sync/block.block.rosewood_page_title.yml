@@ -9,7 +9,7 @@ _core:
 id: rosewood_page_title
 theme: rosewood
 region: header
-weight: -8
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

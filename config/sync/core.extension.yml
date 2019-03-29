@@ -32,6 +32,7 @@ module:
   file: 0
   filter: 0
   flexslider: 0
+  flexslider_fields: 0
   flexslider_views: 0
   honeypot: 0
   image: 0
@@ -68,6 +69,8 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  video_embed_field: 0
+  video_embed_media: 0
   views_bulk_operations: 0
   views_ui: 0
   viewsreference: 0

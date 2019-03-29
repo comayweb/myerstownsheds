@@ -1,0 +1,9 @@
+uuid: f800c934-1f61-4c87-b568-e164ce381197
+langcode: en
+status: true
+dependencies: {  }
+id: downloadable_file
+label: 'Downloadable file'
+icon_uuid: null
+description: 'Provides a paragraph type that provides a way to add downloadable files to a webpage.'
+behavior_plugins: {  }

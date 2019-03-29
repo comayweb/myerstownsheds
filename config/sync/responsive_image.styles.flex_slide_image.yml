@@ -1,0 +1,25 @@
+uuid: 26a8b0d5-602f-42fa-9b6f-f2e197a296d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.flexslider_full
+    - image.style.large
+    - image.style.medium
+  theme:
+    - rosewood
+id: flex_slide_image
+label: 'Flex Slide Image'
+image_style_mappings:
+  -
+    breakpoint_id: rosewood.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: flexslider_full
+  -
+    breakpoint_id: rosewood.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+breakpoint_group: rosewood
+fallback_image_style: medium

@@ -1,0 +1,30 @@
+uuid: ea6b89c0-96d9-416a-bbd1-b3eeed58b3be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.flexslider
+    - field.field.media.product_image.field_media_image
+    - image.style.flexslider_full
+    - media.type.product_image
+  module:
+    - image
+id: media.product_image.flexslider
+targetEntityType: media
+bundle: product_image
+mode: flexslider
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: flexslider_full
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

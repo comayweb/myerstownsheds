@@ -1,0 +1,25 @@
+uuid: 4ed412ad-d9f7-4afd-955e-a92caa9981b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.embed
+  module:
+    - video_embed_field
+id: paragraph.embed.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: embed
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: vimeo
+    youtube_playlist: '0'
+field_type: video_embed_field

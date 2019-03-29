@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
     - field.field.node.product_item.field_choose_options_form
+    - field.field.node.product_item.field_flexslider_view_reference
     - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
@@ -20,6 +21,7 @@ dependencies:
     - paragraphs
     - path
     - text
+    - viewsreference
     - webform
 id: node.product_item.default
 targetEntityType: node
@@ -45,6 +47,15 @@ content:
     third_party_settings: {  }
     type: webform_entity_reference_select
     region: content
+  field_flexslider_view_reference:
+    type: viewsreference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
   field_options:
     type: inline_entity_form_complex
     weight: 4
@@ -88,7 +99,7 @@ content:
       open: false
     third_party_settings: {  }
   field_short_description:
-    weight: 0
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
@@ -110,7 +121,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60

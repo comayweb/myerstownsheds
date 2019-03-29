@@ -1,0 +1,64 @@
+uuid: d0bed4f5-e13e-4202-a55f-963a0f2828ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flexslider_view_reference
+    - node.type.product_item
+    - views.view.flexslider_product_image_view
+  module:
+    - viewsreference
+id: node.product_item.field_flexslider_view_reference
+field_name: field_flexslider_view_reference
+entity_type: node
+bundle: product_item
+label: 'Flexslider View Reference'
+description: 'Please type  ''Flexslider Product Image View'', and then choose Display Id of Block. Once existing content has been updated, we will hide this field, because new content will automatically pull in the correct values.'
+required: true
+translatable: false
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: block_1
+    argument: null
+    title: 0
+    data: null
+    target_uuid: fbf1e30d-e3ad-4c4f-915a-d931a112b51a
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    entity_reference: 0
+    entity_browser: 0
+    embed: 0
+  preselect_views:
+    flexslider_product_image_view: flexslider_product_image_view
+    block_content: 0
+    building_size_list: 0
+    content: 0
+    content_recent: 0
+    feeds_feed: 0
+    manage_products: 0
+    media: 0
+    media_library: 0
+    options: 0
+    options_entity_browser: 0
+    product_category_view: 0
+    product_image_browser: 0
+    redirect: 0
+    redirect_404: 0
+    upgrade_options_list: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference
