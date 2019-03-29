@@ -37,3 +37,12 @@ searchtrigger:
   dependencies:
     - core/jquery
     - core/jquery.once
+
+modals:
+  js:
+    js/modal.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.dialog.ajax
