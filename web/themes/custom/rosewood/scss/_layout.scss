@@ -120,7 +120,6 @@ body {
 @include for-tablet-landscape-up {
   .path-frontpage .page-header {
     z-index: 30;
-    margin-top: -5.25em;
   }
 }
 
@@ -188,6 +187,10 @@ header.navbar {
   background-color: $gray-lighter;
   @include background-to-edge;
   padding: 1em 0 0;
+}
+
+.block--flexslider {
+  margin-bottom: -12.5em;
 }
 
 .breadcrumb {
