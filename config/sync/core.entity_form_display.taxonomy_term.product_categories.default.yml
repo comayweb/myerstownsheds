@@ -6,6 +6,8 @@ dependencies:
     - field.field.taxonomy_term.product_categories.field_disable
     - field.field.taxonomy_term.product_categories.field_link_products
     - field.field.taxonomy_term.product_categories.field_product_thumbnail
+    - field.field.taxonomy_term.product_categories.field_short_description
+    - field.field.taxonomy_term.product_categories.field_show_on_homepage
     - taxonomy.vocabulary.product_categories
   module:
     - media_library
@@ -46,8 +48,24 @@ content:
   field_product_thumbnail:
     type: media_library_widget
     weight: 1
-    settings: {  }
+    settings:
+      media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_short_description:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_show_on_homepage:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   name:
     type: string_textfield

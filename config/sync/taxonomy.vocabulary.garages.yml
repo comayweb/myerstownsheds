@@ -5,5 +5,4 @@ dependencies: {  }
 name: Garages
 vid: garages
 description: null
-hierarchy: 0
 weight: -8

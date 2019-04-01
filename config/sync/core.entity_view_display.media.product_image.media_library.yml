@@ -1,30 +1,30 @@
-uuid: ea6b89c0-96d9-416a-bbd1-b3eeed58b3be
+uuid: 3d57fa56-f8de-496a-973b-3f698b6ef16d
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.flexslider
+    - core.entity_view_mode.media.media_library
     - field.field.media.product_image.field_media_image
+    - image.style.medium
     - media.type.product_image
-    - responsive_image.styles.responsive_banner
   module:
-    - responsive_image
-id: media.product_image.flexslider
+    - image
+id: media.product_image.media_library
 targetEntityType: media
 bundle: product_image
-mode: flexslider
+mode: media_library
 content:
-  field_media_image:
-    weight: 0
+  thumbnail:
+    type: image
     label: hidden
     settings:
-      responsive_image_style: responsive_banner
+      image_style: medium
       image_link: ''
+    weight: 0
     third_party_settings: {  }
-    type: responsive_image
     region: content
 hidden:
   created: true
+  field_media_image: true
   name: true
-  thumbnail: true
   uid: true

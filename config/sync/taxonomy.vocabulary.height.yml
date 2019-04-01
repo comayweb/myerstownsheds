@@ -5,5 +5,4 @@ dependencies: {  }
 name: Height
 vid: height
 description: ''
-hierarchy: 0
 weight: -7

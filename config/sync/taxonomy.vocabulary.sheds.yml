@@ -5,5 +5,4 @@ dependencies: {  }
 name: Sheds
 vid: sheds
 description: null
-hierarchy: 0
 weight: -6

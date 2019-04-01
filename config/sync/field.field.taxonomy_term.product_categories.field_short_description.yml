@@ -1,0 +1,19 @@
+uuid: c5af5aef-b638-4bbf-a687-3326989e23fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_short_description
+    - taxonomy.vocabulary.product_categories
+id: taxonomy_term.product_categories.field_short_description
+field_name: field_short_description
+entity_type: taxonomy_term
+bundle: product_categories
+label: 'Short Description'
+description: 'If adding to the home page, add a short description to display as well.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -6,6 +6,8 @@ dependencies:
     - field.field.taxonomy_term.product_categories.field_disable
     - field.field.taxonomy_term.product_categories.field_link_products
     - field.field.taxonomy_term.product_categories.field_product_thumbnail
+    - field.field.taxonomy_term.product_categories.field_short_description
+    - field.field.taxonomy_term.product_categories.field_show_on_homepage
     - taxonomy.vocabulary.product_categories
   module:
     - entity_reference_revisions
@@ -34,3 +36,5 @@ content:
 hidden:
   field_disable: true
   field_product_thumbnail: true
+  field_short_description: true
+  field_show_on_homepage: true

@@ -470,7 +470,8 @@ display:
             group_items: {  }
           plugin_id: boolean
       sorts: {  }
-      header:
+      header: {  }
+      footer:
         entity_taxonomy_term:
           id: entity_taxonomy_term
           table: views
@@ -484,7 +485,6 @@ display:
           view_mode: default
           bypass_access: false
           plugin_id: entity
-      footer: {  }
       empty: {  }
       relationships:
         parent_target_id:

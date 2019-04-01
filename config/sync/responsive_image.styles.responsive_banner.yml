@@ -1,0 +1,25 @@
+uuid: a5246eb3-bbea-4fee-8220-1ee7009ce8eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.flexslider_full
+    - image.style.large
+    - image.style.medium
+  theme:
+    - rosewood
+id: responsive_banner
+label: 'Responsive Banner'
+image_style_mappings:
+  -
+    breakpoint_id: rosewood.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: flexslider_full
+  -
+    breakpoint_id: rosewood.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+breakpoint_group: rosewood
+fallback_image_style: medium

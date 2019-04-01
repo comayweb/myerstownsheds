@@ -1,0 +1,31 @@
+uuid: 5e70fd7f-66ea-438b-9bf4-3705884752f1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_block:5297dee6-ec57-413a-ba26-0d7ed1a663d9'
+  module:
+    - block_content
+    - system
+  theme:
+    - rosewood
+id: homepagestepsblock
+theme: rosewood
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:5297dee6-ec57-413a-ba26-0d7ed1a663d9'
+settings:
+  id: 'block_content:5297dee6-ec57-413a-ba26-0d7ed1a663d9'
+  label: 'Choose. Quote. Enjoy.'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

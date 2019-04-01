@@ -1,0 +1,25 @@
+uuid: 3c00efbb-8914-47bf-9953-87577659ff70
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_block:a8606831-d7ab-4aba-a486-27e26a2b061a'
+  module:
+    - block_content
+  theme:
+    - rosewood
+id: questionsgetintouch.
+theme: rosewood
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:a8606831-d7ab-4aba-a486-27e26a2b061a'
+settings:
+  id: 'block_content:a8606831-d7ab-4aba-a486-27e26a2b061a'
+  label: 'Questions? Get in touch.'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

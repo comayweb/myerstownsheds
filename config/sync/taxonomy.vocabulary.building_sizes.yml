@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Building Sizes'
 vid: building_sizes
 description: ''
-hierarchy: 0
 weight: -9

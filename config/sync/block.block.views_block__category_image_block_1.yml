@@ -1,0 +1,25 @@
+uuid: f441cc8c-87a5-4cca-8162-de201b78848f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.category_image
+  module:
+    - views
+  theme:
+    - rosewood
+id: views_block__category_image_block_1
+theme: rosewood
+region: header
+weight: -10
+provider: null
+plugin: 'views_block:category_image-block_1'
+settings:
+  id: 'views_block:category_image-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }
