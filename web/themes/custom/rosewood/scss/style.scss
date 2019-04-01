@@ -201,6 +201,18 @@ header.navbar {
   }
 }
 
+#block-homepagestepsblock {
+  
+  h2 {
+    color: $brand-primary;
+    text-align: center;
+  }
+
+  h3 {
+    color: $brand-warning;
+  }
+}
+
 .cta-button {
   background-color: $brand-warning;
   a {
@@ -297,6 +309,25 @@ input, select, textarea,
   }
 }
 
+#block-questionsgetintouch {
+  @include background-to-edge;
+  background-color: #F0F0F0;
+  
+  h2 {
+    color: $brand-primary;
+  }
+}
+
+#block-servicearea {
+  @include background-to-edge;
+  background-color: #4B4B4B;
+  color: $white;
+  
+  h2 {
+    color: $white;
+  }
+}
+
 #block-copyrightblock {
   font-size: .85em;
   
@@ -324,6 +355,47 @@ input, select, textarea,
       color: $gray-base;
       font-family: $primaryFont;
     }
+    
+    .views-field.btn {
+      border: 2px solid $brand-primary;
+      border-radius: 0;
+      white-space: normal;
+    }
+  }
+}
+
+.view-promoted-categories {
+  @include background-to-edge;
+  background: $brand-accent;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3em 0 3em 0;
+    
+  .view-content .views-row {
+    width: calc(100% / 4 - .15em);
+    margin: 0;
+    border: none;
+    
+    h4 {
+      text-align: left;
+    }
+  }
+}
+
+.view-category-image {
+  .view-content {
+    display: block;
+  }
+  
+  .view-content .views-row {
+    margin: 0 0 -7.5em 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+  }
+  
+  .img-responsive {
+    width: 100%;  
   }
 }
 

@@ -92,10 +92,12 @@ body {
 }
 
 .page-header {
-  display: block;
+  display: flex;
   max-width: 12em;
   position: relative;
   padding: 1em 0;
+  min-height: 5em;
+  align-items: center;
 
   &:before {
     content: "";
@@ -114,7 +116,6 @@ body {
     display: block;
     padding-top: .8em;
     font-weight: bold;
-
   }
 }
 
@@ -145,6 +146,63 @@ header.navbar {
   }
 }
 
+#block-homepagestepsblock {
+  @include background-to-edge;
+  background: transparent;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3em 0 3em 0;
+  &:before, &:after {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 3em;
+  }
+  
+  h2 {
+    margin-top: 3em;
+  }
+  
+  h3 {
+    margin: .25em 0;
+    display: inline-block;
+  }
+  
+  ol {
+    text-align: center;
+    display: inline-block;
+    counter-reset: li;
+    list-style: none;
+    margin: 0;
+  }
+  
+  li {
+    counter-increment: li;
+    padding: 0 2em;
+      
+    &:before {
+      content: counter(li)'.';
+      font-size: 1.2em;
+      color: $brand-warning;
+      display: inline-block;
+      width: 1em;
+      left: -1em;
+    }
+  }
+  
+  @include for-tablet-landscape-up {
+    ol {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+    } 
+    
+    li {
+      margin: 0;
+      padding: 1em;
+    }
+  }
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -172,7 +230,7 @@ header.navbar {
   }
 }
 
-.region-content, .contain {
+.region-content article, .contain {
   width: 90vw;
   max-width: 800px;
   margin: 0 auto;
@@ -194,7 +252,12 @@ header.navbar {
 }
 
 p {
-  margin: 2em 0;
+  margin: .5em 0;
+}
+
+a.outline-button {
+  color: $brand-warning;
+  text-align: center;  
 }
 
 .img-responsive {
@@ -349,8 +412,9 @@ footer.footer {
   background-color: $brand-primary;
   color: $white;
   text-align: center;
-  height: 22.47em;
+  padding: 3em 0 3.5em 0;
   font-weight: 100;
+  margin-top: -1px;
 
   a {
     color: $white;
@@ -387,6 +451,29 @@ footer.footer {
   }
 }
 
+#block-questionsgetintouch {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  a.outline-button {
+    font-family: $brand-primary;
+    padding: .5em 1em;
+  }
+}
+
+#block-servicearea {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
 #block-footerlogo {
   padding: 2em 0;
 
@@ -394,6 +481,20 @@ footer.footer {
     max-width: 80vw;
   }
 }
+
+.path-taxonomy {
+  
+  .region-content {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1000px;
+    
+    article {
+      width: auto;
+    }
+  }
+}
+
 
 //TABLET or Medium Screen Widths
 
@@ -423,6 +524,11 @@ footer.footer {
       }
     }
   }
+  
+  .view-promoted-categories .view-content .views-row:nth-child(2n) {
+    margin-right: 0;
+  }
+  
   .paragraph--type--two-column-images {
     
     .field--name-field-images > .field--item {
