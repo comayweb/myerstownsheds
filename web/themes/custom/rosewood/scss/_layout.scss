@@ -117,11 +117,6 @@ body {
 
   }
 }
-@include for-tablet-landscape-up {
-  .path-frontpage .page-header {
-    z-index: 30;
-  }
-}
 
 
 header.navbar {
@@ -187,10 +182,6 @@ header.navbar {
   background-color: $gray-lighter;
   @include background-to-edge;
   padding: 1em 0 0;
-}
-
-.block--flexslider {
-  margin-bottom: -12.5em;
 }
 
 .breadcrumb {
@@ -454,6 +445,15 @@ footer.footer {
       height: 1px;
       clear: both;
     }
+  }
+}
+
+@include for-tablet-landscape-up {
+  .block--flexslider {
+    margin-bottom: -12.5em;
+  }
+  .path-frontpage .page-header {
+    z-index: 30;
   }
 }
 
