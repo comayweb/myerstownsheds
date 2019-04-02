@@ -12,11 +12,6 @@
   z-index: 100;
 }
 
-.region-content * {
-  position: relative;
-  z-index: 1;
-}
-
 //mobile only styles
 @include for-phone-only {
   
@@ -151,13 +146,9 @@ header.navbar {
   background: transparent;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 3em 0 3em 0;
+  padding: 6em 0 4em 0;
   &:before, &:after {
     border-top: 1px solid $gray-lighter;
-    margin-top: 3em;
-  }
-  
-  h2 {
     margin-top: 3em;
   }
   
@@ -220,13 +211,13 @@ header.navbar {
   margin: 0 auto;
 
   .col-sm-12 {
-    float: none;
     padding: 0;
   }
 
   .field--name-field-add-element {
     background-color: $brand-accent;
-    @include background-to-edge;   
+    @include background-to-edge;
+    clear: both;
   }
 }
 
@@ -237,13 +228,19 @@ header.navbar {
 }
 
 .page-node-type-product-item .row {
-  background-color: $gray-lighter;
   @include background-to-edge;
-  padding: 1em 0 0;
+  background-color: $gray-lighter;
+  padding: 0;
+
+  &:before, &:after {
+    position: relative;
+  }
 }
 
 .breadcrumb {
   background-color: $white;
+  max-width: 1000px;
+  margin: 1em auto;
 }
 
 #quote-form {
@@ -495,6 +492,14 @@ footer.footer {
   }
 }
 
+.cta-block {
+  margin: 1em 0;
+  text-align: right;
+}
+
+.page-node-type-product-item .flex-direction-nav a {
+  top: calc(50% - 1em);
+}
 
 //TABLET or Medium Screen Widths
 
@@ -569,10 +574,6 @@ footer.footer {
   .region-navigation #block-productnavigation {
     display: inline-block;
   }
-  .mm-menu .menu--product-navigation,
-  .mm-menu .dropdown-menu {
-    display: none;
-  }
 
   .view-content,
   .field--name-field-product {
@@ -599,6 +600,32 @@ footer.footer {
       &:nth-child(3n + 1) {
         margin-left: 0;
       }
+    }
+  }
+  
+  .path-taxonomy .breadcrumb {
+    float: right;
+    margin-top: -4.5em;
+    max-width: 48%;
+  }
+
+  .page-node-type-product-item h1 {
+    float: left;
+    font-size: 2.5rem;
+  }
+
+  .view-flexslider-product-image-view {
+    margin-top: 20px; //match the title
+  }
+
+  .product-describe {
+    float: left;
+    clear: left;
+    width: 50%;
+    padding: 1em 2em 1em 0;
+
+    .cta-block {
+      text-align: left;
     }
   }
 }

@@ -29,7 +29,7 @@
     top: 0;
     left: -100vw;
     height: 100%;
-    z-index: -1px;
+    z-index: -1;
   }
 
   &:after {
@@ -213,12 +213,13 @@ header.navbar {
   }
 }
 
-.cta-button {
+a.cta-button {
   background-color: $brand-warning;
-  a {
-    color: $white;
-  }
-  
+  font-family: $primaryFont;
+  font-size: .85em;
+  color: $white;
+  padding: .5em;
+  display: inline-block;
 }
 
 .menu--product-navigation {

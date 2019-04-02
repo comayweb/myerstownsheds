@@ -20,6 +20,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.25",
+        "drupal/berf": "1.x-dev",
         "drupal/bootstrap": "3.x-dev",
         "drupal/colorbox": "^1.4",
         "drupal/conditional_fields": "^1.0@alpha",
