@@ -1,0 +1,8 @@
+uuid: 83609891-2337-4f62-b13a-34dece0426e7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Brands (logos)'
+vid: brands_logos
+description: ''
+weight: 0

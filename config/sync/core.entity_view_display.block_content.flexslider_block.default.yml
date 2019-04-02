@@ -5,7 +5,7 @@ dependencies:
   config:
     - block_content.type.flexslider_block
     - field.field.block_content.flexslider_block.field_flex_slide_image
-    - responsive_image.styles.flex_slide_image
+    - responsive_image.styles.responsive_banner
   module:
     - flexslider_fields
 id: block_content.flexslider_block.default
@@ -18,7 +18,7 @@ content:
     label: hidden
     settings:
       optionset: default
-      responsive_image_style: flex_slide_image
+      responsive_image_style: responsive_banner
       caption: '1'
       image_link: ''
     third_party_settings: {  }

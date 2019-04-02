@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - image.style.banner_image_small
     - image.style.flexslider_full
-    - image.style.large
     - image.style.medium
   theme:
     - rosewood
@@ -20,6 +20,6 @@ image_style_mappings:
     breakpoint_id: rosewood.narrow
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: large
+    image_mapping: banner_image_small
 breakpoint_group: rosewood
 fallback_image_style: medium

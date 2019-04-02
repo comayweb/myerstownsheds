@@ -6,6 +6,7 @@ dependencies:
     - entity_browser.browser.product_image_browser
     - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_brands
     - field.field.node.product_item.field_choose_options_form
     - field.field.node.product_item.field_flexslider_view_reference
     - field.field.node.product_item.field_options
@@ -30,7 +31,7 @@ mode: default
 content:
   field_add_element:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 4
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -40,8 +41,26 @@ content:
       default_paragraph_type: text_area
     third_party_settings: {  }
     region: content
+  field_brands:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
   field_choose_options_form:
-    weight: 6
+    weight: 7
     settings:
       default_data: true
     third_party_settings: {  }
@@ -49,7 +68,7 @@ content:
     region: content
   field_flexslider_view_reference:
     type: viewsreference_autocomplete
-    weight: 11
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -58,7 +77,7 @@ content:
     third_party_settings: {  }
   field_options:
     type: inline_entity_form_complex
-    weight: 4
+    weight: 5
     region: content
     settings:
       form_mode: default
@@ -75,7 +94,7 @@ content:
       entity_browser_entity_form:
         entity_browser_id: browse_options
   field_product_category:
-    weight: 5
+    weight: 6
     settings:
       force_deepest: '1'
       parent: '0'
@@ -108,7 +127,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -116,7 +135,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -129,12 +148,12 @@ content:
     third_party_settings: {  }
   uid:
     type: options_buttons
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

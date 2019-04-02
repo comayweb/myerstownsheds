@@ -1,0 +1,29 @@
+uuid: bdd7a72b-4977-4a9e-9d27-2200f80c552f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brands
+    - node.type.product_item
+    - taxonomy.vocabulary.brands_logos
+id: node.product_item.field_brands
+field_name: field_brands
+entity_type: node
+bundle: product_item
+label: Brands
+description: 'Add brands related to this product.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      brands_logos: brands_logos
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: 920ca34d-71a9-4db6-acd5-af59d93a2258
+langcode: en
+status: true
+dependencies: {  }
+name: banner_image_small
+label: 'Banner Image Small'
+effects:
+  a9b582d9-bc6f-43c2-8796-c4331aa44e54:
+    uuid: a9b582d9-bc6f-43c2-8796-c4331aa44e54
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 372
+      anchor: center-center

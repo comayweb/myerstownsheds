@@ -1,6 +1,6 @@
 horizontal_menu: product-navigation
 horizontal_depth: 2
-off_canvas_menus: product-navigation
+off_canvas_menus: 'main,product-navigation'
 horizontal_wrapping_element: nav
 horizontal_breakpoint: wide
 horizontal_media_query: 'all and (min-width: 851px)'
