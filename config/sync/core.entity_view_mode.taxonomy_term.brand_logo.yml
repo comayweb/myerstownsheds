@@ -1,0 +1,10 @@
+uuid: 2636e31b-5fe8-4029-bf93-4e2cca6bbe04
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.brand_logo
+label: 'Brand Logo'
+targetEntityType: taxonomy_term
+cache: true

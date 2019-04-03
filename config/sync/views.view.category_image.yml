@@ -2,8 +2,6 @@ uuid: 7a6f7ca4-9b11-48b3-8241-d73a22b00c8f
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.media.flexslider
   module:
     - media
     - taxonomy
@@ -59,7 +57,7 @@ display:
         type: 'entity:media'
         options:
           relationship: none
-          view_mode: flexslider
+          view_mode: default
       fields:
         name:
           id: name

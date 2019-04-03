@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_product_thumbnail
     - field.storage.taxonomy_term.field_short_description
-    - image.style.flexslider_full
+    - image.style.medium
     - taxonomy.vocabulary.product_categories
   module:
     - media
@@ -112,7 +112,7 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: flexslider_full
+            image_style: medium
             image_link: ''
           group_column: target_id
           group_columns: {  }

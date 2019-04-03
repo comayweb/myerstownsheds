@@ -6,15 +6,16 @@ dependencies:
     - core.entity_view_mode.node.product_thumbnail_display
     - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_brands
     - field.field.node.product_item.field_choose_options_form
+    - field.field.node.product_item.field_flexslider_view_reference
     - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
     - field.field.node.product_item.field_short_description
-    - image.style.medium
     - node.type.product_item
   module:
-    - media
+    - berf
     - user
 id: node.product_item.product_thumbnail_display
 targetEntityType: node
@@ -22,18 +23,24 @@ bundle: product_item
 mode: product_thumbnail_display
 content:
   field_product_image:
-    type: media_thumbnail
+    type: better_entity_reference_view
     weight: 0
     label: hidden
     settings:
-      image_style: medium
-      image_link: content
+      view_mode: flexslider
+      selection_mode: first
+      amount: '1'
+      offset: '0'
+      reverse: 0
+      link: false
     third_party_settings: {  }
     region: content
 hidden:
   feeds_item: true
   field_add_element: true
+  field_brands: true
   field_choose_options_form: true
+  field_flexslider_view_reference: true
   field_options: true
   field_product_category: true
   field_short_description: true

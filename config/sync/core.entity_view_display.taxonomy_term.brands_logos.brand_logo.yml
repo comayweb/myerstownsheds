@@ -1,17 +1,18 @@
-uuid: 75f04dab-d525-4f09-9cb9-a7754374d4b2
+uuid: ceb5b2ca-40b3-4a38-9191-a083a27ffc2f
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.brand_logo
     - field.field.taxonomy_term.brands_logos.field_logo
     - image.style.thumbnail
     - taxonomy.vocabulary.brands_logos
   module:
     - image
-id: taxonomy_term.brands_logos.default
+id: taxonomy_term.brands_logos.brand_logo
 targetEntityType: taxonomy_term
 bundle: brands_logos
-mode: default
+mode: brand_logo
 content:
   field_logo:
     weight: 0

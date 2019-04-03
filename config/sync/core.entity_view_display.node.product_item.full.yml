@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_brands
     - field.field.node.product_item.field_choose_options_form
     - field.field.node.product_item.field_flexslider_view_reference
     - field.field.node.product_item.field_options
@@ -26,15 +27,24 @@ mode: full
 content:
   field_add_element:
     type: entity_reference_revisions_entity_view
-    weight: 2
+    weight: 3
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
+  field_brands:
+    type: entity_reference_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   field_choose_options_form:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       source_entity: true

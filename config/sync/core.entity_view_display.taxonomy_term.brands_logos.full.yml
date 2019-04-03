@@ -1,0 +1,33 @@
+uuid: 7f1d6d75-0880-440b-97bc-be30c53fef73
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.brands_logos.field_logo
+    - taxonomy.vocabulary.brands_logos
+  module:
+    - image
+    - text
+id: taxonomy_term.brands_logos.full
+targetEntityType: taxonomy_term
+bundle: brands_logos
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_logo:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }
