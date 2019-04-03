@@ -491,6 +491,9 @@ footer.footer {
     }
   }
 }
+.modal-open .modal {
+  z-index: 9999 !important;
+}
 
 .cta-block {
   margin: 1em 0;
