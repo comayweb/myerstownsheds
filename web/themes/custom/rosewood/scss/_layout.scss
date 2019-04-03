@@ -501,6 +501,23 @@ footer.footer {
   top: calc(50% - 1em);
 }
 
+.field--name-field-flexslider-view-reference .flex-control-nav {
+  text-align: center;
+  bottom: .8em;
+}
+
+.field--name-field-brands {
+  clear: both;
+  @include background-to-edge;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .field--name-field-logo {
+    padding: .5em;
+  }
+}
 //TABLET or Medium Screen Widths
 
 @include for-tablet-portrait-up {

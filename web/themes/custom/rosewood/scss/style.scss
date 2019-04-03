@@ -377,8 +377,9 @@ input, select, textarea,
     margin: 0;
     border: none;
     
-    h4 {
+    h4, .views-field-field-short-description {
       text-align: left;
+      margin: .5em 0;
     }
   }
 }
