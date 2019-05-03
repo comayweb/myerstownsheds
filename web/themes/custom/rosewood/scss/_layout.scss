@@ -134,7 +134,7 @@ header.navbar {
 
 #block-searchbutton {
   float: right;
-  margin: 1.4em .5em 0;
+  margin: 0;
 
   .contextual {
     margin-top: -1em;
@@ -229,6 +229,34 @@ header.navbar {
   margin: 0 auto;
 }
 
+.page-node-433 .region-content {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  strong, i {
+    color: $brand-primary;
+  }
+
+  .glyphicon {
+    display: inline-block;
+    font-size: 1.6em;
+  }
+
+  @include for-desktop-up { 
+    .block-webform {
+      float: right;
+      padding-top: 2em;
+    }
+
+    article {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+}
+
 .page-node-type-product-item .row {
   @include background-to-edge;
   background-color: $gray-lighter;
@@ -308,22 +336,22 @@ header.navbar {
 .region-navigation #block-productnavigation {
   display: none;
   padding: 0;
-  float: right;
-  width: 54vw;
+  width: auto;
   margin: 0 auto;
   li,
   .open {
     padding-top: 2.12em;
     display: inline-block;
-
-    a,
-    a:hover,
-    a:active {
-      font-size: 1.2vw;
-      padding: 0 .25vw;
-      background-color: transparent;
-    }
   }
+
+  a,
+  a:hover,
+  a:active {
+    font-size: 1.2vw;
+    padding: 0 .25vw;
+    background-color: transparent;
+  }
+
   li .caret {
     display: none;
   }
@@ -370,7 +398,7 @@ header.navbar {
 
 .responsive-menu-toggle-icon {
   width: 3.5em;
-  margin-top: 2em;
+  margin: 2em .5em 0 .5em;
 
   span.label {
     display: none;
@@ -588,7 +616,7 @@ footer.footer {
 
 @include for-tablet-landscape-up {
   .block--flexslider {
-    margin-bottom: -12.5em;
+    
   }
   .path-frontpage .page-header {
     z-index: 30;
@@ -598,14 +626,54 @@ footer.footer {
 //DESKTOP or WIDESCREEN
 
 @include for-desktop-up {
+
+  .navbar-header .region-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+
+    .logo {
+      order: 1;
+    }
+
+    #block-productnavigation {
+      order: 2;
+
+      li {
+        padding-top: 0;
+      }
+    }
+
+    #block-searchbutton {
+      order: 3;
+      margin-top: 0;
+    }
+
+    #block-responsivemenumobileicon {
+      order: 4;
+
+      #toggle-icon {
+        margin-top: 0;
+      }
+    }
+
+    #block-telephone {
+      order: 5;
+      margin-top: 0;
+    }
+
+
+  }
+
   .region-navigation #block-productnavigation {
-    display: inline-block;
+    display: inline-flex;
   }
 
   .view-content,
   .field--name-field-product {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
     .views-row,
     > .field--item {

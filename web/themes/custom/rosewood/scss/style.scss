@@ -187,6 +187,14 @@ header.navbar {
   a {
     font-weight: 400;
   }
+
+  .outline-button {
+    border: 4px solid $brand-warning;
+    max-width: 18em;
+    a {
+      padding: .35em 1em;
+    }
+  }
 }
 
 .outline-button {
@@ -302,11 +310,12 @@ input, select, textarea,
 }
 
 .search-block-form {
-  float: right;
   width: 50vw;
   max-width: 17em;
   display: none;
-
+  position: absolute;
+  right: 0;
+  z-index: 9000;
 
   input,
   .btn {
@@ -405,6 +414,10 @@ input, select, textarea,
       margin: 1em 0;
     }
 
+    .views-field-field-short-description {
+      min-height: 14em;
+    }
+
     h4 {
       font-size: 1.4em;
     }
@@ -429,7 +442,7 @@ input, select, textarea,
 }
 
 //X-TRA Wide SCREEN
-@media (min-width: 1475px) {
+@media (min-width: 1500px) {
   .region-navigation #block-productnavigation {
     li a,
     li a:hover,

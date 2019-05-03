@@ -20,6 +20,15 @@ function rosewood_preprocess_block(&$variables) {
  *
  * Place your custom PHP code in this file.
  */
+ 
+ /**
+ * Implements hook_preprocess_html().
+ */
+function rosewood_preprocess_html(&$variables) {
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'page-node-' . $node->id();
+  }
+}
 
 /**
  * Implements hook_theme_suggestions_alter
