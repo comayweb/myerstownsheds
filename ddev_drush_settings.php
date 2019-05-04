@@ -15,10 +15,10 @@ if (version_compare($version, "7.0") > 0) {
     'password' => "db",
     'host' => "127.0.0.1",
     'driver' => "mysql",
-    'port' => 32774,
+    'port' => 32768,
     'prefix' => "",
   );
 } else {
   // or the old db_url format for d6
-  $db_url = 'mysqli://db:db@127.0.0.1:32774/db';
+  $db_url = 'mysqli://db:db@127.0.0.1:32768/db';
 }

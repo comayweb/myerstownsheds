@@ -71,6 +71,9 @@ $pager-back: $gray-light;
     position: absolute;
     text-align: right;
 }
+.path-frontpage .flex-control-nav {
+    bottom: -40px;
+}
 .flex-control-paging li a {
     border-radius: 0;
     color: transparent;

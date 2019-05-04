@@ -21,7 +21,7 @@
   
   #block-searchbutton {
     position: absolute;
-    top: -3em;
+    top: -1.5em;
     right: 3em;
     
     .search-trigger {
@@ -135,6 +135,7 @@ header.navbar {
 #block-searchbutton {
   float: right;
   margin: 0;
+  top: -1.45em;
 
   .contextual {
     margin-top: -1em;
@@ -227,6 +228,10 @@ header.navbar {
   width: 90vw;
   max-width: 715px;
   margin: 0 auto;
+}
+
+.static-page .content {
+  margin-bottom: 2.5em;
 }
 
 .page-node-433 .region-content {
@@ -481,6 +486,44 @@ footer.footer {
   }
 }
 
+.paragraph--type--testimonial {
+  border-top: 1px solid $brand-primary;
+  margin: 2em auto;
+
+  .field {
+    padding: 0 3em;
+  }
+
+  .field--name-field-testimonial {
+    position: relative;
+    display: block;
+    padding-top: 2em;
+
+    &:before {
+      content: '“';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $brand-primary;
+      font-size: 6rem;
+    }
+
+    &:after {
+      content: '”';
+      position: absolute;
+      right: 0;
+      color: $brand-primary;
+      font-size: 6rem;
+    }
+  }
+
+  .field--name-field-client-name {
+    color: $brand-primary;
+    font-weight: bold;
+    padding: .5em 3em 0 3em;
+  }
+}
+
 #block-questionsgetintouch {
   max-width: 1000px;
   margin: 0 auto;
@@ -562,6 +605,11 @@ footer.footer {
   .navbar-header {
     float: unset;
   }
+
+  #block-searchbutton {
+    top: 1.45em;
+  }
+
   .responsive-menu-toggle-wrapper.responsive-menu-toggle {
     display: inline-block;
   }
@@ -583,6 +631,11 @@ footer.footer {
         margin-left: 0;
       }
     }
+  }
+
+  .view-promoted-categories .view-content .views-row {
+    padding: .5em;
+    width: 49.75%;
   }
   
   .view-promoted-categories .view-content .views-row:nth-child(2n) {
@@ -615,11 +668,21 @@ footer.footer {
 }
 
 @include for-tablet-landscape-up {
-  .block--flexslider {
-    
+  .block--flexslider .slides img {
+     margin: 0 0 -6.5em 0;
   }
+
+  .path-frontpage .flexslider .flex-control-nav {
+    bottom: calc((-6.5em) + (-40px));
+  }
+  
   .path-frontpage .page-header {
     z-index: 30;
+  }
+
+  .view-promoted-categories .view-content .views-row {
+    padding: 0 1em;
+    width: calc(100% / 4);
   }
 }
 

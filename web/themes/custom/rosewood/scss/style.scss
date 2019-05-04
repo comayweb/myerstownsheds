@@ -405,7 +405,6 @@ input, select, textarea,
   padding: 3em 0 3em 0;
     
   .view-content .views-row {
-    width: calc(100% / 4 - .15em);
     margin: 0;
     border: none;
     
@@ -430,10 +429,14 @@ input, select, textarea,
   }
   
   .view-content .views-row {
-    margin: 0 0 -7.5em 0;
+    margin: 0;
     padding: 0;
     width: 100%;
     border: none;
+  }
+
+  .view-content .views-row img {
+    margin-bottom: -6.5em;
   }
   
   .img-responsive {
