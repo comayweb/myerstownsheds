@@ -14,10 +14,12 @@
 
 //mobile only styles
 @include for-phone-only {
-  
-   #block-telephone {
-     margin: 1.3em .25em 0;
-   }
+
+  #block-telephone {
+    margin-left: auto;
+    margin-right: 5%;
+  }
+ 
   
   #block-searchbutton {
     position: absolute;
@@ -31,7 +33,7 @@
   
   #block-responsivemenumobileicon {
     position: absolute;
-    top: -4.25em;
+    top: -2.25em;
     right: 0;
   }
 }
@@ -126,20 +128,9 @@ header.navbar {
   padding: 1.45em .2em;
 }
 
-#block-telephone {
-  float: right;
-  margin: 1.1em .25em 0;
-  max-width: 50vw;
-}
-
-#block-searchbutton {
-  float: right;
-  margin: 0;
-  top: -1.45em;
-
-  .contextual {
-    margin-top: -1em;
-  }
+.region-navigation {
+  display: flex;
+  align-items: center;
 }
 
 #block-homepagestepsblock {
@@ -403,8 +394,7 @@ header.navbar {
 
 .responsive-menu-toggle-icon {
   width: 3.5em;
-  margin: 2em .5em 0 .5em;
-
+  order: 2;
   span.label {
     display: none;
   }
@@ -429,7 +419,7 @@ header.navbar {
 
 .user-login-form {
   max-width: 20em;
-  margin: 0 auto;
+  margin: 3em auto;
 }
 
 .paragraph {
@@ -606,8 +596,25 @@ footer.footer {
     float: unset;
   }
 
+  #block-telephone {
+    max-width: 50vw;
+    margin-right: .5em;
+    margin-left: .5em;
+    order: 4;
+  }
+
   #block-searchbutton {
-    top: 1.45em;
+    margin-left: auto;
+    text-align: right;
+    max-width: 3em;
+    order: 2;
+  }
+
+  #block-responsivemenumobileicon {
+    margin-left: .5em;
+    text-align: right;
+    max-width: 3.5em;
+    order: 3;
   }
 
   .responsive-menu-toggle-wrapper.responsive-menu-toggle {

@@ -10779,32 +10779,33 @@ input:focus, select:focus, textarea:focus,
 @media (max-width: 599px) {
   /* line 18, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-telephone {
-    margin: 1.3em .25em 0;
+    margin-left: auto;
+    margin-right: 5%;
   }
-  /* line 22, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 24, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-searchbutton {
     position: absolute;
     top: -1.5em;
     right: 3em;
   }
-  /* line 27, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 29, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-searchbutton .search-trigger {
     z-index: 10;
   }
-  /* line 32, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 34, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-responsivemenumobileicon {
     position: absolute;
-    top: -4.25em;
+    top: -2.25em;
     right: 0;
   }
 }
 
-/* line 39, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 41, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 html {
   min-height: 100%;
 }
 
-/* line 43, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 45, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 body {
   margin: 0;
   padding: 0;
@@ -10815,31 +10816,31 @@ body {
   max-width: 100vw;
 }
 
-/* line 54, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 56, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 58, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 60, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
   padding: 0px;
 }
 
-/* line 64, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 66, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 68, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 70, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .dropdown-submenu > a:after {
   display: inline-block;
   float: right;
   margin-top: 5px;
 }
 
-/* line 74, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 76, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -10848,18 +10849,18 @@ body {
   border-radius: 6px 0 6px 6px;
 }
 
-/* line 81, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 83, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .navbar-nav li:last-child > .dropdown-menu {
   left: auto;
   right: 0px;
 }
 
-/* line 85, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 87, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .navbar-nav li:last-child > .dropdown-menu a {
   text-align: right !important;
 }
 
-/* line 89, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 91, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-header {
   display: flex;
   max-width: 12em;
@@ -10869,7 +10870,7 @@ body {
   align-items: center;
 }
 
-/* line 97, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 99, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-header:before {
   content: "";
   position: absolute;
@@ -10880,7 +10881,7 @@ body {
   background-color: inherit;
 }
 
-/* line 107, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 109, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-header span:before {
   content: ' ';
   font-size: .6em;
@@ -10890,39 +10891,26 @@ body {
   font-weight: bold;
 }
 
-/* line 118, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 120, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 header.navbar {
   padding: 0;
   margin-bottom: 0;
 }
 
-/* line 123, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 125, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .region-navigation .logo {
   width: 50vw;
   max-width: 250px;
   padding: 1.45em .2em;
 }
 
-/* line 129, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
-#block-telephone {
-  float: right;
-  margin: 1.1em .25em 0;
-  max-width: 50vw;
+/* line 131, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+.region-navigation {
+  display: flex;
+  align-items: center;
 }
 
-/* line 135, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
-#block-searchbutton {
-  float: right;
-  margin: 0;
-  top: -1.45em;
-}
-
-/* line 140, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
-#block-searchbutton .contextual {
-  margin-top: -1em;
-}
-
-/* line 145, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 136, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-homepagestepsblock {
   position: relative;
   padding: 1em 0;
@@ -10952,20 +10940,20 @@ header.navbar {
   right: 5vw;
 }
 
-/* line 151, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 142, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-homepagestepsblock:before, #block-homepagestepsblock:after {
   border-top: 1px solid #eeeeee;
   margin-top: 3em;
 }
 
-/* line 156, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 147, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-homepagestepsblock h3 {
   margin: .25em 0;
   display: inline-block;
   font-size: 1.75em;
 }
 
-/* line 162, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 153, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-homepagestepsblock ol {
   text-align: center;
   display: inline-block;
@@ -10974,13 +10962,13 @@ header.navbar {
   margin: 0;
 }
 
-/* line 170, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 161, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-homepagestepsblock li {
   counter-increment: li;
   padding: 0 2em;
 }
 
-/* line 174, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 165, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-homepagestepsblock li:before {
   content: counter(li) ".";
   font-size: 1.75em;
@@ -10991,14 +10979,14 @@ header.navbar {
 }
 
 @media (min-width: 900px) {
-  /* line 185, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 176, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-homepagestepsblock ol {
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
   }
-  /* line 192, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 183, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-homepagestepsblock li {
     margin: 0;
     padding: 1.2em;
@@ -11006,33 +10994,33 @@ header.navbar {
   }
 }
 
-/* line 200, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 191, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 204, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 195, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .row {
   margin: 0;
 }
 
-/* line 208, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 199, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu_offcanvas {
   z-index: 999;
 }
 
-/* line 212, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 203, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .main-container {
   padding: 0;
   margin: 0 auto;
 }
 
-/* line 216, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 207, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .main-container .col-sm-12 {
   padding: 0;
 }
 
-/* line 220, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 211, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .main-container .field--name-field-add-element {
   background-color: #F7F4CE;
   position: relative;
@@ -11060,50 +11048,50 @@ header.navbar {
   right: 5vw;
 }
 
-/* line 227, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 218, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .region-content article, .contain {
   width: 90vw;
   max-width: 715px;
   margin: 0 auto;
 }
 
-/* line 233, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 224, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .static-page .content {
   margin-bottom: 2.5em;
 }
 
-/* line 237, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 228, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-node-433 .region-content {
   width: 90vw;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 242, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 233, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-node-433 .region-content strong, .page-node-433 .region-content i {
   color: #5F9357;
 }
 
-/* line 246, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 237, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-node-433 .region-content .glyphicon {
   display: inline-block;
   font-size: 1.6em;
 }
 
 @media (min-width: 1200px) {
-  /* line 252, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 243, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .page-node-433 .region-content .block-webform {
     float: right;
     padding-top: 2em;
   }
-  /* line 257, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 248, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .page-node-433 .region-content article {
     width: auto;
     max-width: 100%;
   }
 }
 
-/* line 265, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 256, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-node-type-product-item .row {
   position: relative;
   padding: 1em 0;
@@ -11131,19 +11119,19 @@ header.navbar {
   right: 5vw;
 }
 
-/* line 270, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 261, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-node-type-product-item .row:before, .page-node-type-product-item .row:after {
   position: relative;
 }
 
-/* line 275, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 266, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .breadcrumb {
   background-color: #FFF;
   max-width: 1000px;
   margin: 1em auto;
 }
 
-/* line 281, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 272, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #quote-form {
   background-color: #FFF;
   position: relative;
@@ -11170,28 +11158,28 @@ header.navbar {
   right: 5vw;
 }
 
-/* line 286, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 277, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 p {
   margin: .5em 0;
 }
 
-/* line 290, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 281, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 a.outline-button {
   color: #EA984D;
   text-align: center;
 }
 
-/* line 295, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 286, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .img-responsive {
   margin: 0 auto;
 }
 
-/* line 299, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 290, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-siteheadline {
   text-align: center;
 }
 
-/* line 303, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 294, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .field--name-field-headline-text, .field--name-field-headline-text a,
 .field--name-field-link a,
 .field--name-field-link {
@@ -11200,14 +11188,14 @@ a.outline-button {
   font-size: 1.5rem;
 }
 
-/* line 309, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 300, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .field--name-field-headline-text a,
 .field--name-field-link a a,
 .field--name-field-link a {
   padding: 0;
 }
 
-/* line 314, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 305, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
@@ -11216,19 +11204,19 @@ a.outline-button {
   padding: 0;
 }
 
-/* line 322, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 313, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 header.navbar {
   padding: 0;
   border-radius: 0;
   z-index: 0;
 }
 
-/* line 329, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 320, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .navbar-header .navbar-btn {
   margin: 0;
 }
 
-/* line 333, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 324, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .navbar-header .logo img {
   width: 100%;
   max-width: 165px;
@@ -11236,7 +11224,7 @@ header.navbar {
   margin: 0 auto;
 }
 
-/* line 341, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 332, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .region-navigation #block-productnavigation {
   display: none;
   padding: 0;
@@ -11244,14 +11232,14 @@ header.navbar {
   margin: 0 auto;
 }
 
-/* line 346, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 337, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .region-navigation #block-productnavigation li,
 .region-navigation #block-productnavigation .open {
   padding-top: 2.12em;
   display: inline-block;
 }
 
-/* line 352, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 343, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .region-navigation #block-productnavigation a,
 .region-navigation #block-productnavigation a:hover,
 .region-navigation #block-productnavigation a:active {
@@ -11260,23 +11248,23 @@ header.navbar {
   background-color: transparent;
 }
 
-/* line 360, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 351, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .region-navigation #block-productnavigation li .caret {
   display: none;
 }
 
-/* line 365, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 356, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu_offcanvas.mm-menu_opened + div {
   width: 80vw;
 }
 
-/* line 369, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 360, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu .menu--product-navigation,
 .mm-menu .dropdown-menu {
   display: block;
 }
 
-/* line 374, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 365, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu .dropdown-menu {
   display: block;
   position: relative;
@@ -11288,79 +11276,79 @@ header.navbar {
   font-size: 1em;
 }
 
-/* line 384, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 375, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu .dropdown-menu li a {
   padding: 1em .25em;
   display: inline-block;
 }
 
-/* line 388, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 379, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu .dropdown-menu li a:hover {
   background: transparent;
 }
 
-/* line 393, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 384, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .mm-menu .dropdown-menu li a.mm-btn {
   float: right;
   padding: .5em 0;
 }
 
-/* line 399, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 390, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .responsive-menu-toggle {
   /* display: inline-block; */
   float: right;
 }
 
-/* line 404, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 395, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .responsive-menu-toggle-icon {
   width: 3.5em;
-  margin: 2em .5em 0 .5em;
+  order: 2;
 }
 
-/* line 408, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 398, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .responsive-menu-toggle-icon span.label {
   display: none;
 }
 
-/* line 412, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 402, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .responsive-menu-toggle-icon::before, .responsive-menu-toggle-icon::after,
 .responsive-menu-toggle-icon span.icon {
   width: 1.6em;
   border-radius: 0;
 }
 
-/* line 418, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 408, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .responsive-menu-toggle-icon::before {
   top: .3em;
 }
 
-/* line 421, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 411, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .responsive-menu-toggle-icon::after {
   top: 1.45em;
 }
 
-/* line 426, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 416, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .toggle .label {
   display: none;
 }
 
-/* line 430, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 420, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .user-login-form {
   max-width: 20em;
-  margin: 0 auto;
+  margin: 3em auto;
 }
 
-/* line 435, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 425, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph {
   padding: 1em 0;
 }
 
-/* line 439, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 429, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--text-area-brand-color p {
   font-size: 2rem;
 }
 
-/* line 443, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 433, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 footer.footer {
   background-color: #5F9357;
   color: #FFF;
@@ -11370,19 +11358,19 @@ footer.footer {
   margin-top: -1px;
 }
 
-/* line 451, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 441, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 footer.footer a {
   color: #FFF;
   font-family: work-sans, sans-serif;
 }
 
-/* line 457, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 447, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .view-content,
 .field--name-field-product {
   display: block;
 }
 
-/* line 461, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 451, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .view-content .views-row,
 .view-content > .field--item,
 .field--name-field-product .views-row,
@@ -11392,7 +11380,7 @@ footer.footer a {
   text-align: center;
 }
 
-/* line 467, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 457, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .view-content .views-row .name,
 .view-content > .field--item .name,
 .field--name-field-product .views-row .name,
@@ -11401,7 +11389,7 @@ footer.footer a {
   margin: 1em 0;
 }
 
-/* line 472, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 462, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .view-content .views-row .outline-button,
 .view-content > .field--item .outline-button,
 .field--name-field-product .views-row .outline-button,
@@ -11409,7 +11397,7 @@ footer.footer a {
   margin: 1.5em auto 1.75em auto;
 }
 
-/* line 476, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 466, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .view-content .views-row .views-field-field-product-thumbnail,
 .view-content .views-row .field--name-field-product-image,
 .view-content > .field--item .views-field-field-product-thumbnail,
@@ -11421,7 +11409,7 @@ footer.footer a {
   min-height: 150px;
 }
 
-/* line 480, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 470, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .view-content .views-row .views-field-field-product-thumbnail .img-responsive,
 .view-content .views-row .field--name-field-product-image .img-responsive,
 .view-content > .field--item .views-field-field-product-thumbnail .img-responsive,
@@ -11435,25 +11423,25 @@ footer.footer a {
   height: auto;
 }
 
-/* line 489, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 479, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--testimonial {
   border-top: 1px solid #5F9357;
   margin: 2em auto;
 }
 
-/* line 493, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 483, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--testimonial .field {
   padding: 0 3em;
 }
 
-/* line 497, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 487, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--testimonial .field--name-field-testimonial {
   position: relative;
   display: block;
   padding-top: 2em;
 }
 
-/* line 502, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 492, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--testimonial .field--name-field-testimonial:before {
   content: '“';
   position: absolute;
@@ -11463,7 +11451,7 @@ footer.footer a {
   font-size: 6rem;
 }
 
-/* line 511, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 501, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--testimonial .field--name-field-testimonial:after {
   content: '”';
   position: absolute;
@@ -11472,35 +11460,35 @@ footer.footer a {
   font-size: 6rem;
 }
 
-/* line 520, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 510, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .paragraph--type--testimonial .field--name-field-client-name {
   color: #5F9357;
   font-weight: bold;
   padding: .5em 3em 0 3em;
 }
 
-/* line 527, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 517, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-questionsgetintouch {
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 3em;
 }
 
-/* line 532, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 522, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-questionsgetintouch h2 {
   text-align: center;
   margin-bottom: 1em;
   font-weight: bold;
 }
 
-/* line 538, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 528, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-questionsgetintouch a.outline-button {
   font-family: work-sans, sans-serif;
   padding: .5em 1em;
   font-size: 1.8rem;
 }
 
-/* line 545, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 535, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-servicearea {
   max-width: 1000px;
   margin: 0 auto;
@@ -11508,51 +11496,51 @@ footer.footer a {
   text-align: center;
 }
 
-/* line 552, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 542, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-footerlogo {
   padding: 2em 0 0;
 }
 
-/* line 555, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 545, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 #block-footerlogo .logo img {
   max-width: 80vw;
 }
 
-/* line 562, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 552, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .path-taxonomy .region-content {
   margin: 0 auto;
   width: 90vw;
   max-width: 1000px;
 }
 
-/* line 567, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 557, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .path-taxonomy .region-content article {
   width: auto;
 }
 
-/* line 572, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 562, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .modal-open .modal {
   z-index: 9999 !important;
 }
 
-/* line 576, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 566, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .cta-block {
   margin: 1em 0;
   text-align: right;
 }
 
-/* line 581, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 571, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .page-node-type-product-item .flex-direction-nav a {
   top: calc(50% - 1em);
 }
 
-/* line 585, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 575, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .field--name-field-flexslider-view-reference .flex-control-nav {
   text-align: center;
   bottom: .8em;
 }
 
-/* line 590, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 580, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .field--name-field-brands {
   clear: both;
   position: relative;
@@ -11583,74 +11571,91 @@ footer.footer a {
   right: 5vw;
 }
 
-/* line 598, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+/* line 588, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
 .field--name-field-brands .field--name-field-logo {
   padding: .5em;
 }
 
 @media (min-width: 600px) {
-  /* line 605, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 595, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header {
     float: unset;
   }
-  /* line 609, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 599, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  #block-telephone {
+    max-width: 50vw;
+    margin-right: .5em;
+    margin-left: .5em;
+    order: 4;
+  }
+  /* line 606, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   #block-searchbutton {
-    top: 1.45em;
+    margin-left: auto;
+    text-align: right;
+    max-width: 3em;
+    order: 2;
   }
   /* line 613, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  #block-responsivemenumobileicon {
+    margin-left: .5em;
+    text-align: right;
+    max-width: 3.5em;
+    order: 3;
+  }
+  /* line 620, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .responsive-menu-toggle-wrapper.responsive-menu-toggle {
     display: inline-block;
   }
-  /* line 617, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 624, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content,
   .field--name-field-product {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 622, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 629, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row,
   .view-content > .field--item,
   .field--name-field-product .views-row,
   .field--name-field-product > .field--item {
     width: calc(100% / 2 - .5em);
   }
-  /* line 626, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 633, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row:nth-child(2n),
   .view-content > .field--item:nth-child(2n),
   .field--name-field-product .views-row:nth-child(2n),
   .field--name-field-product > .field--item:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 630, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 637, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row:nth-child(2n + 1),
   .view-content > .field--item:nth-child(2n + 1),
   .field--name-field-product .views-row:nth-child(2n + 1),
   .field--name-field-product > .field--item:nth-child(2n + 1) {
     margin-left: 0;
   }
-  /* line 636, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 643, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-promoted-categories .view-content .views-row {
     padding: .5em;
     width: 49.75%;
   }
-  /* line 641, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 648, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-promoted-categories .view-content .views-row:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 647, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 654, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .paragraph--type--two-column-images .field--name-field-images > .field--item {
     width: 47.5%;
     float: left;
   }
-  /* line 651, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 658, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .paragraph--type--two-column-images .field--name-field-images > .field--item:nth-child(even) {
     float: right;
   }
-  /* line 655, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 662, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .paragraph--type--two-column-images .field--name-field-images > .field--item img {
     width: 100%;
   }
-  /* line 660, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 667, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .paragraph--type--two-column-images:after {
     content: '';
     display: block;
@@ -11661,19 +11666,19 @@ footer.footer a {
 }
 
 @media (min-width: 900px) {
-  /* line 671, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 678, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .block--flexslider .slides img {
     margin: 0 0 -6.5em 0;
   }
-  /* line 675, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 682, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .path-frontpage .flexslider .flex-control-nav {
     bottom: calc((-6.5em) + (-40px));
   }
-  /* line 679, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 686, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .path-frontpage .page-header {
     z-index: 30;
   }
-  /* line 683, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 690, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-promoted-categories .view-content .views-row {
     padding: 0 1em;
     width: calc(100% / 4);
@@ -11681,115 +11686,115 @@ footer.footer a {
 }
 
 @media (min-width: 1200px) {
-  /* line 693, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 700, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
   }
-  /* line 699, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 706, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation .logo {
     order: 1;
   }
-  /* line 703, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 710, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation #block-productnavigation {
     order: 2;
   }
-  /* line 706, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 713, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation #block-productnavigation li {
     padding-top: 0;
   }
-  /* line 711, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 718, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation #block-searchbutton {
     order: 3;
     margin-top: 0;
   }
-  /* line 716, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 723, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation #block-responsivemenumobileicon {
     order: 4;
   }
-  /* line 719, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 726, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation #block-responsivemenumobileicon #toggle-icon {
     margin-top: 0;
   }
-  /* line 724, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 731, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .navbar-header .region-navigation #block-telephone {
     order: 5;
     margin-top: 0;
   }
-  /* line 732, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 739, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .region-navigation #block-productnavigation {
     display: inline-flex;
   }
-  /* line 736, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 743, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content,
   .field--name-field-product {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 741, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 748, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row,
   .view-content > .field--item,
   .field--name-field-product .views-row,
   .field--name-field-product > .field--item {
     width: calc(100% / 3 - .67em);
   }
-  /* line 745, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 752, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row:nth-child(2n),
   .view-content > .field--item:nth-child(2n),
   .field--name-field-product .views-row:nth-child(2n),
   .field--name-field-product > .field--item:nth-child(2n) {
     margin-right: .5em;
   }
-  /* line 749, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 756, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row:nth-child(2n + 1),
   .view-content > .field--item:nth-child(2n + 1),
   .field--name-field-product .views-row:nth-child(2n + 1),
   .field--name-field-product > .field--item:nth-child(2n + 1) {
     margin-left: .5em;
   }
-  /* line 754, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 761, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row:nth-child(3n),
   .view-content > .field--item:nth-child(3n),
   .field--name-field-product .views-row:nth-child(3n),
   .field--name-field-product > .field--item:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 758, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 765, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-content .views-row:nth-child(3n + 1),
   .view-content > .field--item:nth-child(3n + 1),
   .field--name-field-product .views-row:nth-child(3n + 1),
   .field--name-field-product > .field--item:nth-child(3n + 1) {
     margin-left: 0;
   }
-  /* line 764, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 771, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .path-taxonomy .breadcrumb {
     float: right;
     margin-top: -4.5em;
     max-width: 48%;
   }
-  /* line 770, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 777, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .page-node-type-product-item h1 {
     float: left;
     font-size: 2.5rem;
   }
-  /* line 775, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 782, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .view-flexslider-product-image-view {
     margin-top: 20px;
   }
-  /* line 779, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 786, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .product-describe {
     float: left;
     clear: left;
     width: 50%;
     padding: 1em 2em 1em 0;
   }
-  /* line 785, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 792, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   .product-describe .cta-block {
     text-align: left;
   }
-  /* line 789, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
+  /* line 796, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/_layout.scss */
   li.expanded {
     display: none;
   }
