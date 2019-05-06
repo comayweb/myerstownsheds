@@ -33,7 +33,7 @@
   }
 
   &:after {
-    left: -5vw;
+    left: 0vw;
     right: 5vw;
   }
 }
@@ -400,6 +400,7 @@ input, select, textarea,
 .view-promoted-categories {
   @include background-to-edge;
   background: $brand-accent;
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding: 3em 0 3em 0;

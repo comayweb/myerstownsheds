@@ -272,6 +272,7 @@ header.navbar {
 #quote-form {
   background-color: $white;
   @include background-to-edge;
+  clear: left;
 }
 
 p {
@@ -600,21 +601,21 @@ footer.footer {
     max-width: 50vw;
     margin-right: .5em;
     margin-left: .5em;
-    order: 4;
+    order: 5;
   }
 
   #block-searchbutton {
     margin-left: auto;
     text-align: right;
     max-width: 3em;
-    order: 2;
+    order: 3;
   }
 
   #block-responsivemenumobileicon {
     margin-left: .5em;
     text-align: right;
     max-width: 3.5em;
-    order: 3;
+    order: 4;
   }
 
   .responsive-menu-toggle-wrapper.responsive-menu-toggle {
@@ -687,9 +688,10 @@ footer.footer {
     z-index: 30;
   }
 
-  .view-promoted-categories .view-content .views-row {
+  .path-frontpage .view-promoted-categories .view-content .views-row {
     padding: 0 1em;
     width: calc(100% / 4);
+    margin: 0;
   }
 }
 
@@ -718,6 +720,7 @@ footer.footer {
     #block-searchbutton {
       order: 3;
       margin-top: 0;
+      margin-left: 0;
     }
 
     #block-responsivemenumobileicon {
