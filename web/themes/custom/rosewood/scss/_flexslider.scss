@@ -66,13 +66,14 @@ $pager-back: $gray-light;
 .flex-control-nav {
     z-index: 30;
     bottom: 2em;
-    right: 2em;
+    right: 0;
     height: 1em;
     position: absolute;
     text-align: right;
 }
 .path-frontpage .flex-control-nav {
     bottom: -40px;
+    right: 2em;
 }
 .flex-control-paging li a {
     border-radius: 0;

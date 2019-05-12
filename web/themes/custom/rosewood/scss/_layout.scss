@@ -212,6 +212,82 @@ header.navbar {
     background-color: $brand-accent;
     @include background-to-edge;
     clear: both;
+    max-width: 755px;
+    margin: 0 auto;
+    
+    .field--label {
+      font-size: 3rem;
+      color: $gray;
+      font-weight: 100;
+      text-align: center;
+      padding-top: 2rem;
+    }
+    
+    .panel-heading {
+      background: transparent;
+      color: $gray;
+      border: none;
+      position: relative;
+      font-size: 3rem;
+      
+      a {
+        font-family: $primaryFont;
+        font-size: 3rem;
+      }
+      
+      & [aria-expanded="false"]:after {
+        content: '+';
+        display: block;
+        position: absolute;
+        right: .25em;
+        top: -.2em;
+        font-size: 6rem;
+        color: $brand-warning;
+        font-weight: 400;
+      }
+      
+      & [aria-expanded="true"]:after {
+        content: '–';
+        display: block;
+        position: absolute;
+        right: .25em;
+        top: -.2em;
+        font-size: 6rem;
+        color: $brand-warning;
+      }
+
+    }
+    
+    .panel-body {
+      
+      li {
+        list-style: none;
+        position: relative;
+        padding: .5em 0 .5em 1em;
+        
+        &:before {
+          content: '+';
+          position: absolute;
+          font-size: 2rem;
+          color: $brand-warning;
+          font-weight: 400;
+          left: 0;
+          top: .25em;
+        }
+      }
+      
+      a {
+        font-family: $primaryFont;
+        font-weight: 400;
+      }
+    }
+    
+    .panel-default {
+      border: 6px solid $white;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
   }
 }
 
@@ -219,6 +295,10 @@ header.navbar {
   width: 90vw;
   max-width: 715px;
   margin: 0 auto;
+}
+
+.page-node-type-product-item .region-content article {
+  max-width: 1135px;
 }
 
 .static-page .content {
@@ -564,9 +644,15 @@ footer.footer {
   z-index: 9999 !important;
 }
 
+.modal-dialog {
+  width: 80vw;
+}
+
 .cta-block {
   margin: 1em 0;
   text-align: right;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .page-node-type-product-item .flex-direction-nav a {
@@ -590,6 +676,12 @@ footer.footer {
     padding: .5em;
   }
 }
+
+.field--name-field-flexslider-view-reference {
+  margin: 0 auto 6rem auto;
+  max-width: 750px;
+}
+  
 //TABLET or Medium Screen Widths
 
 @include for-tablet-portrait-up {
@@ -779,7 +871,7 @@ footer.footer {
 
   .page-node-type-product-item h1 {
     float: left;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
   }
 
   .view-flexslider-product-image-view {
@@ -789,8 +881,9 @@ footer.footer {
   .product-describe {
     float: left;
     clear: left;
-    width: 50%;
-    padding: 1em 2em 1em 0;
+    width: 34%;
+    padding: 1em 3rem 1em 0;
+    margin-bottom: 4rem;
 
     .cta-block {
       text-align: left;
@@ -798,5 +891,9 @@ footer.footer {
   }
   li.expanded {
     display: none;
+  }
+  
+  .field--name-field-flexslider-view-reference {
+    max-width: 1155px;
   }
 }

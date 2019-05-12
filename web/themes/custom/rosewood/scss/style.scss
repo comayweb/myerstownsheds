@@ -226,13 +226,20 @@ header.navbar {
   }
 }
 
-a.cta-button {
+a.cta-button,
+.form-actions .btn {
   background-color: $brand-warning;
   font-family: $primaryFont;
-  font-size: .85em;
+  font-size: 1.8rem;
   color: $white;
-  padding: .5em;
+  padding: 1rem 2rem;
   display: inline-block;
+  font-weight: 100;
+  border-radius: 2px;
+}
+
+.form-actions {
+  text-align: right;
 }
 
 .menu--product-navigation {
