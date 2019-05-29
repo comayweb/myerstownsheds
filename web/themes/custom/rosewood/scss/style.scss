@@ -369,6 +369,22 @@ input, select, textarea,
   }
 }
 
+.field--name-field-choose-options-form {
+
+  .field--label {
+    color: $brand-primary;
+    font-weight: 200;
+    text-align: center;
+    padding: 2em 0 0;
+    font-size: 4rem;
+  }
+}
+
+.progress-step.is-active .progress-marker,
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker {
+    background-color: $brand-primary;
+}
+
 .view-content,
 .field--name-field-product {
   display: block;
@@ -387,6 +403,7 @@ input, select, textarea,
     .name a {
       color: $gray-base;
       font-family: $primaryFont;
+      padding-top: 1em;
     }
     
     .views-field.btn {
@@ -401,6 +418,16 @@ input, select, textarea,
       color: $brand-primary;
       font-size: 1.8rem;
     }
+  }
+}
+
+.main-container .field--name-field-choose-options-form {
+  @include background-to-edge;
+  background-color: $white;
+
+  .panel,
+  .form-item-sizes {
+    border-color: $gray-lighter;
   }
 }
 
