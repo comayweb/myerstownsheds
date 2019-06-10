@@ -63,3 +63,32 @@ function rosewood_theme_suggestions_block_alter(array &$suggestions, array $vari
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function rosewood_page_attachments_alter(array &$attachments) {
+  // Trim all meta tags to a max of 300 characters.
+  if (!empty($attachments['#attached']['html_head'])) {
+    // Adjust this as needed.
+    $max_length = 225;
+    foreach ($attachments['#attached']['html_head'] as &$tag) {
+      // Only process meta tags with a 'content' attribute, that way it will
+      // exclude LINK tags or meta tags which do not have a "content" value.
+      if (isset($tag[0]['#tag']) && $tag[0]['#tag'] == 'meta') {
+        if (isset($tag[0]['#attributes']['content'])) {
+          if (!is_string($tag[0]['#attributes']['content'])) {
+            $tag[0]['#attributes']['content'] = (string) $tag[0]['#attributes']['content'];
+          }
+          if (strlen($tag[0]['#attributes']['content']) > $max_length) {
+            // Trim the string three characters shorter than the max so that
+            // there is room for the elipses.
+            $string = wordwrap($tag[0]['#attributes']['content'], ($max_length - 3));
+            $string = explode("\n", $string);
+            $tag[0]['#attributes']['content'] = $string[0] . '...';
+          }
+        }
+      }
+    }
+  }
+}
