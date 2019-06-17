@@ -117,6 +117,17 @@ a {
   }
 }
 
+p.warning {
+  color: $attention;
+  font-size: .75em;
+  
+  &:before {
+    content: '* ';
+    color: inherit;
+    display: inline-block;
+  }
+}
+
 body h2 {
   font-size: 3rem;
 }
@@ -426,7 +437,8 @@ input, select, textarea,
   background-color: $white;
 
   .panel,
-  .form-item-sizes {
+  .form-item-sizes,
+  .form-item-lengths {
     border-color: $gray-lighter;
   }
 }

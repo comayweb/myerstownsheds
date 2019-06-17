@@ -283,14 +283,16 @@ header.navbar {
   }
 
   .panel-default,
-  .form-item-sizes {
+  .form-item-sizes,
+  .form-item-lengths {
     border: 6px solid $white;
     border-radius: 0;
     background: transparent;
     box-shadow: none;
   }
 
-  .form-item-sizes {
+  .form-item-sizes,
+  .form-item-lengths {
     padding: 1.25rem;
 
     .select-wrapper {
@@ -299,7 +301,9 @@ header.navbar {
   }
 }
 
-
+.form-item-post-or-column span {
+  display: none;
+}
 
 .region-content article, .contain {
   width: 90vw;
@@ -886,6 +890,7 @@ footer.footer {
   .page-node-type-product-item h1 {
     float: left;
     font-size: 2.9rem;
+    width: 34%;
   }
 
   .view-flexslider-product-image-view {
