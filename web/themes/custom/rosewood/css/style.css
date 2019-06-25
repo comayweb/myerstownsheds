@@ -10355,7 +10355,7 @@ a.cta-button,
 /* line 279, /Users/slebersole/Sites/myerstown/web/themes/custom/rosewood/scss/style.scss */
 input, select, textarea,
 .form-control {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #F0F0F0;
   border: none;
   border-radius: 0;
   box-shadow: none;
