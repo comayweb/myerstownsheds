@@ -117,6 +117,10 @@ a {
   }
 }
 
+.breadcrumb li {
+  font-family: $linkFont;
+}
+
 p.warning {
   color: $attention;
   font-size: .75em;
@@ -415,6 +419,7 @@ input, select, textarea,
       color: $gray-base;
       font-family: $primaryFont;
       padding-top: 1em;
+      display: block;
     }
     
     .views-field.btn {

@@ -36,6 +36,26 @@
     top: -2.25em;
     right: 0;
   }
+  
+  .product-item h1,
+  #quote-form .field--label,
+  .webform-submission-form {
+    padding: 1.8em 0;
+    text-align: center;
+  }
+  
+  #block-questionsgetintouch {
+    padding: 2.5em 0 4.5em 0;
+  }
+  
+  .breadcrumb {
+    padding: 1.5em .5em;
+  }
+  
+  .contain .page-header {
+    padding: 0;
+    min-height: 1em;
+  }
 }
 
 html {
@@ -363,7 +383,7 @@ header.navbar {
 
 .breadcrumb {
   background-color: $white;
-  max-width: 1000px;
+  max-width: 1135px;
   margin: 1em auto;
 }
 
