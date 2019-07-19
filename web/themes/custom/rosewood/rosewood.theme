@@ -98,3 +98,13 @@ function rosewood_page_attachments_alter(array &$attachments) {
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_field().
+ */
+ function rosewood_preprocess_field(array &$variables, $hook) {
+   if ($node = \Drupal::request()->attributes->get('node')) {
+     $variables['nid'] = $node->id();
+   }
+ }
+ 
