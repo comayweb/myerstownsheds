@@ -132,6 +132,10 @@ p.warning {
   }
 }
 
+p.center-align {
+  text-align: center;
+}
+
 body h2 {
   font-size: 3rem;
 }
@@ -435,6 +439,10 @@ input, select, textarea,
       font-size: 1.8rem;
     }
   }
+}
+
+.view-promoted-categories .view-content .views-field a {
+  padding-top: 0;
 }
 
 .main-container .field--name-field-choose-options-form {
