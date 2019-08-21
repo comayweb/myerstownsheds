@@ -16,25 +16,18 @@
 @include for-phone-only {
 
   #block-telephone {
-    margin-left: auto;
-    margin-right: 5%;
-  }
- 
-  
-  #block-searchbutton {
-    position: absolute;
-    top: -1.5em;
-    right: 3em;
-    
-    .search-trigger {
-      z-index: 10;
+    margin: auto;
+    .outline-button a {
+      padding: .25em .2em;
     }
   }
+
+  .path-frontpage .flex-control-nav {
+    bottom: 5px;
+  }
   
-  #block-responsivemenumobileicon {
-    position: absolute;
-    top: -2.25em;
-    right: 0;
+  #block-searchbutton .search-trigger {
+      z-index: 10;
   }
   
   .product-item h1,
@@ -59,6 +52,11 @@
   .contain .page-header {
     padding: 0;
     min-height: 3em;
+  }
+
+  .contain .page-header {
+    font-size: 2rem;
+    padding: 1rem 0;
   }
 }
 
@@ -140,6 +138,30 @@ body {
   }
 }
 
+#block-telephone {
+  margin-left: .25em;
+  margin-right: 1%;
+  order: 5;
+}
+
+#block-searchbutton {
+  margin-left: auto;
+  text-align: right;
+  padding-left: .25em;
+  max-width: 3em;
+  order: 3;
+}
+
+#block-responsivemenumobileicon {
+  margin-left: .5em;
+  text-align: right;
+  max-width: 3.5em;
+  order: 4;
+}
+
+.responsive-menu-toggle-wrapper.responsive-menu-toggle {
+  display: inline-block;
+}
 
 header.navbar {
   padding: 0;
@@ -147,9 +169,9 @@ header.navbar {
 }
 
 .region-navigation .logo {
-  width: 50vw;
+  width: 35vw;
   max-width: 250px;
-  padding: 1.45em .2em;
+  padding: 1em .2em;
 }
 
 .region-navigation {
@@ -410,8 +432,23 @@ a.outline-button {
  margin: 0 auto;
 }
 
-#block-siteheadline {
+#block-siteheadline .head-wrapper {
   text-align: center;
+  padding: 1em 2rem;
+
+  p,
+  a {
+    display: inline;
+    color: $brand-primary;
+    font-weight: bold;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+  }
+
+  a {
+    padding-left: 1em;
+    display: inline-block;
+  }
 }
 
 .field--name-field-headline-text,
@@ -731,31 +768,6 @@ footer.footer {
     float: unset;
   }
 
-  #block-telephone {
-    max-width: 50vw;
-    margin-right: .5em;
-    margin-left: .5em;
-    order: 5;
-  }
-
-  #block-searchbutton {
-    margin-left: auto;
-    text-align: right;
-    max-width: 3em;
-    order: 3;
-  }
-
-  #block-responsivemenumobileicon {
-    margin-left: .5em;
-    text-align: right;
-    max-width: 3.5em;
-    order: 4;
-  }
-
-  .responsive-menu-toggle-wrapper.responsive-menu-toggle {
-    display: inline-block;
-  }
-
   .view-content,
   .field--name-field-product {
     display: flex;
@@ -870,7 +882,13 @@ footer.footer {
       margin-top: 0;
     }
 
+    .menu-item--expanded {
+      display: none;
+    }
+  }
 
+  .menu-item--expanded {
+    display: none;
   }
 
   .region-navigation #block-productnavigation {

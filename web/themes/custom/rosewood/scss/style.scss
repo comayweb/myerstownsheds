@@ -184,18 +184,6 @@ header.navbar {
   #block-telephone a {
     font-size: 1.4rem;
   }
-  
-  #block-searchbutton span.icon {
-    color: $gray-base;
-  }
-  
-  #block-responsivemenumobileicon {
-    .responsive-menu-toggle-icon:before, 
-    .responsive-menu-toggle-icon:after, 
-    .responsive-menu-toggle-icon span.icon {
-      background-color: $gray-base;
-    }
-  }
 }
 
 #block-telephone {
@@ -261,7 +249,10 @@ a.cta-button,
   text-align: right;
 }
 
-.menu--product-navigation {
+#block-productnavigation {
+  ul {
+    margin-bottom: 0;
+  }
 
   li a {
     color: $white;
