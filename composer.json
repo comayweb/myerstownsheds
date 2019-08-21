@@ -126,6 +126,9 @@
         "patches": {
             "drupal/draggableviews": {
                 "Draggable Views fix for duplicates in a view": "https://www.drupal.org/files/issues/2018-11-10/draggableviews_displays.03-8.x-1.2.patch"
+            },
+            "drupal/field_group": {
+                "Patch for existing field_groups": "https://www.drupal.org/files/issues/2018-10-30/field_group-inline_entity_form_compatibility-2986704-3.patch"
             }
         }
     }
