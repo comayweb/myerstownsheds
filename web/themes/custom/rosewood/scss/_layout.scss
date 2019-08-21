@@ -37,6 +37,10 @@
     text-align: center;
   }
   
+  .webform-submission-form .form-item {
+    text-align: left;
+  }
+  
   #block-questionsgetintouch {
     padding: 2.5em 0 4.5em 0;
   }
@@ -115,7 +119,6 @@ body {
   max-width: 12em;
   position: relative;
   padding: 1em 0;
-  min-height: 5em;
   align-items: center;
 
   &:before {
@@ -822,8 +825,13 @@ footer.footer {
 }
 
 @include for-tablet-landscape-up {
-  .block--flexslider .slides img {
+  .block--flexslider .slides img,
+  .view-category-image .views-row img {
      margin: 0 0 -6.5em 0;
+  }
+
+  .page-header {
+    min-height: 5em;
   }
 
   .path-frontpage .flexslider .flex-control-nav {
@@ -838,6 +846,27 @@ footer.footer {
     padding: 0 1em;
     width: calc(100% / 4);
     margin: 0;
+  }
+  
+  .page-node-type-product-item h1 {
+    float: left;
+    font-size: 2.9rem;
+    width: 34%;
+  }
+
+  .view-flexslider-product-image-view {
+    margin-top: 20px; //match the title
+  }
+
+  .product-describe {
+    float: left;
+    clear: left;
+    width: 34%;
+    padding: 1em 3rem 1em 0;
+
+    .cta-block {
+      text-align: left;
+    }
   }
 }
 
@@ -927,27 +956,6 @@ footer.footer {
     float: right;
     margin-top: -4.5em;
     max-width: 48%;
-  }
-
-  .page-node-type-product-item h1 {
-    float: left;
-    font-size: 2.9rem;
-    width: 34%;
-  }
-
-  .view-flexslider-product-image-view {
-    margin-top: 20px; //match the title
-  }
-
-  .product-describe {
-    float: left;
-    clear: left;
-    width: 34%;
-    padding: 1em 3rem 1em 0;
-
-    .cta-block {
-      text-align: left;
-    }
   }
   
   .page-node-1355 {
