@@ -445,12 +445,15 @@ a.outline-button {
     color: $brand-primary;
     font-weight: bold;
     font-family: $primaryFont;
-    text-transform: uppercase;
   }
 
   a {
     padding-left: 1em;
     display: inline-block;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -593,6 +596,12 @@ header.navbar {
   font-size: 2rem;
 }
 
+.paragraph--type--color-swatch {
+    text-align: center;
+    padding: .5em;
+    margin-top: 1em;
+}
+
 footer.footer {
   background-color: $brand-primary;
   color: $white;
@@ -604,6 +613,16 @@ footer.footer {
   a {
     color: $white;
     font-family: $primaryFont;
+  }
+}
+
+.colors .field {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+  .field--item {
+    
   }
 }
 
