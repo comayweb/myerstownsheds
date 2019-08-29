@@ -451,9 +451,7 @@ a.outline-button {
     padding-left: 1em;
     display: inline-block;
     text-transform: uppercase;
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 }
 
@@ -760,9 +758,33 @@ footer.footer {
   top: calc(50% - 1em);
 }
 
+.flexslider {
+  text-align: center;
+  .views-field-name {
+    margin: 1em 0;
+  }
+}
+
 .field--name-field-flexslider-view-reference .flex-control-nav {
   text-align: center;
-  bottom: .8em;
+  top: 80%;
+  display: none;
+  
+  li {
+    padding: 0;
+    margin: 0 2px;
+    
+    a {
+      background: $gray-lighter;
+      &:hover,
+      &.flex-active {
+        background: $brand-warning;
+      }
+    }
+  }
+  
+  @include for-tablet-landscape-up { display: block; }
+  @include for-desktop-up { top: 85%; }
 }
 
 .field--name-field-brands {
@@ -782,7 +804,24 @@ footer.footer {
   margin: 0 auto 4rem auto;
   max-width: 750px;
 }
+
+.path-search .region-content{
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1040px;
   
+  .js-form-type-search {
+    width: 15em;
+  }
+  
+  ol li {
+    margin: 1.5em 0;
+  }
+  
+  .panel-default {
+    border: $gray-lighter 3px solid;
+  }
+}
 //TABLET or Medium Screen Widths
 
 @include for-tablet-portrait-up {
