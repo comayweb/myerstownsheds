@@ -1,0 +1,29 @@
+uuid: 3da6c758-5296-42d6-8d44-326411c0bb5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_option_type
+    - node.type.product_options
+    - taxonomy.vocabulary.option_type
+id: node.product_options.field_option_type
+field_name: field_option_type
+entity_type: node
+bundle: product_options
+label: 'Option Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      option_type: option_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: building_sizes
+field_type: entity_reference

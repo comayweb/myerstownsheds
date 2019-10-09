@@ -18,12 +18,89 @@ dependencies:
     - cshs
     - entity_browser
     - entity_browser_entity_form
+    - field_group
     - inline_entity_form
     - paragraphs
     - path
     - text
-    - viewsreference
     - webform
+third_party_settings:
+  field_group:
+    group_edit_tabs:
+      children:
+        - group_product_information
+        - group_branding
+        - group_add
+        - group_options
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Edit Tabs'
+      region: content
+    group_product_information:
+      children:
+        - title
+        - field_short_description
+        - field_product_image
+      parent_name: group_edit_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Product Information'
+      region: content
+    group_branding:
+      children:
+        - field_brands
+      parent_name: group_edit_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Branding
+      region: content
+    group_options:
+      children:
+        - field_product_category
+        - field_options
+        - field_choose_options_form
+      parent_name: group_edit_tabs
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Options
+      region: content
+    group_add:
+      children:
+        - field_add_element
+      parent_name: group_edit_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Additional Info'
+      region: content
 id: node.product_item.default
 targetEntityType: node
 bundle: product_item
@@ -31,7 +108,7 @@ mode: default
 content:
   field_add_element:
     type: entity_reference_paragraphs
-    weight: 4
+    weight: 23
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -42,59 +119,46 @@ content:
     third_party_settings: {  }
     region: content
   field_brands:
-    weight: 3
+    weight: 1
     settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: _none
-    type: inline_entity_form_complex
+      entity_browser: brands_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   field_choose_options_form:
-    weight: 7
+    weight: 27
     settings:
       default_data: true
     third_party_settings: {  }
     type: webform_entity_reference_select
     region: content
-  field_flexslider_view_reference:
-    type: viewsreference_autocomplete
-    weight: 12
-    region: content
-    settings:
-      match_operator: CONTAINS
-      size: '60'
-      placeholder: ''
-    third_party_settings: {  }
   field_options:
-    type: inline_entity_form_complex
-    weight: 5
-    region: content
+    weight: 26
     settings:
       form_mode: default
       override_labels: true
-      label_singular: Option
-      label_plural: ''
-      collapsible: true
+      label_singular: 'options collection'
+      label_plural: 'options collections'
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
-      allow_duplicate: true
+      collapsible: false
       collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
-        entity_browser_id: browse_options
+        entity_browser_id: options_browser
+    type: inline_entity_form_complex
+    region: content
   field_product_category:
-    weight: 6
+    weight: 25
     settings:
       force_deepest: '1'
       parent: '0'
@@ -104,7 +168,7 @@ content:
     region: content
   field_product_image:
     type: entity_browser_entity_reference
-    weight: 2
+    weight: 3
     region: content
     settings:
       entity_browser: product_image_browser
@@ -118,7 +182,7 @@ content:
       open: false
     third_party_settings: {  }
   field_short_description:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -127,7 +191,7 @@ content:
     region: content
   path:
     type: path
-    weight: 9
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -135,30 +199,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 1
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: options_buttons
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   url_redirects:
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
   feeds_item: true
+  field_flexslider_view_reference: true
   promote: true
   sticky: true
+  uid: true

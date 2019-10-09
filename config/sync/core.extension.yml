@@ -16,22 +16,28 @@ module:
   contextual: 0
   copyright_block: 0
   cshs: 0
+  csv_serialization: 0
   ctools: 0
   dblog: 0
   dropzonejs: 0
+  dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
-  eck: 0
   editor: 0
+  embed: 0
   entity_browser: 0
   entity_browser_enhanced: 0
   entity_browser_entity_form: 0
+  entity_class_formatter: 0
+  entity_embed: 0
   entity_reference_revisions: 0
   feeds: 0
+  feeds_tamper: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
+  file_browser: 0
   filter: 0
   flexslider: 0
   flexslider_fields: 0
@@ -49,6 +55,7 @@ module:
   metatag: 0
   metatag_dc: 0
   metatag_dc_advanced: 0
+  metatag_views: 0
   migrate: 0
   node: 0
   options: 0
@@ -61,11 +68,17 @@ module:
   redirect_404: 0
   responsive_image: 0
   responsive_menu: 0
+  rest: 0
   search: 0
+  serialization: 0
+  settings_tray: 0
+  shortcut: 0
   syslog: 0
   system: 0
+  tamper: 0
   taxonomy: 0
   taxonomy_menu: 0
+  telephone: 0
   text: 0
   token: 0
   toolbar: 0
@@ -74,6 +87,7 @@ module:
   video_embed_field: 0
   video_embed_media: 0
   views_bulk_operations: 0
+  views_data_export: 0
   views_ui: 0
   viewsreference: 0
   webform: 0
@@ -82,6 +96,7 @@ module:
   menu_link_content: 1
   pathauto: 1
   webform_bootstrap: 1
+  xmlsitemap: 1
   views: 10
   paragraphs: 11
   minimal: 1000

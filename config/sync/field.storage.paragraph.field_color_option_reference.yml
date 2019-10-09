@@ -1,0 +1,20 @@
+uuid: cf897f56-2e33-40a6-b9f2-88308b839d8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_color_option_reference
+field_name: field_color_option_reference
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -114,16 +114,34 @@ definitions:
     enabled: true
     menu_name: product-navigation
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__50':
-    parent: ''
-    weight: 7
-    expanded: false
-    enabled: true
+    enabled: false
     menu_name: product-navigation
+    parent: ''
+    expanded: false
+    weight: 56
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__42':
     parent: ''
     weight: 2
     expanded: false
     enabled: true
     menu_name: product-navigation
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__88':
+    enabled: false
+    menu_name: product-navigation
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.50'
+    weight: 0
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__89':
+    enabled: false
+    menu_name: product-navigation
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.50'
+    weight: 1
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__product_navigation__90':
+    enabled: false
+    menu_name: product-navigation
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.product_navigation.50'
+    weight: 2
+    expanded: false
 _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

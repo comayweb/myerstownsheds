@@ -1,9 +1,0 @@
-uuid: d7c7a3ac-5d6b-47d0-abc5-dcfb8d6bb7fe
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.options
-name: 'Railings - Baluster Style'
-type: baluster_style
-description: ''

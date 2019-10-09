@@ -1,0 +1,38 @@
+uuid: 2e13e4bf-78f1-4935-b9b9-14020ba1e91d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.color_options_reference.field_color_option_reference
+    - paragraphs.paragraphs_type.color_options_reference
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_view_color_options:
+      children:
+        - field_color_option_reference
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: 'Available Colors'
+        id: ''
+        classes: color-options-wrapper
+        open: false
+      label: 'Available Colors'
+      region: content
+id: paragraph.color_options_reference.default
+targetEntityType: paragraph
+bundle: color_options_reference
+mode: default
+content:
+  field_color_option_reference:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

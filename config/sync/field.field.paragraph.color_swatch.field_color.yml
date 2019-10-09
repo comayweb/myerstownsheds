@@ -1,0 +1,19 @@
+uuid: 60d56516-bc60-4af8-be76-13e14b8cc5a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.color_swatch
+id: paragraph.color_swatch.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: color_swatch
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

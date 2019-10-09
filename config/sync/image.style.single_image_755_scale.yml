@@ -1,0 +1,15 @@
+uuid: cd80eebf-bb2a-48ca-b779-2be646596593
+langcode: en
+status: true
+dependencies: {  }
+name: single_image_755_scale
+label: 'Single Image 755 scale'
+effects:
+  02ecf1ad-5d10-4f2c-980e-c7ba6b73d686:
+    uuid: 02ecf1ad-5d10-4f2c-980e-c7ba6b73d686
+    id: image_scale
+    weight: 1
+    data:
+      width: 755
+      height: null
+      upscale: false

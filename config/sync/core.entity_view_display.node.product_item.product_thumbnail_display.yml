@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.product_thumbnail_display
-    - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
     - field.field.node.product_item.field_brands
     - field.field.node.product_item.field_choose_options_form
@@ -36,7 +35,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  feeds_item: true
   field_add_element: true
   field_brands: true
   field_choose_options_form: true

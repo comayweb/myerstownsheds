@@ -1,0 +1,8 @@
+uuid: f00e5a87-d9ce-4d35-bb6a-b7a065f4caf8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Furniture Sizes'
+vid: furniture_sizes
+description: ''
+weight: 0

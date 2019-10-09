@@ -1,0 +1,84 @@
+uuid: 3f707074-5ca6-4e0f-8954-7f28ebcc20c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.product_options.title
+    - field.field.node.product_options.feeds_item
+    - field.field.node.product_options.field_option_type
+    - node.type.product_options
+  module:
+    - node
+label: 'Product Options'
+id: product_options
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: product_options
+custom_sources:
+  option:
+    label: Option
+    value: Option
+    machine_name: option
+  option_type:
+    label: 'Option Type'
+    value: 'Option Type'
+    machine_name: option_type
+  category:
+    label: category
+    value: category
+    machine_name: category
+  option_name:
+    label: 'Option Name'
+    value: 'Option Name'
+    machine_name: option_name
+  option_id:
+    label: 'Option ID'
+    value: 'Option ID'
+    machine_name: option_id
+  option_category:
+    label: Category
+    value: Category
+    machine_name: option_category
+  option_guid:
+    label: 'Option ID'
+    value: 'Option ID'
+    machine_name: option_guid
+mappings:
+  -
+    target: field_option_type
+    map:
+      target_id: option_category
+    settings:
+      reference_by: tid
+      autocreate: 0
+  -
+    target: title
+    map:
+      value: option_name
+    unique:
+      value: '1'
+  -
+    target: feeds_item
+    map:
+      url: ''
+      guid: option_guid
+    unique: {  }

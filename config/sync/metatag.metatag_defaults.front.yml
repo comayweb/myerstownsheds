@@ -7,5 +7,6 @@ _core:
 id: front
 label: 'Front page'
 tags:
+  description: 'Sheds, Patio Furniture, Fencing, and Swingsets in Lebanon, Berks, and Schuylkill PA. Get your free quote.'
   canonical_url: '[site:url]'
   shortlink: '[site:url]'

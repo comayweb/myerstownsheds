@@ -1,0 +1,22 @@
+uuid: 810cbf71-81a6-4046-98cd-ea617f395c99
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: options
+label: Options
+type: 'canonical_entities:node'
+pattern: '/options/[node:nid]'
+selection_criteria:
+  328759f0-73c1-4b69-b531-9a0d217069b1:
+    id: node_type
+    bundles:
+      product_options: product_options
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 328759f0-73c1-4b69-b531-9a0d217069b1
+selection_logic: and
+weight: -5
+relationships: {  }

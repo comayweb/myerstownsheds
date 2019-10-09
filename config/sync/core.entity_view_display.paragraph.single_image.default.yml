@@ -1,22 +1,25 @@
-uuid: f7908661-99f8-4384-b761-7a728e5512e2
+uuid: 676e363a-f1d5-4b9a-aea3-0f889d3fcc7d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.single_image.field_upload_image
+    - field.field.paragraph.single_image.field_single_image
+    - image.style.single_image_755_scale
     - paragraphs.paragraphs_type.single_image
+  module:
+    - image
 id: paragraph.single_image.default
 targetEntityType: paragraph
 bundle: single_image
 mode: default
 content:
-  field_upload_image:
-    type: entity_reference_entity_view
+  field_single_image:
     weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: single_image_755_scale
+      image_link: ''
     third_party_settings: {  }
+    type: image
     region: content
 hidden: {  }

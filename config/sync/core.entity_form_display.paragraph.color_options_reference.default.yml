@@ -1,0 +1,32 @@
+uuid: 99fa7fc8-6268-491d-9633-1e952fb4453a
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.color_options_browser
+    - field.field.paragraph.color_options_reference.field_color_option_reference
+    - paragraphs.paragraphs_type.color_options_reference
+  module:
+    - entity_browser
+id: paragraph.color_options_reference.default
+targetEntityType: paragraph
+bundle: color_options_reference
+mode: default
+content:
+  field_color_option_reference:
+    weight: 0
+    settings:
+      entity_browser: color_options_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+hidden:
+  created: true
+  status: true

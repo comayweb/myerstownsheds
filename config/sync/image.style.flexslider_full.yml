@@ -5,13 +5,13 @@ dependencies: {  }
 _core:
   default_config_hash: NzoU8g2Q_HdPlk1Mm7KilV1FwnWeMmNt6dRjcCBJXj4
 name: flexslider_full
-label: 'Flexslider Full'
+label: 'Flexslider Full 1920x800'
 effects:
   7c3142f8-ebf5-4cb3-9815-2140c9ef8466:
     uuid: 7c3142f8-ebf5-4cb3-9815-2140c9ef8466
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 1600
-      height: 737
+      width: 1920
+      height: 800
       anchor: center-center

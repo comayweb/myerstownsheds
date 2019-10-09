@@ -1,0 +1,42 @@
+uuid: 7fc0572f-15c1-4843-9ea9-641dca5d9572
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.manage_products
+  module:
+    - entity_browser_entity_form
+    - views
+name: color_options_browser
+label: 'Color Options Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Add Color Option'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  2fa794b8-d955-417b-ae2b-f83c019b7c3e:
+    settings:
+      entity_type: node
+      bundle: product_options
+      form_mode: default
+      submit_text: 'Save Color Option'
+    uuid: 2fa794b8-d955-417b-ae2b-f83c019b7c3e
+    weight: 1
+    label: 'Create New'
+    id: entity_form
+  0d65b236-e48f-4c57-947d-10e0b6b3496b:
+    settings:
+      view: manage_products
+      view_display: entity_browser_3
+      submit_text: 'Choose Color Option'
+      auto_select: false
+    uuid: 0d65b236-e48f-4c57-947d-10e0b6b3496b
+    weight: 2
+    label: 'Add Existing'
+    id: view

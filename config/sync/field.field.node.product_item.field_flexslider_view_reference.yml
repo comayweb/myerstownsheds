@@ -14,7 +14,7 @@ entity_type: node
 bundle: product_item
 label: 'Flexslider View Reference'
 description: 'Please type  ''Flexslider Product Image View'', and then choose Display Id of Block. Once existing content has been updated, we will hide this field, because new content will automatically pull in the correct values.'
-required: true
+required: false
 translatable: false
 default_value:
   -
@@ -36,29 +36,37 @@ settings:
     block: block
     default: 0
     page: 0
-    entity_reference: 0
+    rest_export: 0
     entity_browser: 0
+    entity_reference: 0
     embed: 0
   preselect_views:
     flexslider_product_image_view: flexslider_product_image_view
     block_content: 0
-    building_size_list: 0
+    category_image: 0
     content: 0
     content_recent: 0
+    csv_download: 0
     feeds_feed: 0
+    file_entity_browser: 0
     manage_products: 0
     media: 0
     media_library: 0
-    options: 0
-    options_entity_browser: 0
+    options_listing: 0
     product_category_view: 0
     product_image_browser: 0
+    promoted_categories: 0
     redirect: 0
     redirect_404: 0
-    upgrade_options_list: 0
     user_admin_people: 0
     watchdog: 0
     webform_submissions: 0
     who_s_new: 0
     who_s_online: 0
+  enabled_settings:
+    argument: argument
+    offset: 0
+    limit: 0
+    pager: 0
+    title: title
 field_type: viewsreference

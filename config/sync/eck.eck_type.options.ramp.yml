@@ -1,9 +1,0 @@
-uuid: 7729dc01-04ab-4993-8ff0-cb5badee6c12
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.options
-name: 'Sheds - Ramp'
-type: ramp
-description: ''

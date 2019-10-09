@@ -4,22 +4,28 @@ status: true
 dependencies:
   config:
     - block_content.type.flexslider_block
-    - field.field.block_content.flexslider_block.field_flex_slide_image
-    - image.style.thumbnail
+    - entity_browser.browser.browse_files_modal
+    - field.field.block_content.flexslider_block.field_slide_image
   module:
-    - image
+    - entity_browser
 id: block_content.flexslider_block.default
 targetEntityType: block_content
 bundle: flexslider_block
 mode: default
 content:
-  field_flex_slide_image:
-    weight: 27
+  field_slide_image:
+    weight: 26
     settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
       preview_image_style: thumbnail
-      progress_indicator: throbber
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   info:
     type: string_textfield

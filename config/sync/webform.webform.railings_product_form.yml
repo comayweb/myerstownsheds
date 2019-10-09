@@ -12,15 +12,19 @@ id: railings_product_form
 title: 'Railings Product Form'
 description: ''
 category: 'Product Forms'
-elements: "product_options:\n  '#type': webform_wizard_page\n  '#title': 'Product Options'\n  '#next_button_label': 'Request Quote'\n  color:\n    '#type': webform_entity_select\n    '#title': Color\n    '#target_type': options\n    '#selection_handler': views\n    '#selection_settings':\n      view:\n        view_name: upgrade_options_list\n        display_name: entity_reference_6\n        arguments: {  }\n  baluster_wrapper:\n    '#type': details\n    '#title': 'Baluster Style'\n    baluster:\n      '#type': webform_entity_checkboxes\n      '#title': 'Baluster Style Options'\n      '#target_type': options\n      '#selection_handler': views\n      '#selection_settings':\n        view:\n          view_name: upgrade_options_list\n          display_name: entity_reference_5\n          arguments: {  }\n  height:\n    '#type': webform_entity_select\n    '#title': 'Railing Height'\n    '#target_type': taxonomy_term\n    '#selection_handler': views\n    '#selection_settings':\n      view:\n        view_name: building_size_list\n        display_name: entity_reference_2\n        arguments: {  }\n  please_specify_any_special_requirements:\n    '#type': textarea\n    '#title': 'Please specify any special requirements'\ncontact_information:\n  '#type': webform_wizard_page\n  '#title': 'Contact Information'\n  your_name:\n    '#type': webform_name\n    '#title': 'Your name'\n    '#title_display': before\n    '#title__access': false\n    '#first__required': true\n    '#middle__access': false\n    '#last__required': true\n    '#suffix__access': false\n    '#degree__access': false\n    '#flexbox': '1'\n  contact_my_by:\n    '#type': radios\n    '#title': 'Contact my by'\n    '#options':\n      phone: phone\n      email: email\n    '#required': true\n    '#default_value': email\n  phone_number:\n    '#type': tel\n    '#title': 'Phone number'\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"contact_my_by\"]':\n          value: phone\n  email_address:\n    '#type': email\n    '#title': 'Email address'\n    '#required': true\n    '#states':\n      visible:\n        ':input[name=\"contact_my_by\"]':\n          value: email"
+elements: "product_options:\n  '#type': webform_wizard_page\n  '#title': 'Product Options'\n  '#next_button_label': 'Request Quote'\n  railing_color:\n    '#type': details\n    '#title': 'Railing Color'\n    choose_color:\n      '#type': webform_entity_radios\n      '#title': 'Choose Color'\n      '#target_type': node\n      '#selection_handler': views\n      '#selection_settings':\n        view:\n          view_name: options_list\n          display_name: entity_reference_1\n          arguments:\n            - colors\n      '#required': true\n  baluster_wrapper:\n    '#type': details\n    '#title': 'Baluster Style'\n    styles_railing:\n      '#type': webform_entity_radios\n      '#title': 'Choose Style'\n      '#target_type': node\n      '#selection_handler': views\n      '#selection_settings':\n        view:\n          view_name: options_list\n          display_name: entity_reference_1\n          arguments:\n            - 'baluster styles'\n      '#required': true\n  notice_for_railing_height_:\n    '#type': webform_computed_twig\n    '#title': 'Notice for Railing Height.'\n    '#title_display': invisible\n    '#description_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"sizes\"]':\n          value: '53'\n    '#display_on': form\n    '#template': '<p class=\"warning\">30 inch height is only available in Model, Madison, or Heritage. Please review your baluster style above.</p>'\n    '#ajax': true\n  sizes:\n    '#type': webform_entity_select\n    '#title': 'Railing Height'\n    '#required': true\n    '#target_type': taxonomy_term\n    '#selection_handler': views\n    '#selection_settings':\n      view:\n        view_name: building_sizes\n        display_name: entity_reference_2\n        arguments: {  }\n  lengths:\n    '#type': webform_entity_select\n    '#title': 'Railing Section Length'\n    '#required': true\n    '#target_type': taxonomy_term\n    '#selection_handler': views\n    '#selection_settings':\n      view:\n        view_name: building_sizes\n        display_name: entity_reference_3\n        arguments: {  }\n  please_specify_any_special_requirements:\n    '#type': textarea\n    '#title': 'Please specify any special requirements'\ncontact_information:\n  '#type': webform_wizard_page\n  '#title': 'Contact Information'\n  your_name:\n    '#type': webform_name\n    '#title': 'Your name'\n    '#title_display': before\n    '#title__access': false\n    '#first__required': true\n    '#middle__access': false\n    '#last__required': true\n    '#suffix__access': false\n    '#degree__access': false\n    '#flexbox': '1'\n  phone_number:\n    '#type': tel\n    '#title': 'Phone number'\n    '#required': true\n  email_address:\n    '#type': email\n    '#title': 'Email address'\n    '#required': true\n  address:\n    '#type': webform_address\n    '#title': Zip\n    '#address__access': false\n    '#address_2__access': false\n    '#city__access': false\n    '#state_province__access': false\n    '#postal_code__required': true\n    '#country__access': false\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send Email'"
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
   page_submit_path: ''
   page_confirm_path: ''
+  page_admin_theme: false
   form_title: both
   form_submit_once: false
   form_exception_message: ''
@@ -92,6 +96,8 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_title: ''
   confirmation_message: ''
@@ -102,6 +108,7 @@ settings:
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
   confirmation_exclude_token: false
+  confirmation_update: false
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''
@@ -166,4 +173,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: sales@myerstownsheds.com
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: "Date: [webform_submission:created]\r\n<h2>[webform_submission:values:your_name] requested information about [webform_submission:source-entity].</h2>\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

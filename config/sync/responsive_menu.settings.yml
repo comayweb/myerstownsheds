@@ -1,13 +1,13 @@
 horizontal_menu: product-navigation
 horizontal_depth: 2
-off_canvas_menus: 'main,product-navigation'
+off_canvas_menus: 'product-navigation,main'
 horizontal_wrapping_element: nav
 horizontal_breakpoint: wide
 horizontal_media_query: 'all and (min-width: 851px)'
 include_css: true
-off_canvas_position: left
+off_canvas_position: right
 off_canvas_theme: theme-dark
-pagedim: pagedim
+pagedim: pagedim-black
 horizontal_superfish: true
 horizontal_superfish_delay: 300
 horizontal_superfish_speed: 100

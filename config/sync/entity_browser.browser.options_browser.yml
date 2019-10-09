@@ -1,0 +1,42 @@
+uuid: cfcf54a1-6947-4c2a-abf6-08346c50a583
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.manage_products
+  module:
+    - entity_browser_entity_form
+    - views
+name: options_browser
+label: 'Options Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Add options'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7a247804-8b32-44f4-82e0-25357d3ff0ea:
+    settings:
+      view: manage_products
+      view_display: entity_browser_2
+      submit_text: 'Select Option'
+      auto_select: false
+    uuid: 7a247804-8b32-44f4-82e0-25357d3ff0ea
+    weight: 2
+    label: 'Choose existing'
+    id: view
+  9ce3a153-d35f-47b1-83cd-1c6992f3541a:
+    settings:
+      entity_type: node
+      bundle: product_options
+      form_mode: default
+      submit_text: 'Save Option'
+    uuid: 9ce3a153-d35f-47b1-83cd-1c6992f3541a
+    weight: 1
+    label: 'Add Option'
+    id: entity_form

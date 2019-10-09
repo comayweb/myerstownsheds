@@ -11,7 +11,7 @@ dependencies:
 id: questionsgetintouch.
 theme: rosewood
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: 'block_content:a8606831-d7ab-4aba-a486-27e26a2b061a'
 settings:

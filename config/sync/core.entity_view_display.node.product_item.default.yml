@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.product_item.feeds_item
     - field.field.node.product_item.field_add_element
     - field.field.node.product_item.field_brands
     - field.field.node.product_item.field_choose_options_form
@@ -26,7 +25,7 @@ mode: default
 content:
   field_add_element:
     type: entity_reference_revisions_entity_view
-    weight: 4
+    weight: 5
     label: above
     settings:
       view_mode: default
@@ -37,13 +36,13 @@ content:
     weight: 3
     label: hidden
     settings:
-      view_mode: default
+      view_mode: brand_logo
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
   field_choose_options_form:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       source_entity: true
@@ -64,6 +63,14 @@ content:
     third_party_settings: {  }
     type: viewsreference_formatter
     region: content
+  field_options:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_product_image:
     type: entity_reference_label
     weight: 2
@@ -80,7 +87,5 @@ content:
     type: text_default
     region: content
 hidden:
-  feeds_item: true
-  field_options: true
   field_product_category: true
   links: true

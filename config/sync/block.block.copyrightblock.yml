@@ -20,6 +20,6 @@ settings:
   start_year: '2019'
   seperator: '-'
   text:
-    value: "<p>©&nbsp;[copyright_statement:dates] Myerstown Sheds &amp; Fencing | Design By: Rosewood Marketing | Privacy Policy</p>\r\n"
+    value: "<p>©&nbsp;[copyright_statement:dates] Myerstown Sheds &amp; Fencing | Design By: <a target=\"_blank\" href=\"https://www.rosewood.us.com/\">Rosewood Marketing</a> | <a href=\"/privacy-policy\">Privacy Policy</a></p>\r\n"
     format: basic_html
 visibility: {  }

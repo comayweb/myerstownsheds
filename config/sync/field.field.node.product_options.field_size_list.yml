@@ -1,0 +1,33 @@
+uuid: babad950-53b8-4f00-acfc-b047bdefc0f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_size_list
+    - node.type.product_options
+    - taxonomy.vocabulary.building_sizes
+    - taxonomy.vocabulary.furniture_sizes
+    - taxonomy.vocabulary.height
+id: node.product_options.field_size_list
+field_name: field_size_list
+entity_type: node
+bundle: product_options
+label: 'Size List'
+description: 'Choose or create a size list for this item (if applicable)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      building_sizes: building_sizes
+      furniture_sizes: furniture_sizes
+      height: height
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: building_sizes
+field_type: entity_reference

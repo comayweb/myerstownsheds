@@ -1,0 +1,9 @@
+uuid: 750b23d9-8b7d-4a24-8ded-a005a6ecbec9
+langcode: en
+status: true
+dependencies: {  }
+id: color_options_reference
+label: 'Color Options Reference'
+icon_uuid: null
+description: 'Use this field to reference or create a color option content of the product option content type.'
+behavior_plugins: {  }

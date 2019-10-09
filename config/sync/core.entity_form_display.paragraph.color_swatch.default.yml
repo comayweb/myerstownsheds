@@ -1,0 +1,35 @@
+uuid: eafcc296-6344-4883-914f-4e3f1a9a5263
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.color_swatch.field_color
+    - field.field.paragraph.color_swatch.field_image_of_color
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.color_swatch
+  module:
+    - image
+id: paragraph.color_swatch.default
+targetEntityType: paragraph
+bundle: color_swatch
+mode: default
+content:
+  field_color:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image_of_color:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

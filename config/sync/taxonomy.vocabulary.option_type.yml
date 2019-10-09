@@ -1,0 +1,8 @@
+uuid: 47746da4-c5c8-4c97-9d16-27e2daa4f1b7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Option Type'
+vid: option_type
+description: ''
+weight: 0

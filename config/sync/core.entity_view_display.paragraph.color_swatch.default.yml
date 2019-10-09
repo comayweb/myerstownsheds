@@ -1,0 +1,56 @@
+uuid: 98152050-e53a-4aa2-bc47-a2f1835cfb60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.color_swatch.field_color
+    - field.field.paragraph.color_swatch.field_image_of_color
+    - image.style.media_library
+    - paragraphs.paragraphs_type.color_swatch
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_color_wrapper:
+      children:
+        - field_image_of_color
+        - field_color
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: color-swatch-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Color Wrapper'
+      region: content
+id: paragraph.color_swatch.default
+targetEntityType: paragraph
+bundle: color_swatch
+mode: default
+content:
+  field_color:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_of_color:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: media_library
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: 8a3c4572-5593-44b9-a797-84a2530811b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Product Options'
+type: product_options
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,9 +1,0 @@
-uuid: 9abdb6b8-65b7-462d-a48a-8a59d5ce2b41
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.options
-name: 'Sheds - Windows'
-type: windows
-description: ''

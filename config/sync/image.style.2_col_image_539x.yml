@@ -1,0 +1,15 @@
+uuid: 9bb212d0-0a5a-4762-874b-3be6457a2272
+langcode: en
+status: true
+dependencies: {  }
+name: 2_col_image_539x
+label: '2-col image 539x361'
+effects:
+  9fda30a9-7262-45d0-a475-6a7882b46d11:
+    uuid: 9fda30a9-7262-45d0-a475-6a7882b46d11
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 539
+      height: 361
+      anchor: center-center

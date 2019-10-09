@@ -5,8 +5,9 @@ dependencies:
   config:
     - field.field.media.product_image.field_media_image
     - media.type.product_image
+    - responsive_image.styles.responsive_banner
   module:
-    - image
+    - responsive_image
 id: media.product_image.default
 targetEntityType: media
 bundle: product_image
@@ -16,10 +17,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: responsive_banner
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
 hidden:
   created: true

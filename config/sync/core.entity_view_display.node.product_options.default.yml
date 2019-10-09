@@ -1,0 +1,50 @@
+uuid: ee3277e0-eb4c-4057-8c1d-3bf74771e698
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product_options.feeds_item
+    - field.field.node.product_options.field_formatted_content
+    - field.field.node.product_options.field_option_type
+    - field.field.node.product_options.field_size_list
+    - node.type.product_options
+  module:
+    - entity_class_formatter
+    - entity_reference_revisions
+    - user
+id: node.product_options.default
+targetEntityType: node
+bundle: product_options
+mode: default
+content:
+  field_formatted_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_option_type:
+    type: entity_class_formatter
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_size_list:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

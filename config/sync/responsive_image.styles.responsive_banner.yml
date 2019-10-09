@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - image.style.banner_image_small
+    - image.style.banner_small_559x500
     - image.style.flexslider_full
-    - image.style.medium
   theme:
     - rosewood
 id: responsive_banner
@@ -22,4 +22,4 @@ image_style_mappings:
     image_mapping_type: image_style
     image_mapping: banner_image_small
 breakpoint_group: rosewood
-fallback_image_style: medium
+fallback_image_style: banner_small_559x500

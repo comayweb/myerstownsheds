@@ -1,22 +1,17 @@
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'https://myerstown.rosewoodhosting.us.com/themes/custom/rosewood/favicon.ico'
-  use_default: 1
+  mimetype: image/png
+  path: ./sites/default/files/favicon.png
+  url: 'http://myerstown.rosewoodhosting.us.com/./sites/default/files/favicon.png'
+  use_default: false
 schemas:
   bootstrap: 8000
   rosewood: 8000
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: 1
-  node_user_picture: false
 logo:
   path: ./sites/default/files/logo_reverse.png
   url: ''
-  use_default: 0
+  use_default: false
 region_wells:
   headline: ''
   navigation: ''
@@ -27,7 +22,6 @@ region_wells:
   sidebar_first: ''
   sidebar_second: ''
   footer: ''
-fluid_container: 0
 cdn_custom_css: null
 cdn_custom_css_min: null
 cdn_custom_js: null
@@ -35,4 +29,19 @@ cdn_custom_js_min: null
 cdn_jsdelivr_version: null
 cdn_jsdelivr_theme: null
 reset_http_request_cache: ''
+breadcrumb_home: 1
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+popover_enabled: 0
+tooltip_animation: 0
+tooltip_enabled: 0
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+forms_smart_descriptions: 0
 table: ''

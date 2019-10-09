@@ -1,0 +1,28 @@
+uuid: 3157b767-1274-48bd-b6f6-5de07a63b1f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_option_reference
+    - node.type.product_options
+    - paragraphs.paragraphs_type.color_options_reference
+id: paragraph.color_options_reference.field_color_option_reference
+field_name: field_color_option_reference
+entity_type: paragraph
+bundle: color_options_reference
+label: 'Color Option Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      product_options: product_options
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

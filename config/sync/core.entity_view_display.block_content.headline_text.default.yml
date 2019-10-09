@@ -7,22 +7,44 @@ dependencies:
     - field.field.block_content.headline_text.field_headline_text
     - field.field.block_content.headline_text.field_link
   module:
+    - field_group
     - link
     - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - field_headline_text
+        - field_link
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: head-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+      region: content
 id: block_content.headline_text.default
 targetEntityType: block_content
 bundle: headline_text
 mode: default
 content:
   field_headline_text:
-    weight: 0
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_link:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       trim_length: 80

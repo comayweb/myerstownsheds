@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: banner_image_small
-label: 'Banner Image Small'
+label: 'Banner Image Small 1199x600'
 effects:
   a9b582d9-bc6f-43c2-8796-c4331aa44e54:
     uuid: a9b582d9-bc6f-43c2-8796-c4331aa44e54
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 800
-      height: 372
+      width: 1199
+      height: 600
       anchor: center-center

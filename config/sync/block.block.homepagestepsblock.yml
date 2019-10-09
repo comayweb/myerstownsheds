@@ -12,7 +12,7 @@ dependencies:
 id: homepagestepsblock
 theme: rosewood
 region: content
-weight: -11
+weight: -10
 provider: null
 plugin: 'block_content:5297dee6-ec57-413a-ba26-0d7ed1a663d9'
 settings:

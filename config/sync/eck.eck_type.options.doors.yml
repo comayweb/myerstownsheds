@@ -1,9 +1,0 @@
-uuid: 0ed956b5-0b2a-41d7-8ea7-fe6d3c8ac03d
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.options
-name: 'Sheds - Doors'
-type: doors
-description: ''

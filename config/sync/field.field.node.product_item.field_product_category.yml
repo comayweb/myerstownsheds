@@ -10,7 +10,7 @@ id: node.product_item.field_product_category
 field_name: field_product_category
 entity_type: node
 bundle: product_item
-label: 'Product Category'
+label: Breadcrumbs
 description: ''
 required: false
 translatable: false

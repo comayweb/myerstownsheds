@@ -17,11 +17,17 @@ settings:
           items:
             - Bold
             - Italic
+            - Format
+        -
+          name: Styling
+          items:
+            - Styles
         -
           name: Links
           items:
             - DrupalLink
             - DrupalUnlink
+            - '-'
         -
           name: Lists
           items:
@@ -37,7 +43,7 @@ settings:
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: "a.cta-button|Button\r\np.center-align| Center Align"
     language:
       language_list: un
 image_upload:

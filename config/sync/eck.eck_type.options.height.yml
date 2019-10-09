@@ -1,9 +1,0 @@
-uuid: 05fc1fa7-516c-438b-a53b-7521b8193198
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.options
-name: 'Railings - Height'
-type: height
-description: ''

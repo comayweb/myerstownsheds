@@ -11,7 +11,7 @@ id: node.product_item.field_choose_options_form
 field_name: field_choose_options_form
 entity_type: node
 bundle: product_item
-label: 'Choose Options Form'
+label: 'Request a Quote'
 description: ''
 required: false
 translatable: false

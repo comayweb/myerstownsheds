@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_add_element
     - node.type.product_item
+    - paragraphs.paragraphs_type.color_options_reference
     - paragraphs.paragraphs_type.downloadable_file
     - paragraphs.paragraphs_type.embed
     - paragraphs.paragraphs_type.single_image
@@ -32,6 +33,7 @@ settings:
       two_column_images: two_column_images
       downloadable_file: downloadable_file
       embed: embed
+      color_options_reference: color_options_reference
     target_bundles_drag_drop:
       text_area:
         enabled: true
@@ -54,4 +56,13 @@ settings:
       embed:
         enabled: true
         weight: -9
+      color_options_reference:
+        enabled: true
+        weight: 11
+      color_swatch:
+        weight: 11
+        enabled: false
+      testimonial:
+        weight: 15
+        enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,38 @@
+uuid: a73a4e91-e8a6-4a3e-9762-c3983e739c79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_of_color
+    - paragraphs.paragraphs_type.color_swatch
+  module:
+    - image
+id: paragraph.color_swatch.field_image_of_color
+field_name: field_image_of_color
+entity_type: paragraph
+bundle: color_swatch
+label: 'Image of color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

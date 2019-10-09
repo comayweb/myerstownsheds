@@ -1,0 +1,9 @@
+uuid: 750876f4-4314-4fdc-9212-acbb52fa0b71
+langcode: en
+status: true
+dependencies: {  }
+id: color_swatch
+label: 'Color Swatch'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+uuid: e3ab4dc3-0b53-4afa-a5d0-d71cde09de42
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.product_options
+id: node.product_options.title
+field_name: title
+entity_type: node
+bundle: product_options
+label: Option
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: aa271429-389b-4aa1-aa43-ec4776350dc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.2_col_image
+label: '2-col image'
+targetEntityType: media
+cache: true

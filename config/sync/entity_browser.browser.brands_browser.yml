@@ -1,0 +1,42 @@
+uuid: e15a983a-22ae-4661-9c25-7dc125157a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.brands
+  module:
+    - entity_browser_entity_form
+    - views
+name: brands_browser
+label: 'Brands Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  505f27d5-a32a-4842-974c-184a644a680a:
+    settings:
+      entity_type: taxonomy_term
+      bundle: brands_logos
+      form_mode: default
+      submit_text: Save
+    uuid: 505f27d5-a32a-4842-974c-184a644a680a
+    weight: 1
+    label: Create
+    id: entity_form
+  56f5b769-58f6-4354-abb9-82f28c445e51:
+    settings:
+      view: brands
+      view_display: entity_browser_1
+      submit_text: 'Select brand'
+      auto_select: false
+    uuid: 56f5b769-58f6-4354-abb9-82f28c445e51
+    weight: 2
+    label: 'Select existing'
+    id: view

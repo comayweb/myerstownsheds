@@ -1,25 +1,45 @@
-uuid: 490a53e4-5557-4e63-b163-64ee95c2e44d
+uuid: 81050221-a510-426e-b08b-e7beaefb6ce4
 langcode: en
 status: true
 dependencies:
   config:
     - core.base_field_override.node.product_item.title
     - field.field.node.product_item.feeds_item
-    - field.field.node.product_item.field_add_element
+    - field.field.node.product_item.field_options
     - field.field.node.product_item.field_product_category
     - field.field.node.product_item.field_product_image
+    - field.field.node.product_item.field_short_description
     - node.type.product_item
   module:
+    - feeds_tamper
     - node
-    - paragraphs
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      c26538b9-30c9-4b45-bfd6-33a36cabfd6e:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: field_options
+        weight: 0
+        uuid: c26538b9-30c9-4b45-bfd6-33a36cabfd6e
+      563429eb-952a-4526-8f1f-8fad70027c81:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: field_product_image
+        weight: 0
+        uuid: 563429eb-952a-4526-8f1f-8fad70027c81
 label: Product
 id: product
-description: ''
+description: 'Import Products'
 import_period: -1
-fetcher: upload
+fetcher: directory
 fetcher_configuration:
   allowed_extensions: 'txt csv tsv xml opml'
-  directory: 'public://feeds'
+  allowed_schemes:
+    public: public
+  recursive_scan: false
 parser: csv
 parser_configuration:
   delimiter: ','
@@ -37,82 +57,68 @@ processor_configuration:
   values:
     type: product_item
 custom_sources:
-  '':
-    label: ''
-    value: ''
-    machine_name: ''
-  id:
-    label: ID
-    value: ID
-    machine_name: id
   title:
-    label: Title
-    value: Title
+    label: title
+    value: title
     machine_name: title
-  description:
-    label: Description
-    value: Description
-    machine_name: description
-  categories:
-    label: Categories
-    value: Categories
-    machine_name: categories
-  categories_2:
-    label: Categories_2
-    value: Categories_2
-    machine_name: categories_2
-  categories_3:
-    label: Categories_3
-    value: Categories_3
-    machine_name: categories_3
-  categories_03:
-    label: Categories_3
-    value: Categories_3
-    machine_name: categories_03
-  options_1:
-    label: Options_1
-    value: Options_1
-    machine_name: options_1
-  options_2:
-    label: Options_2
-    value: Options_2
-    machine_name: options_2
-  product_image_reference:
-    label: Product_Image_Reference
-    value: Product_Image_Reference
-    machine_name: product_image_reference
+  field_short_description:
+    label: field_short_description
+    value: field_short_description
+    machine_name: field_short_description
+  field_product_category:
+    label: field_product_category
+    value: field_product_category
+    machine_name: field_product_category
+  field_options:
+    label: field_options
+    value: field_options
+    machine_name: field_options
+  field_product_image:
+    label: field_product_image
+    value: field_product_image
+    machine_name: field_product_image
+  nid:
+    label: nid
+    value: nid
+    machine_name: nid
 mappings:
   -
     target: title
     map:
       value: title
-    unique: {  }
+    unique:
+      value: '1'
   -
-    target: field_add_element
+    target: field_short_description
     map:
-      value: description
+      value: field_short_description
     settings:
-      paragraphs_type: text_area
-      paragraph_field: field_text_area
       format: basic_html
   -
     target: field_product_category
     map:
-      target_id: categories
+      target_id: field_product_category
     settings:
       reference_by: tid
+      autocreate: 0
+  -
+    target: field_options
+    map:
+      target_id: field_options
+    settings:
+      reference_by: nid
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_product_image
+    map:
+      target_id: field_product_image
+    settings:
+      reference_by: mid
       autocreate: 0
   -
     target: feeds_item
     map:
       url: ''
-      guid: id
-    unique:
-      guid: '1'
-  -
-    target: field_product_image
-    map:
-      target_id: product_image_reference
-    settings:
-      reference_by: mid
-      autocreate: 0
+      guid: nid
+    unique: {  }

@@ -1,22 +1,31 @@
-uuid: eaff4271-4114-45ca-abf7-7252f95e278d
+uuid: 57ab6792-5e59-4751-ba4d-8546bbd9c092
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.single_image.field_upload_image
+    - entity_browser.browser.browse_files_modal
+    - field.field.paragraph.single_image.field_single_image
     - paragraphs.paragraphs_type.single_image
   module:
-    - media_library
+    - entity_browser
 id: paragraph.single_image.default
 targetEntityType: paragraph
 bundle: single_image
 mode: default
 content:
-  field_upload_image:
-    type: media_library_widget
+  field_single_image:
     weight: 0
-    settings: {  }
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
+    type: entity_browser_file
     region: content
 hidden:
   created: true

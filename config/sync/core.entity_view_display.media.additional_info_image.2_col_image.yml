@@ -1,0 +1,30 @@
+uuid: fdd70152-81bf-47f8-bef0-3239bad56733
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.2_col_image
+    - field.field.media.additional_info_image.field_media_image
+    - image.style.2_col_image_539x
+    - media.type.additional_info_image
+  module:
+    - image
+id: media.additional_info_image.2_col_image
+targetEntityType: media
+bundle: additional_info_image
+mode: 2_col_image
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 2_col_image_539x
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

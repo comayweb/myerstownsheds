@@ -1,0 +1,15 @@
+uuid: ad8f11c1-ffe1-4262-b436-b233c1b379c1
+langcode: en
+status: true
+dependencies: {  }
+name: banner_small_559x500
+label: 'Banner Small 559x500'
+effects:
+  cbf88537-6a2c-4cb2-80f3-f5d475a3e969:
+    uuid: cbf88537-6a2c-4cb2-80f3-f5d475a3e969
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 559
+      height: 500
+      anchor: center-center

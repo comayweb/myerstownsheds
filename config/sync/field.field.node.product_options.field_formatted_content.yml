@@ -1,0 +1,63 @@
+uuid: 32c04547-4e72-4210-ab87-21903c786def
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_formatted_content
+    - node.type.product_options
+    - paragraphs.paragraphs_type.color_swatch
+    - paragraphs.paragraphs_type.embed
+    - paragraphs.paragraphs_type.single_image
+    - paragraphs.paragraphs_type.text_area
+    - paragraphs.paragraphs_type.two_column_images
+  module:
+    - entity_reference_revisions
+id: node.product_options.field_formatted_content
+field_name: field_formatted_content
+entity_type: node
+bundle: product_options
+label: 'Formatted Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      color_swatch: color_swatch
+      embed: embed
+      single_image: single_image
+      text_area: text_area
+      two_column_images: two_column_images
+    target_bundles_drag_drop:
+      color_swatch:
+        enabled: true
+        weight: 10
+      downloadable_file:
+        weight: 11
+        enabled: false
+      embed:
+        enabled: true
+        weight: 12
+      product_reference:
+        weight: 13
+        enabled: false
+      single_image:
+        enabled: true
+        weight: 14
+      testimonial:
+        weight: 15
+        enabled: false
+      text_area:
+        enabled: true
+        weight: 16
+      text_area_brand_color:
+        weight: 17
+        enabled: false
+      two_column_images:
+        enabled: true
+        weight: 18
+field_type: entity_reference_revisions

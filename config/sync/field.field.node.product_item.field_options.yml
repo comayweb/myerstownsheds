@@ -1,18 +1,11 @@
-uuid: 7193dea5-9f9d-4f5e-ace8-d03f0579338b
+uuid: 54d7d149-fc18-4206-990a-eae8f65085ba
 langcode: en
 status: true
 dependencies:
   config:
-    - eck.eck_type.options.baluster_style
-    - eck.eck_type.options.doors
-    - eck.eck_type.options.height
-    - eck.eck_type.options.railing_colors
-    - eck.eck_type.options.ramp
-    - eck.eck_type.options.size_options
-    - eck.eck_type.options.upgrades
-    - eck.eck_type.options.windows
     - field.storage.node.field_options
     - node.type.product_item
+    - node.type.product_options
 id: node.product_item.field_options
 field_name: field_options
 entity_type: node
@@ -24,19 +17,12 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:options'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      baluster_style: baluster_style
-      railing_colors: railing_colors
-      height: height
-      doors: doors
-      ramp: ramp
-      size_options: size_options
-      upgrades: upgrades
-      windows: windows
+      product_options: product_options
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: doors
+    auto_create_bundle: ''
 field_type: entity_reference

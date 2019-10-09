@@ -1,0 +1,10 @@
+uuid: 8ac307a5-8363-44d3-85d4-c1b6b02c8080
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.full_width_flexslider
+label: 'Full Width Flexslider'
+targetEntityType: media
+cache: true
