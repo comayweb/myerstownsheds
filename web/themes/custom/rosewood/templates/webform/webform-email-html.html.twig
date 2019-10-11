@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation for webform email wrapper template as HTML.
+ *
+ * @ingroup themeable
+ */
+#}
+<html>
+<head>
+  <title>{{ subject }}</title>
+</head>
+<body style="background:#F6F6F6;padding:20pt;">
+  <div style="background:#FFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0 auto; padding:0 20pt; max-width: 650px;">
+    {{ body|raw }}
+  </div>
+</body>
+</html>
