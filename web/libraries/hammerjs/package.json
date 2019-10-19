@@ -50,7 +50,7 @@
     "rollup": "^0.36.0",
     "rollup-plugin-babel": "^2.4.0",
     "run-when-changed": "^1.2.0",
-    "serve": "^1.4.0",
+    "serve": "^11.2.0",
     "uglify-js": "^2.7.0"
   },
   "main": "hammer.js",
